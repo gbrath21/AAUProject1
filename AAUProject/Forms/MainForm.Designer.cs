@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.Password = new System.Windows.Forms.TextBox();
             this.Username = new System.Windows.Forms.TextBox();
             this.UserType = new System.Windows.Forms.ComboBox();
@@ -100,6 +100,7 @@
             this.bunifuGroupBox1.Size = new System.Drawing.Size(467, 552);
             this.bunifuGroupBox1.TabIndex = 18;
             this.bunifuGroupBox1.TabStop = false;
+            this.bunifuGroupBox1.Enter += new System.EventHandler(this.bunifuGroupBox1_Enter);
             // 
             // Login
             // 
@@ -121,11 +122,11 @@
             this.Login.ColorContrastOnClick = 45;
             this.Login.ColorContrastOnHover = 45;
             this.Login.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.Login.CustomizableEdges = borderEdges2;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.Login.CustomizableEdges = borderEdges1;
             this.Login.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Login.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Login.DisabledFillColor = System.Drawing.Color.Empty;

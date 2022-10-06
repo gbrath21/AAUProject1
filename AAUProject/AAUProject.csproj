@@ -289,6 +289,12 @@
     <Compile Include="Forms\Welcompage\WelcompageStundet\CalendarpageStudent.Designer.cs">
       <DependentUpon>CalendarpageStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Welcompage\WelcompageStundet\EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Welcompage\WelcompageStundet\EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Welcompage\WelcompageStundet\UserControlDays.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -324,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Welcompage\WelcompageStundet\CalendarpageStudent.resx">
       <DependentUpon>CalendarpageStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Welcompage\WelcompageStundet\EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Welcompage\WelcompageStundet\UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>

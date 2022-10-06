@@ -15,6 +15,8 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
     public partial class CalendarpageStudent : Form
     {
         int month, year;
+
+        public static int static_month, static_year;
         public CalendarpageStudent()
         {
             InitializeComponent();
@@ -56,6 +58,9 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 
             String monthnam = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text = monthnam + " " + year;
+
+            static_month = month;
+            static_year = year;
             //firstday
             DateTime startofthemonth = new DateTime(year, month,1);
             //Count of days
@@ -79,6 +84,8 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         {
             daycontainer.Controls.Clear();
             month--;
+            static_month = month;
+            static_year = year;
             String monthnam = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text = monthnam + " " + year;
             DateTime startofthemonth = new DateTime(year, month, 1);
@@ -99,10 +106,17 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             }
         }
 
+        private void bunifuGroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void NextButton_Click(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();
             month++;
+            static_month = month;
+            static_year = year;
             String monthnam = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lbdate.Text = monthnam + " " + year;
             DateTime startofthemonth = new DateTime(year, month, 1);
