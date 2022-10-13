@@ -1,6 +1,6 @@
-﻿namespace AAUProject.Forms.Welcompage.WelcompageStundet
+﻿namespace AAUProject.Forms.Welcompage.WelcompageAdmin
 {
-    partial class CalendarpageStudent
+    partial class CalendarpageAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendarpageStudent));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalendarpageAdmin));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -40,16 +40,15 @@
             this.HomeButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbdate = new Bunifu.UI.WinForms.BunifuLabel();
+            this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbdate = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.NextButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.PreButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuGroupBox1.SuspendLayout();
@@ -58,8 +57,6 @@
             // 
             // bunifuGroupBox1
             // 
-            this.bunifuGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.bunifuGroupBox1.BackColor = System.Drawing.Color.White;
             this.bunifuGroupBox1.BorderColor = System.Drawing.Color.White;
             this.bunifuGroupBox1.BorderRadius = 0;
@@ -68,6 +65,7 @@
             this.bunifuGroupBox1.Controls.Add(this.CalendarButton1);
             this.bunifuGroupBox1.Controls.Add(this.HomeButton1);
             this.bunifuGroupBox1.Controls.Add(this.bunifuPictureBox1);
+            this.bunifuGroupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.bunifuGroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuGroupBox1.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox1.LabelIndent = 10;
@@ -76,9 +74,8 @@
             this.bunifuGroupBox1.Name = "bunifuGroupBox1";
             this.bunifuGroupBox1.Padding = new System.Windows.Forms.Padding(0);
             this.bunifuGroupBox1.Size = new System.Drawing.Size(200, 647);
-            this.bunifuGroupBox1.TabIndex = 11;
+            this.bunifuGroupBox1.TabIndex = 12;
             this.bunifuGroupBox1.TabStop = false;
-            this.bunifuGroupBox1.Enter += new System.EventHandler(this.bunifuGroupBox1_Enter);
             // 
             // HomeworkButton1
             // 
@@ -170,7 +167,6 @@
             this.HomeworkButton1.TextMarginLeft = 0;
             this.HomeworkButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.HomeworkButton1.UseDefaultRadiusAndThickness = true;
-            this.HomeworkButton1.Click += new System.EventHandler(this.HomeworkButton1_Click);
             // 
             // CalendarButton1
             // 
@@ -381,49 +377,86 @@
             this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel5.Font = new System.Drawing.Font("Barlow Black", 18F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.bunifuLabel5.Location = new System.Drawing.Point(476, 12);
+            this.bunifuLabel5.Location = new System.Drawing.Point(475, 13);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(374, 46);
-            this.bunifuLabel5.TabIndex = 8;
+            this.bunifuLabel5.TabIndex = 27;
             this.bunifuLabel5.Text = "Your AAU Calendar";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel5.Click += new System.EventHandler(this.bunifuLabel5_Click);
             // 
-            // bunifuLabel1
+            // lbdate
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.bunifuLabel1.Location = new System.Drawing.Point(1019, 106);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(52, 22);
-            this.bunifuLabel1.TabIndex = 15;
-            this.bunifuLabel1.Text = "Sunday";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
+            this.lbdate.AllowParentOverrides = false;
+            this.lbdate.AutoEllipsis = false;
+            this.lbdate.AutoSize = false;
+            this.lbdate.CursorType = null;
+            this.lbdate.Font = new System.Drawing.Font("Barlow SemiBold", 14F, System.Drawing.FontStyle.Bold);
+            this.lbdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.lbdate.Location = new System.Drawing.Point(504, 65);
+            this.lbdate.Name = "lbdate";
+            this.lbdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbdate.Size = new System.Drawing.Size(331, 28);
+            this.lbdate.TabIndex = 38;
+            this.lbdate.Text = "MONTH YEAR";
+            this.lbdate.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbdate.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel6
+            // daycontainer
             // 
-            this.bunifuLabel6.AllowParentOverrides = false;
-            this.bunifuLabel6.AutoEllipsis = false;
-            this.bunifuLabel6.CursorType = null;
-            this.bunifuLabel6.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.bunifuLabel6.Location = new System.Drawing.Point(259, 106);
-            this.bunifuLabel6.Name = "bunifuLabel6";
-            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel6.Size = new System.Drawing.Size(54, 22);
-            this.bunifuLabel6.TabIndex = 19;
-            this.bunifuLabel6.Text = "Monday";
-            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.daycontainer.Location = new System.Drawing.Point(222, 135);
+            this.daycontainer.Name = "daycontainer";
+            this.daycontainer.Size = new System.Drawing.Size(885, 459);
+            this.daycontainer.TabIndex = 37;
+            // 
+            // bunifuLabel7
+            // 
+            this.bunifuLabel7.AllowParentOverrides = false;
+            this.bunifuLabel7.AutoEllipsis = false;
+            this.bunifuLabel7.CursorType = null;
+            this.bunifuLabel7.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.bunifuLabel7.Location = new System.Drawing.Point(888, 107);
+            this.bunifuLabel7.Name = "bunifuLabel7";
+            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel7.Size = new System.Drawing.Size(63, 22);
+            this.bunifuLabel7.TabIndex = 36;
+            this.bunifuLabel7.Text = "Saturday";
+            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel8
+            // 
+            this.bunifuLabel8.AllowParentOverrides = false;
+            this.bunifuLabel8.AutoEllipsis = false;
+            this.bunifuLabel8.CursorType = null;
+            this.bunifuLabel8.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.bunifuLabel8.Location = new System.Drawing.Point(766, 107);
+            this.bunifuLabel8.Name = "bunifuLabel8";
+            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel8.Size = new System.Drawing.Size(44, 22);
+            this.bunifuLabel8.TabIndex = 35;
+            this.bunifuLabel8.Text = "Friday";
+            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel9
+            // 
+            this.bunifuLabel9.AllowParentOverrides = false;
+            this.bunifuLabel9.AutoEllipsis = false;
+            this.bunifuLabel9.CursorType = null;
+            this.bunifuLabel9.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.bunifuLabel9.Location = new System.Drawing.Point(630, 107);
+            this.bunifuLabel9.Name = "bunifuLabel9";
+            this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel9.Size = new System.Drawing.Size(66, 22);
+            this.bunifuLabel9.TabIndex = 34;
+            this.bunifuLabel9.Text = "Thursday";
+            this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel2
             // 
@@ -432,11 +465,11 @@
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.bunifuLabel2.Location = new System.Drawing.Point(495, 106);
+            this.bunifuLabel2.Location = new System.Drawing.Point(494, 107);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(83, 22);
-            this.bunifuLabel2.TabIndex = 21;
+            this.bunifuLabel2.TabIndex = 33;
             this.bunifuLabel2.Text = "Wednesday";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
@@ -448,102 +481,47 @@
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.bunifuLabel3.Location = new System.Drawing.Point(383, 106);
+            this.bunifuLabel3.Location = new System.Drawing.Point(382, 107);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(60, 22);
-            this.bunifuLabel3.TabIndex = 20;
+            this.bunifuLabel3.TabIndex = 32;
             this.bunifuLabel3.Text = "Tuesday";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel9
+            // bunifuLabel6
             // 
-            this.bunifuLabel9.AllowParentOverrides = false;
-            this.bunifuLabel9.AutoEllipsis = false;
-            this.bunifuLabel9.CursorType = null;
-            this.bunifuLabel9.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.bunifuLabel9.Location = new System.Drawing.Point(631, 106);
-            this.bunifuLabel9.Name = "bunifuLabel9";
-            this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel9.Size = new System.Drawing.Size(66, 22);
-            this.bunifuLabel9.TabIndex = 22;
-            this.bunifuLabel9.Text = "Thursday";
-            this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel6.AllowParentOverrides = false;
+            this.bunifuLabel6.AutoEllipsis = false;
+            this.bunifuLabel6.CursorType = null;
+            this.bunifuLabel6.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.bunifuLabel6.Location = new System.Drawing.Point(258, 107);
+            this.bunifuLabel6.Name = "bunifuLabel6";
+            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel6.Size = new System.Drawing.Size(54, 22);
+            this.bunifuLabel6.TabIndex = 31;
+            this.bunifuLabel6.Text = "Monday";
+            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel8
+            // bunifuLabel1
             // 
-            this.bunifuLabel8.AllowParentOverrides = false;
-            this.bunifuLabel8.AutoEllipsis = false;
-            this.bunifuLabel8.CursorType = null;
-            this.bunifuLabel8.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.bunifuLabel8.Location = new System.Drawing.Point(767, 106);
-            this.bunifuLabel8.Name = "bunifuLabel8";
-            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(44, 22);
-            this.bunifuLabel8.TabIndex = 23;
-            this.bunifuLabel8.Text = "Friday";
-            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel7
-            // 
-            this.bunifuLabel7.AllowParentOverrides = false;
-            this.bunifuLabel7.AutoEllipsis = false;
-            this.bunifuLabel7.CursorType = null;
-            this.bunifuLabel7.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.bunifuLabel7.Location = new System.Drawing.Point(889, 106);
-            this.bunifuLabel7.Name = "bunifuLabel7";
-            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(63, 22);
-            this.bunifuLabel7.TabIndex = 24;
-            this.bunifuLabel7.Text = "Saturday";
-            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // daycontainer
-            // 
-            this.daycontainer.Location = new System.Drawing.Point(223, 134);
-            this.daycontainer.Name = "daycontainer";
-            this.daycontainer.Size = new System.Drawing.Size(885, 459);
-            this.daycontainer.TabIndex = 25;
-            // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel4.Location = new System.Drawing.Point(0, 0);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(0, 0);
-            this.bunifuLabel4.TabIndex = 0;
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // lbdate
-            // 
-            this.lbdate.AllowParentOverrides = false;
-            this.lbdate.AutoEllipsis = false;
-            this.lbdate.AutoSize = false;
-            this.lbdate.CursorType = null;
-            this.lbdate.Font = new System.Drawing.Font("Barlow SemiBold", 14F, System.Drawing.FontStyle.Bold);
-            this.lbdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.lbdate.Location = new System.Drawing.Point(505, 64);
-            this.lbdate.Name = "lbdate";
-            this.lbdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbdate.Size = new System.Drawing.Size(331, 28);
-            this.lbdate.TabIndex = 26;
-            this.lbdate.Text = "MONTH YEAR";
-            this.lbdate.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbdate.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.lbdate.Click += new System.EventHandler(this.lbdate_Click);
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.bunifuLabel1.Location = new System.Drawing.Point(1018, 107);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(52, 22);
+            this.bunifuLabel1.TabIndex = 30;
+            this.bunifuLabel1.Text = "Sunday";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // NextButton
             // 
@@ -594,7 +572,7 @@
             this.NextButton.IdleIconLeftImage = null;
             this.NextButton.IdleIconRightImage = null;
             this.NextButton.IndicateFocus = false;
-            this.NextButton.Location = new System.Drawing.Point(1009, 610);
+            this.NextButton.Location = new System.Drawing.Point(1008, 611);
             this.NextButton.Name = "NextButton";
             this.NextButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.NextButton.OnDisabledState.BorderRadius = 1;
@@ -629,13 +607,13 @@
             this.NextButton.OnPressedState.IconLeftImage = null;
             this.NextButton.OnPressedState.IconRightImage = null;
             this.NextButton.Size = new System.Drawing.Size(83, 28);
-            this.NextButton.TabIndex = 14;
+            this.NextButton.TabIndex = 29;
             this.NextButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.NextButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.NextButton.TextMarginLeft = 0;
             this.NextButton.TextPadding = new System.Windows.Forms.Padding(0);
             this.NextButton.UseDefaultRadiusAndThickness = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click_1);
             // 
             // PreButton
             // 
@@ -686,7 +664,7 @@
             this.PreButton.IdleIconLeftImage = null;
             this.PreButton.IdleIconRightImage = null;
             this.PreButton.IndicateFocus = false;
-            this.PreButton.Location = new System.Drawing.Point(898, 610);
+            this.PreButton.Location = new System.Drawing.Point(897, 611);
             this.PreButton.Name = "PreButton";
             this.PreButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.PreButton.OnDisabledState.BorderRadius = 1;
@@ -721,7 +699,7 @@
             this.PreButton.OnPressedState.IconLeftImage = null;
             this.PreButton.OnPressedState.IconRightImage = null;
             this.PreButton.Size = new System.Drawing.Size(83, 28);
-            this.PreButton.TabIndex = 13;
+            this.PreButton.TabIndex = 28;
             this.PreButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.PreButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.PreButton.TextMarginLeft = 0;
@@ -729,15 +707,13 @@
             this.PreButton.UseDefaultRadiusAndThickness = true;
             this.PreButton.Click += new System.EventHandler(this.PreButton_Click);
             // 
-            // CalendarpageStudent
+            // CalendarpageAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1130, 647);
             this.Controls.Add(this.bunifuLabel5);
             this.Controls.Add(this.lbdate);
-            this.Controls.Add(this.bunifuLabel4);
             this.Controls.Add(this.daycontainer);
             this.Controls.Add(this.bunifuLabel7);
             this.Controls.Add(this.bunifuLabel8);
@@ -749,11 +725,9 @@
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.PreButton);
             this.Controls.Add(this.bunifuGroupBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "CalendarpageStudent";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CalendarpageStudent";
-            this.Load += new System.EventHandler(this.CalendarpageStudent_Load);
+            this.Name = "CalendarpageAdmin";
+            this.Text = "CalendarpageAdmin";
+            this.Load += new System.EventHandler(this.CalendarpageAdmin_Load);
             this.bunifuGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -769,17 +743,16 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton HomeButton1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton PreButton;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton NextButton;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
+        private Bunifu.UI.WinForms.BunifuLabel lbdate;
+        private System.Windows.Forms.FlowLayoutPanel daycontainer;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
-        private System.Windows.Forms.FlowLayoutPanel daycontainer;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private Bunifu.UI.WinForms.BunifuLabel lbdate;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton NextButton;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton PreButton;
     }
 }

@@ -42,11 +42,11 @@ namespace AAUProject
         private void Login_Click(object sender, EventArgs e)
         {
             
-            string conn = "server=localhost;user id=root;database=aau;port=3306;password=PA10na2013";
-            string sqlStatement = "SELECT * From users WHERE USERNAME = @username AND PASSWORD = @password AND USERTYPE = @usertype;";
-            string sqlStatement1 = "SELECT USERTYPE From users WHERE USERNAME = @username AND PASSWORD = @password AND USERTYPE = 'Student';";
-            string sqlStatement2 = "SELECT USERTYPE From users WHERE USERNAME = @username AND PASSWORD = @password AND USERTYPE = 'Teacher';";
-            string sqlStatement3 = "SELECT USERTYPE From users WHERE USERNAME = @username AND PASSWORD = @password AND USERTYPE = 'Admin';";
+            string conn = "server=users.cedkilyugxhq.eu-north-1.rds.amazonaws.com;user id=admin;database=users;port=3306;password=12345678";
+            string sqlStatement = "SELECT * From user WHERE user_name = @username AND user_password = @password AND user_type = @usertype;";
+            string sqlStatement1 = "SELECT user_type From user WHERE user_name = @username AND user_password = @password AND user_type = 'Student';";
+            string sqlStatement2 = "SELECT user_type From user WHERE user_name = @username AND user_password = @password AND user_type = 'Teacher';";
+            string sqlStatement3 = "SELECT user_type From user WHERE user_name = @username AND user_password = @password AND user_type = 'Admin';";
             MySqlConnection connection = new MySqlConnection(conn);
 
             MySqlCommand command = new MySqlCommand(sqlStatement, connection);

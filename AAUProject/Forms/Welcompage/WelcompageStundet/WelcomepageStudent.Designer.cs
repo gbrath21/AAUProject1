@@ -30,16 +30,16 @@ namespace AAUProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomepageStudent));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.HomeworkButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.CalendarButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.HomeButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.HomeButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.CalendarButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Userinfopanel = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.ShowUsernameLabel = new Bunifu.UI.WinForms.BunifuLabel();
@@ -58,6 +58,7 @@ namespace AAUProject
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.AutoSize = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -78,7 +79,7 @@ namespace AAUProject
             this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel5.Font = new System.Drawing.Font("Barlow Black", 18F, System.Drawing.FontStyle.Bold);
             this.bunifuLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.bunifuLabel5.Location = new System.Drawing.Point(261, 6);
+            this.bunifuLabel5.Location = new System.Drawing.Point(416, 32);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(374, 46);
@@ -94,10 +95,10 @@ namespace AAUProject
             this.bunifuGroupBox1.BorderRadius = 0;
             this.bunifuGroupBox1.BorderThickness = 1;
             this.bunifuGroupBox1.Controls.Add(this.HomeworkButton);
-            this.bunifuGroupBox1.Controls.Add(this.CalendarButton);
-            this.bunifuGroupBox1.Controls.Add(this.HomeButton);
             this.bunifuGroupBox1.Controls.Add(this.bunifuPictureBox1);
-            this.bunifuGroupBox1.Controls.Add(this.bunifuLabel5);
+            this.bunifuGroupBox1.Controls.Add(this.HomeButton);
+            this.bunifuGroupBox1.Controls.Add(this.CalendarButton);
+            this.bunifuGroupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.bunifuGroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuGroupBox1.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox1.LabelIndent = 10;
@@ -105,7 +106,7 @@ namespace AAUProject
             this.bunifuGroupBox1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGroupBox1.Name = "bunifuGroupBox1";
             this.bunifuGroupBox1.Padding = new System.Windows.Forms.Padding(0);
-            this.bunifuGroupBox1.Size = new System.Drawing.Size(934, 156);
+            this.bunifuGroupBox1.Size = new System.Drawing.Size(200, 647);
             this.bunifuGroupBox1.TabIndex = 10;
             this.bunifuGroupBox1.TabStop = false;
             // 
@@ -116,7 +117,7 @@ namespace AAUProject
             this.HomeworkButton.AllowToggling = false;
             this.HomeworkButton.AnimationSpeed = 200;
             this.HomeworkButton.AutoGenerateColors = false;
-            this.HomeworkButton.AutoRoundBorders = false;
+            this.HomeworkButton.AutoRoundBorders = true;
             this.HomeworkButton.AutoSizeLeftIcon = true;
             this.HomeworkButton.AutoSizeRightIcon = true;
             this.HomeworkButton.BackColor = System.Drawing.Color.Transparent;
@@ -128,11 +129,11 @@ namespace AAUProject
             this.HomeworkButton.ColorContrastOnClick = 45;
             this.HomeworkButton.ColorContrastOnHover = 45;
             this.HomeworkButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.HomeworkButton.CustomizableEdges = borderEdges7;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.HomeworkButton.CustomizableEdges = borderEdges1;
             this.HomeworkButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.HomeworkButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.HomeworkButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -158,10 +159,10 @@ namespace AAUProject
             this.HomeworkButton.IdleIconLeftImage = null;
             this.HomeworkButton.IdleIconRightImage = null;
             this.HomeworkButton.IndicateFocus = false;
-            this.HomeworkButton.Location = new System.Drawing.Point(530, 58);
+            this.HomeworkButton.Location = new System.Drawing.Point(24, 352);
             this.HomeworkButton.Name = "HomeworkButton";
             this.HomeworkButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.HomeworkButton.OnDisabledState.BorderRadius = 1;
+            this.HomeworkButton.OnDisabledState.BorderRadius = 39;
             this.HomeworkButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.HomeworkButton.OnDisabledState.BorderThickness = 1;
             this.HomeworkButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -169,7 +170,7 @@ namespace AAUProject
             this.HomeworkButton.OnDisabledState.IconLeftImage = null;
             this.HomeworkButton.OnDisabledState.IconRightImage = null;
             this.HomeworkButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.HomeworkButton.onHoverState.BorderRadius = 1;
+            this.HomeworkButton.onHoverState.BorderRadius = 39;
             this.HomeworkButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.HomeworkButton.onHoverState.BorderThickness = 1;
             this.HomeworkButton.onHoverState.FillColor = System.Drawing.Color.White;
@@ -177,7 +178,7 @@ namespace AAUProject
             this.HomeworkButton.onHoverState.IconLeftImage = null;
             this.HomeworkButton.onHoverState.IconRightImage = null;
             this.HomeworkButton.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.HomeworkButton.OnIdleState.BorderRadius = 1;
+            this.HomeworkButton.OnIdleState.BorderRadius = 39;
             this.HomeworkButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.HomeworkButton.OnIdleState.BorderThickness = 1;
             this.HomeworkButton.OnIdleState.FillColor = System.Drawing.Color.White;
@@ -185,7 +186,7 @@ namespace AAUProject
             this.HomeworkButton.OnIdleState.IconLeftImage = null;
             this.HomeworkButton.OnIdleState.IconRightImage = null;
             this.HomeworkButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.HomeworkButton.OnPressedState.BorderRadius = 1;
+            this.HomeworkButton.OnPressedState.BorderRadius = 39;
             this.HomeworkButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.HomeworkButton.OnPressedState.BorderThickness = 1;
             this.HomeworkButton.OnPressedState.FillColor = System.Drawing.Color.White;
@@ -200,97 +201,22 @@ namespace AAUProject
             this.HomeworkButton.TextPadding = new System.Windows.Forms.Padding(0);
             this.HomeworkButton.UseDefaultRadiusAndThickness = true;
             // 
-            // CalendarButton
+            // bunifuPictureBox1
             // 
-            this.CalendarButton.AllowAnimations = true;
-            this.CalendarButton.AllowMouseEffects = true;
-            this.CalendarButton.AllowToggling = false;
-            this.CalendarButton.AnimationSpeed = 200;
-            this.CalendarButton.AutoGenerateColors = false;
-            this.CalendarButton.AutoRoundBorders = false;
-            this.CalendarButton.AutoSizeLeftIcon = true;
-            this.CalendarButton.AutoSizeRightIcon = true;
-            this.CalendarButton.BackColor = System.Drawing.Color.Transparent;
-            this.CalendarButton.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
-            this.CalendarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CalendarButton.BackgroundImage")));
-            this.CalendarButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.CalendarButton.ButtonText = "Calendar";
-            this.CalendarButton.ButtonTextMarginLeft = 0;
-            this.CalendarButton.ColorContrastOnClick = 45;
-            this.CalendarButton.ColorContrastOnHover = 45;
-            this.CalendarButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.CalendarButton.CustomizableEdges = borderEdges8;
-            this.CalendarButton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.CalendarButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.CalendarButton.DisabledFillColor = System.Drawing.Color.Empty;
-            this.CalendarButton.DisabledForecolor = System.Drawing.Color.Empty;
-            this.CalendarButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.CalendarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CalendarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CalendarButton.IconLeft = null;
-            this.CalendarButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CalendarButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.CalendarButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.CalendarButton.IconMarginLeft = 11;
-            this.CalendarButton.IconPadding = 10;
-            this.CalendarButton.IconRight = null;
-            this.CalendarButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CalendarButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.CalendarButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.CalendarButton.IconSize = 25;
-            this.CalendarButton.IdleBorderColor = System.Drawing.Color.Empty;
-            this.CalendarButton.IdleBorderRadius = 0;
-            this.CalendarButton.IdleBorderThickness = 0;
-            this.CalendarButton.IdleFillColor = System.Drawing.Color.Empty;
-            this.CalendarButton.IdleIconLeftImage = null;
-            this.CalendarButton.IdleIconRightImage = null;
-            this.CalendarButton.IndicateFocus = false;
-            this.CalendarButton.Location = new System.Drawing.Point(377, 58);
-            this.CalendarButton.Name = "CalendarButton";
-            this.CalendarButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CalendarButton.OnDisabledState.BorderRadius = 1;
-            this.CalendarButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.CalendarButton.OnDisabledState.BorderThickness = 1;
-            this.CalendarButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CalendarButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CalendarButton.OnDisabledState.IconLeftImage = null;
-            this.CalendarButton.OnDisabledState.IconRightImage = null;
-            this.CalendarButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CalendarButton.onHoverState.BorderRadius = 1;
-            this.CalendarButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.CalendarButton.onHoverState.BorderThickness = 1;
-            this.CalendarButton.onHoverState.FillColor = System.Drawing.Color.White;
-            this.CalendarButton.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CalendarButton.onHoverState.IconLeftImage = null;
-            this.CalendarButton.onHoverState.IconRightImage = null;
-            this.CalendarButton.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CalendarButton.OnIdleState.BorderRadius = 1;
-            this.CalendarButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.CalendarButton.OnIdleState.BorderThickness = 1;
-            this.CalendarButton.OnIdleState.FillColor = System.Drawing.Color.White;
-            this.CalendarButton.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CalendarButton.OnIdleState.IconLeftImage = null;
-            this.CalendarButton.OnIdleState.IconRightImage = null;
-            this.CalendarButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CalendarButton.OnPressedState.BorderRadius = 1;
-            this.CalendarButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.CalendarButton.OnPressedState.BorderThickness = 1;
-            this.CalendarButton.OnPressedState.FillColor = System.Drawing.Color.White;
-            this.CalendarButton.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CalendarButton.OnPressedState.IconLeftImage = null;
-            this.CalendarButton.OnPressedState.IconRightImage = null;
-            this.CalendarButton.Size = new System.Drawing.Size(150, 39);
-            this.CalendarButton.TabIndex = 11;
-            this.CalendarButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CalendarButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.CalendarButton.TextMarginLeft = 0;
-            this.CalendarButton.TextPadding = new System.Windows.Forms.Padding(0);
-            this.CalendarButton.UseDefaultRadiusAndThickness = true;
-            this.CalendarButton.Click += new System.EventHandler(this.CalendarButton_Click);
+            this.bunifuPictureBox1.AllowFocused = false;
+            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox1.AutoSizeHeight = true;
+            this.bunifuPictureBox1.BorderRadius = 0;
+            this.bunifuPictureBox1.Image = global::AAUProject.Properties.Resources.AAU_logo_2012;
+            this.bunifuPictureBox1.IsCircle = true;
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(45, 19);
+            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(101, 101);
+            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox1.TabIndex = 9;
+            this.bunifuPictureBox1.TabStop = false;
+            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
             // 
             // HomeButton
             // 
@@ -299,7 +225,7 @@ namespace AAUProject
             this.HomeButton.AllowToggling = false;
             this.HomeButton.AnimationSpeed = 200;
             this.HomeButton.AutoGenerateColors = false;
-            this.HomeButton.AutoRoundBorders = false;
+            this.HomeButton.AutoRoundBorders = true;
             this.HomeButton.AutoSizeLeftIcon = true;
             this.HomeButton.AutoSizeRightIcon = true;
             this.HomeButton.BackColor = System.Drawing.Color.Transparent;
@@ -311,11 +237,11 @@ namespace AAUProject
             this.HomeButton.ColorContrastOnClick = 45;
             this.HomeButton.ColorContrastOnHover = 45;
             this.HomeButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.HomeButton.CustomizableEdges = borderEdges9;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.HomeButton.CustomizableEdges = borderEdges2;
             this.HomeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.HomeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.HomeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -341,10 +267,10 @@ namespace AAUProject
             this.HomeButton.IdleIconLeftImage = null;
             this.HomeButton.IdleIconRightImage = null;
             this.HomeButton.IndicateFocus = false;
-            this.HomeButton.Location = new System.Drawing.Point(224, 58);
+            this.HomeButton.Location = new System.Drawing.Point(24, 189);
             this.HomeButton.Name = "HomeButton";
             this.HomeButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.HomeButton.OnDisabledState.BorderRadius = 1;
+            this.HomeButton.OnDisabledState.BorderRadius = 39;
             this.HomeButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.HomeButton.OnDisabledState.BorderThickness = 1;
             this.HomeButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -352,7 +278,7 @@ namespace AAUProject
             this.HomeButton.OnDisabledState.IconLeftImage = null;
             this.HomeButton.OnDisabledState.IconRightImage = null;
             this.HomeButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.HomeButton.onHoverState.BorderRadius = 1;
+            this.HomeButton.onHoverState.BorderRadius = 39;
             this.HomeButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.HomeButton.onHoverState.BorderThickness = 1;
             this.HomeButton.onHoverState.FillColor = System.Drawing.Color.White;
@@ -360,7 +286,7 @@ namespace AAUProject
             this.HomeButton.onHoverState.IconLeftImage = null;
             this.HomeButton.onHoverState.IconRightImage = null;
             this.HomeButton.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.HomeButton.OnIdleState.BorderRadius = 1;
+            this.HomeButton.OnIdleState.BorderRadius = 39;
             this.HomeButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.HomeButton.OnIdleState.BorderThickness = 1;
             this.HomeButton.OnIdleState.FillColor = System.Drawing.Color.White;
@@ -368,7 +294,7 @@ namespace AAUProject
             this.HomeButton.OnIdleState.IconLeftImage = null;
             this.HomeButton.OnIdleState.IconRightImage = null;
             this.HomeButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.HomeButton.OnPressedState.BorderRadius = 1;
+            this.HomeButton.OnPressedState.BorderRadius = 39;
             this.HomeButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.HomeButton.OnPressedState.BorderThickness = 1;
             this.HomeButton.OnPressedState.FillColor = System.Drawing.Color.White;
@@ -384,22 +310,97 @@ namespace AAUProject
             this.HomeButton.UseDefaultRadiusAndThickness = true;
             this.HomeButton.Click += new System.EventHandler(this.HomeButton_Click);
             // 
-            // bunifuPictureBox1
+            // CalendarButton
             // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 50;
-            this.bunifuPictureBox1.Image = global::AAUProject.Properties.Resources.AAU_logo_2012;
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(101, 101);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 9;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBox1.Click += new System.EventHandler(this.bunifuPictureBox1_Click);
+            this.CalendarButton.AllowAnimations = true;
+            this.CalendarButton.AllowMouseEffects = true;
+            this.CalendarButton.AllowToggling = false;
+            this.CalendarButton.AnimationSpeed = 200;
+            this.CalendarButton.AutoGenerateColors = false;
+            this.CalendarButton.AutoRoundBorders = true;
+            this.CalendarButton.AutoSizeLeftIcon = true;
+            this.CalendarButton.AutoSizeRightIcon = true;
+            this.CalendarButton.BackColor = System.Drawing.Color.Transparent;
+            this.CalendarButton.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(122)))), ((int)(((byte)(183)))));
+            this.CalendarButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CalendarButton.BackgroundImage")));
+            this.CalendarButton.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.CalendarButton.ButtonText = "Calendar";
+            this.CalendarButton.ButtonTextMarginLeft = 0;
+            this.CalendarButton.ColorContrastOnClick = 45;
+            this.CalendarButton.ColorContrastOnHover = 45;
+            this.CalendarButton.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.CalendarButton.CustomizableEdges = borderEdges3;
+            this.CalendarButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.CalendarButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.CalendarButton.DisabledFillColor = System.Drawing.Color.Empty;
+            this.CalendarButton.DisabledForecolor = System.Drawing.Color.Empty;
+            this.CalendarButton.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.CalendarButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CalendarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalendarButton.IconLeft = null;
+            this.CalendarButton.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CalendarButton.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.CalendarButton.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.CalendarButton.IconMarginLeft = 11;
+            this.CalendarButton.IconPadding = 10;
+            this.CalendarButton.IconRight = null;
+            this.CalendarButton.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CalendarButton.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.CalendarButton.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.CalendarButton.IconSize = 25;
+            this.CalendarButton.IdleBorderColor = System.Drawing.Color.Empty;
+            this.CalendarButton.IdleBorderRadius = 0;
+            this.CalendarButton.IdleBorderThickness = 0;
+            this.CalendarButton.IdleFillColor = System.Drawing.Color.Empty;
+            this.CalendarButton.IdleIconLeftImage = null;
+            this.CalendarButton.IdleIconRightImage = null;
+            this.CalendarButton.IndicateFocus = false;
+            this.CalendarButton.Location = new System.Drawing.Point(24, 269);
+            this.CalendarButton.Name = "CalendarButton";
+            this.CalendarButton.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalendarButton.OnDisabledState.BorderRadius = 39;
+            this.CalendarButton.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.CalendarButton.OnDisabledState.BorderThickness = 1;
+            this.CalendarButton.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalendarButton.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalendarButton.OnDisabledState.IconLeftImage = null;
+            this.CalendarButton.OnDisabledState.IconRightImage = null;
+            this.CalendarButton.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalendarButton.onHoverState.BorderRadius = 39;
+            this.CalendarButton.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.CalendarButton.onHoverState.BorderThickness = 1;
+            this.CalendarButton.onHoverState.FillColor = System.Drawing.Color.White;
+            this.CalendarButton.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalendarButton.onHoverState.IconLeftImage = null;
+            this.CalendarButton.onHoverState.IconRightImage = null;
+            this.CalendarButton.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalendarButton.OnIdleState.BorderRadius = 39;
+            this.CalendarButton.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.CalendarButton.OnIdleState.BorderThickness = 1;
+            this.CalendarButton.OnIdleState.FillColor = System.Drawing.Color.White;
+            this.CalendarButton.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalendarButton.OnIdleState.IconLeftImage = null;
+            this.CalendarButton.OnIdleState.IconRightImage = null;
+            this.CalendarButton.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalendarButton.OnPressedState.BorderRadius = 39;
+            this.CalendarButton.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.CalendarButton.OnPressedState.BorderThickness = 1;
+            this.CalendarButton.OnPressedState.FillColor = System.Drawing.Color.White;
+            this.CalendarButton.OnPressedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalendarButton.OnPressedState.IconLeftImage = null;
+            this.CalendarButton.OnPressedState.IconRightImage = null;
+            this.CalendarButton.Size = new System.Drawing.Size(150, 39);
+            this.CalendarButton.TabIndex = 11;
+            this.CalendarButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CalendarButton.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CalendarButton.TextMarginLeft = 0;
+            this.CalendarButton.TextPadding = new System.Windows.Forms.Padding(0);
+            this.CalendarButton.UseDefaultRadiusAndThickness = true;
+            this.CalendarButton.Click += new System.EventHandler(this.CalendarButton_Click);
             // 
             // Userinfopanel
             // 
@@ -416,10 +417,10 @@ namespace AAUProject
             this.Userinfopanel.Controls.Add(this.bunifuLabel2);
             this.Userinfopanel.Controls.Add(this.bunifuLabel3);
             this.Userinfopanel.Controls.Add(this.pictureBox1);
-            this.Userinfopanel.Location = new System.Drawing.Point(24, 184);
+            this.Userinfopanel.Location = new System.Drawing.Point(278, 161);
             this.Userinfopanel.Name = "Userinfopanel";
             this.Userinfopanel.ShowBorders = true;
-            this.Userinfopanel.Size = new System.Drawing.Size(276, 150);
+            this.Userinfopanel.Size = new System.Drawing.Size(299, 185);
             this.Userinfopanel.TabIndex = 11;
             this.Userinfopanel.Click += new System.EventHandler(this.Userinfopanel_Click);
             // 
@@ -447,6 +448,7 @@ namespace AAUProject
             // 
             this.ShowUsernameLabel.AllowParentOverrides = false;
             this.ShowUsernameLabel.AutoEllipsis = false;
+            this.ShowUsernameLabel.BackColor = System.Drawing.Color.White;
             this.ShowUsernameLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.ShowUsernameLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.ShowUsernameLabel.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
@@ -465,6 +467,7 @@ namespace AAUProject
             // 
             this.ShowPasswordLabel.AllowParentOverrides = false;
             this.ShowPasswordLabel.AutoEllipsis = false;
+            this.ShowPasswordLabel.BackColor = System.Drawing.Color.White;
             this.ShowPasswordLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.ShowPasswordLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.ShowPasswordLabel.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
@@ -482,6 +485,7 @@ namespace AAUProject
             // 
             this.ShowUserTypeLabel.AllowParentOverrides = false;
             this.ShowUserTypeLabel.AutoEllipsis = false;
+            this.ShowUserTypeLabel.BackColor = System.Drawing.Color.White;
             this.ShowUserTypeLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.ShowUserTypeLabel.CursorType = System.Windows.Forms.Cursors.Default;
             this.ShowUserTypeLabel.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
@@ -538,7 +542,7 @@ namespace AAUProject
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(272, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -549,11 +553,13 @@ namespace AAUProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(934, 764);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1130, 647);
+            this.Controls.Add(this.bunifuLabel5);
             this.Controls.Add(this.Userinfopanel);
             this.Controls.Add(this.bunifuGroupBox1);
             this.Controls.Add(this.bunifuLabel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WelcomepageStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcomepage";
@@ -564,7 +570,6 @@ namespace AAUProject
             this.Userinfopanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

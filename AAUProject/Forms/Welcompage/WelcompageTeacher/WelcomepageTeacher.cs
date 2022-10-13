@@ -16,5 +16,10 @@ namespace AAUProject
         {
             InitializeComponent();
         }
+
+        private void bunifuGroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

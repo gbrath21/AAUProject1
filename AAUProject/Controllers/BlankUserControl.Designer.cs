@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "BlankUserControl";
-            this.Size = new System.Drawing.Size(120, 85);
+            this.Size = new System.Drawing.Size(120, 70);
             this.ResumeLayout(false);
 
         }

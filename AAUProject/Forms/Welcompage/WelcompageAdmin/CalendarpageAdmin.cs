@@ -1,4 +1,4 @@
-﻿using MySqlX.XDevAPI.Relational;
+﻿using AAUProject.Forms.Welcompage.WelcompageStundet;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,45 +10,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AAUProject.Forms.Welcompage.WelcompageStundet
+namespace AAUProject.Forms.Welcompage.WelcompageAdmin
 {
-    public partial class CalendarpageStudent : Form
+    public partial class CalendarpageAdmin : Form
     {
         int month, year;
 
         public static int static_month, static_year;
-        public CalendarpageStudent()
-        {
-            InitializeComponent();
-        }
 
         private void HomeButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            WelcomepageStudent welcomepageStudent = new WelcomepageStudent();
-            welcomepageStudent.Show();
+            WelcomepageAdmin welcomepageAdmin = new WelcomepageAdmin();
+            welcomepageAdmin.Show();
         }
 
-        private void HomeworkButton1_Click(object sender, EventArgs e)
+        public CalendarpageAdmin()
         {
-
+            InitializeComponent();
         }
 
-        private void CalendarButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CalendarpageStudent_Load(object sender, EventArgs e)
+        private void CalendarpageAdmin_Load(object sender, EventArgs e)
         {
             displayDays();
         }
-
         private void displayDays()
         {
             DateTime now = DateTime.Now;
@@ -61,12 +46,12 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             static_month = month;
             static_year = year;
             //firstday
-            DateTime startofthemonth = new DateTime(year, month,1);
+            DateTime startofthemonth = new DateTime(year, month, 1);
             //Count of days
             int days = DateTime.DaysInMonth(year, month);
             //convert to int
             int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
-            for(int i =1;i<daysoftheweek; i++)
+            for (int i = 1; i < daysoftheweek; i++)
             {
                 BlankUserControl ucblank = new BlankUserControl();
                 daycontainer.Controls.Add(ucblank);
@@ -79,10 +64,15 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             }
         }
 
-        private void PreButton_Click(object sender, EventArgs e)
+        private void CalendarButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NextButton_Click_1(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();
-            month--;
+            month++;
             static_month = month;
             static_year = year;
             String monthnam = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
@@ -105,25 +95,10 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             }
         }
 
-        private void bunifuLabel5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbdate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuGroupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NextButton_Click(object sender, EventArgs e)
+        private void PreButton_Click(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();
-            month++;
+            month--;
             static_month = month;
             static_year = year;
             String monthnam = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);

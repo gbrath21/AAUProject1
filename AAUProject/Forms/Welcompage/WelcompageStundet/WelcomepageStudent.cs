@@ -94,7 +94,7 @@ namespace AAUProject
             this.Hide();
             CalendarpageStudent calendarpageStudent = new CalendarpageStudent();
             calendarpageStudent.Show();
-            
+
         }
     }
 }

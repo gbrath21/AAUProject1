@@ -117,13 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lbdays.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow Medium'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="passwordtx.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANEAAAAnCAYAAACR8a3rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACnSURBVHhe7dOxDcMwAANB7T+VBY2RMTJAAgFu0jl+l3cA
+        G/Y/gAestV7HcXzM7Pp2N2dCY+wD+M/u5kxIRHCHiCASEUQigkhEEIkIIhFBJCKIRASRiCASEUQigkhE
+        EIkIIhFBJCKIRASRiCASEUQigkhEEIkIIhFBJCKIRASRiCASEUQigkhEEIkIIhFBJCKIRASRiCD6iWjO
+        +d6HmV3f7uZMCLhvjC+/59WU849vpgAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="dispnl.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 21px;font-family: 'Barlow SemiBold'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(16, 36, 76); text-align: center; }</value>
+  <data name="usernametx.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANEAAAAnCAYAAACR8a3rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACnSURBVHhe7dOxDcMwAANB7T+VBY2RMTJAAgFu0jl+l3cA
+        G/Y/gAestV7HcXzM7Pp2N2dCY+wD+M/u5kxIRHCHiCASEUQigkhEEIkIIhFBJCKIRASRiCASEUQigkhE
+        EIkIIhFBJCKIRASRiCASEUQigkhEEIkIIhFBJCKIRASRiCASEUQigkhEEIkIIhFBJCKIRASRiCD6iWjO
+        +d6HmV3f7uZMCLhvjC+/59WU849vpgAAAABJRU5ErkJggg==
+</value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="UsernameLabel.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Barlow SemiBold'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="PasswordLabel.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Barlow SemiBold'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="UserTypeLabel.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Barlow SemiBold'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="SemesterLabel.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Barlow SemiBold'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <data name="SaveUserInDBButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVHhe7dKxAUBAAMBAk/zK7GcM/WMAFdJdcVXaLGOb
+        +9jOE/4z93uspwDfGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuE
+        sUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFILGOdx1OA19Z5XLF9Eabs0yP2
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Barlow SemiBold'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
 </root>
