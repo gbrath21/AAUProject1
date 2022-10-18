@@ -725,6 +725,7 @@
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.PreButton);
             this.Controls.Add(this.bunifuGroupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CalendarpageAdmin";
             this.Text = "CalendarpageAdmin";
             this.Load += new System.EventHandler(this.CalendarpageAdmin_Load);
