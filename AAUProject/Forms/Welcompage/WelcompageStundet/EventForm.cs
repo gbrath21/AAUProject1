@@ -28,7 +28,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 
         private void EventForm_Load(object sender, EventArgs e)
         {
-            txdate.Text = CalendarpageStudent.static_year + "/" + CalendarpageStudent.static_month + "/" + UserControlDays.static_day;
+            txdate.Text = WelcomepageAdmin.static_year + "/" + WelcomepageAdmin.static_month + "/" + UserControlDays.static_day;
         }
 
         private void SaveButton_Click(object sender, EventArgs e)

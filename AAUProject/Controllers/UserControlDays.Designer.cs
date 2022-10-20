@@ -60,10 +60,10 @@
             this.dispnl.CursorType = System.Windows.Forms.Cursors.Default;
             this.dispnl.Font = new System.Drawing.Font("Barlow SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dispnl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.dispnl.Location = new System.Drawing.Point(3, 40);
+            this.dispnl.Location = new System.Drawing.Point(3, 31);
             this.dispnl.Name = "dispnl";
             this.dispnl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dispnl.Size = new System.Drawing.Size(114, 27);
+            this.dispnl.Size = new System.Drawing.Size(114, 40);
             this.dispnl.TabIndex = 1;
             this.dispnl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.dispnl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
@@ -78,8 +78,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.dispnl);
             this.Controls.Add(this.lbdays);
+            this.Controls.Add(this.dispnl);
             this.Name = "UserControlDays";
             this.Size = new System.Drawing.Size(120, 70);
             this.Load += new System.EventHandler(this.UserControlDays_Load);

@@ -511,6 +511,7 @@
             this.daycontainer.Name = "daycontainer";
             this.daycontainer.Size = new System.Drawing.Size(885, 459);
             this.daycontainer.TabIndex = 25;
+            this.daycontainer.Paint += new System.Windows.Forms.PaintEventHandler(this.daycontainer_Paint);
             // 
             // bunifuLabel4
             // 

@@ -115,6 +115,11 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 
         }
 
+        private void daycontainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void bunifuGroupBox1_Enter(object sender, EventArgs e)
         {
 

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySqlConnector;
@@ -37,32 +38,33 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
                 }
             }
         }
-        private void LoadsemesternameById(int id)
-        {
-            var connectionString = connString;
-            using (var connection = new MySqlConnection(connectionString))
-            {
-                connection.Open();
-                var query = "SELECT semester_id, semester_name FROM semester_reg WHERE semester_name = @semestername";
-                using (var command = new MySqlCommand(query, connection))
-                { 
-                    command.Parameters.AddWithValue("@semestername", id);
-                    using (var reader = command.ExecuteReader())
-                    {
-                        if (!reader.HasRows)
-                            return;
+        //private void LoadsemesternameById(int id)
+        //{
+        //    var connectionString = connString;
+        //    using (var connection = new MySqlConnection(connectionString))
+        //    {
+        //        connection.Open();
+        //        var query = "SELECT semester_id, semester_name FROM semester_reg WHERE semester_name = @semestername";
+        //        using (var command = new MySqlCommand(query, connection))
+        //        { 
+        //            command.Parameters.AddWithValue("@semestername", id);
+        //            using (var reader = command.ExecuteReader())
+        //            {
+        //                if (!reader.HasRows)
+        //                    return;
 
-                        semestertx.Text = reader.GetInt32("Id").ToString();
-                    }
-                }
-            }
-        }
+        //                semestertx.Text = reader.GetInt32("Id").ToString();
+        //            }
+        //        }
+        //    }
+        //}
         
 
         private void SaveUserInDBButton_Click(object sender, EventArgs e)
         {
             MySqlConnection connection = new MySqlConnection(connString);
-            String sqlStatement = "INSERT INTO user(user_name, user_password, user_type, semester_id) VALUES(@username, @password, @usertype, (select semester_id from semester_reg where semester_name = @semestername));";
+            String sqlStatement = "INSERT INTO users.user(user_name, user_password, user_type, semester_id) VALUES(@username, @password, @usertype, (select semester_id from semester_reg where semester_name = @semestername));";
+            String sqlStatement1 = "UPDATE users.course set course.course_avalability = (course_avalability - 1) where course.course_id in (SELECT `course_id` FROM `users`.`semester` where semester_id in (select semester_id from semester_reg where semester_name = @semestername));";
             MySqlCommand command = new MySqlCommand(sqlStatement, connection);
             command.Parameters.AddWithValue("@username", usernametx.Text);
             command.Parameters.AddWithValue("@password", passwordtx.Text);
@@ -70,15 +72,30 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
             command.Parameters.AddWithValue("@semestername", semestertx.Text);
             connection.Open();
             command.ExecuteNonQuery();
+            connection.Close();
+            
+            if(usertypetx.Text == "Student") 
+            {
+                connection.Open();
+                MySqlCommand command1 = new MySqlCommand(sqlStatement1, connection);
+                command1.Parameters.AddWithValue("@semestername", semestertx.Text);
+                command1.ExecuteNonQuery();
+            }
+
             MessageBox.Show("User created");
             command.Dispose();
             connection.Close();
             this.Hide();
         }
 
-       
+        private void usertypetx_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-       
-        
+        }
+
+        private void semestertx_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WelcomepageTeacher));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
             this.HomeworkButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.CalendarButton = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -46,6 +46,7 @@
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.coursedrop = new ReaLTaiizor.Controls.ComboBoxEdit();
             this.bunifuGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.Userinfopanel.SuspendLayout();
@@ -94,11 +95,11 @@
             this.HomeworkButton.ColorContrastOnClick = 45;
             this.HomeworkButton.ColorContrastOnHover = 45;
             this.HomeworkButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.HomeworkButton.CustomizableEdges = borderEdges4;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.HomeworkButton.CustomizableEdges = borderEdges1;
             this.HomeworkButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.HomeworkButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.HomeworkButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -185,11 +186,11 @@
             this.CalendarButton.ColorContrastOnClick = 45;
             this.CalendarButton.ColorContrastOnHover = 45;
             this.CalendarButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.CalendarButton.CustomizableEdges = borderEdges5;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.CalendarButton.CustomizableEdges = borderEdges2;
             this.CalendarButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.CalendarButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.CalendarButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -276,11 +277,11 @@
             this.HomeButton.ColorContrastOnClick = 45;
             this.HomeButton.ColorContrastOnHover = 45;
             this.HomeButton.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.HomeButton.CustomizableEdges = borderEdges6;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.HomeButton.CustomizableEdges = borderEdges3;
             this.HomeButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.HomeButton.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.HomeButton.DisabledFillColor = System.Drawing.Color.Empty;
@@ -352,11 +353,11 @@
             // 
             this.bunifuPictureBox1.AllowFocused = false;
             this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
+            this.bunifuPictureBox1.AutoSizeHeight = false;
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = global::AAUProject.Properties.Resources.AAU_logo_2012;
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(45, 19);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(43, 40);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(101, 101);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -524,16 +525,38 @@
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // coursedrop
+            // 
+            this.coursedrop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.coursedrop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.coursedrop.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.coursedrop.DropDownHeight = 100;
+            this.coursedrop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.coursedrop.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.coursedrop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
+            this.coursedrop.FormattingEnabled = true;
+            this.coursedrop.HoverSelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.coursedrop.IntegralHeight = false;
+            this.coursedrop.ItemHeight = 20;
+            this.coursedrop.Location = new System.Drawing.Point(732, 238);
+            this.coursedrop.Name = "coursedrop";
+            this.coursedrop.Size = new System.Drawing.Size(135, 26);
+            this.coursedrop.StartIndex = 0;
+            this.coursedrop.TabIndex = 16;
+            this.coursedrop.SelectedIndexChanged += new System.EventHandler(this.coursedrop_SelectedIndexChanged);
+            // 
             // WelcomepageTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1130, 647);
+            this.Controls.Add(this.coursedrop);
             this.Controls.Add(this.bunifuLabel5);
             this.Controls.Add(this.Userinfopanel);
             this.Controls.Add(this.bunifuGroupBox1);
             this.Name = "WelcomepageTeacher";
             this.Text = "WelcomepageTeacher";
+            this.Load += new System.EventHandler(this.WelcomepageTeacher_Load);
             this.bunifuGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.Userinfopanel.ResumeLayout(false);
@@ -559,5 +582,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
+        private ReaLTaiizor.Controls.ComboBoxEdit coursedrop;
     }
 }

@@ -27,11 +27,13 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             String sqlstatement = "SELECT * FROM course WHERE CourseDate = @coursedate";
             conn.Open();
             MySqlCommand command = new MySqlCommand(sqlstatement, conn);
-            command.Parameters.AddWithValue("@coursedate", CalendarpageStudent.static_year + "-" + CalendarpageStudent.static_month + "-" + lbdays.Text);
+            command.Parameters.AddWithValue("@coursedate", WelcomepageAdmin.static_year + "-" + WelcomepageAdmin.static_month + "-" + lbdays.Text);
             MySqlDataReader reader = command.ExecuteReader();
             if (reader.Read())
             {
+                    
                 dispnl.Text = reader["CourseName"].ToString();
+
             }
             reader.Dispose();
             command.Dispose();
