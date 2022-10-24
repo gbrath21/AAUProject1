@@ -8,7 +8,7 @@ using System.ServiceModel.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
 using MySqlConnector;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -163,6 +163,16 @@ namespace AAUProject
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void foxLabel2_Click(object sender, EventArgs e)
         {
 
         }
