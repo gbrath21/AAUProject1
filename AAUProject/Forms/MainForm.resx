@@ -118,24 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Login.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIkAAAAnCAYAAAA7MmtXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACKSURBVHhe7dIrFYBAAABBGkCIawP9DTEIwMeg4G2BEaPW
-        7rSMbb+d8GN/JvkK8DIJySQkk5BMQjIJySQkk5BMQjIJySQkk5BMQjIJySQkk5BMQjIJySQkk5BMQjIJ
-        ySQkk5BMQjIJySQkk5BMQjIJySQkk5BMQjIJySQkk5BMQprmsR5fAR7zWI8LGCQ7D9FTXPUAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
-  <data name="LabelPassword.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow Black'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(16, 36, 76); text-align: left; direction: rtl; }</value>
-  </data>
-  <data name="LabelUsername.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow Black'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(16, 36, 76); text-align: left; direction: rtl; }</value>
-  </data>
-  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow Black'; font-size: 14,25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(16, 36, 76); text-align: left; direction: rtl; }</value>
-  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOQAAADdCAMAAACc/C7aAAAABGdBTUEAALGPC/xhBQAAAKhQTFRFECRM

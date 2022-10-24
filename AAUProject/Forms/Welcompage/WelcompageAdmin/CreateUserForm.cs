@@ -34,7 +34,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
             {
                 while (Reader.Read())
                 {
-                    semestertx.Items.Add(Reader.GetString("semester_name"));
+                    semestertxt.Items.Add(Reader.GetString("semester_name"));
                 }
             }
         }
@@ -60,25 +60,25 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
         //}
         
 
-        private void SaveUserInDBButton_Click(object sender, EventArgs e)
+        private void createuser_button_Click(object sender, EventArgs e)
         {
             MySqlConnection connection = new MySqlConnection(connString);
             String sqlStatement = "INSERT INTO users.user(user_name, user_password, user_type, semester_id) VALUES(@username, @password, @usertype, (select semester_id from semester_reg where semester_name = @semestername));";
             String sqlStatement1 = "UPDATE users.course set course.course_avalability = (course_avalability - 1) where course.course_id in (SELECT `course_id` FROM `users`.`semester` where semester_id in (select semester_id from semester_reg where semester_name = @semestername));";
             MySqlCommand command = new MySqlCommand(sqlStatement, connection);
-            command.Parameters.AddWithValue("@username", usernametx.Text);
-            command.Parameters.AddWithValue("@password", passwordtx.Text);
-            command.Parameters.AddWithValue("@usertype", usertypetx.Text);
-            command.Parameters.AddWithValue("@semestername", semestertx.Text);
+            command.Parameters.AddWithValue("@username", usernametxt.Text);
+            command.Parameters.AddWithValue("@password", passwordtxt.Text);
+            command.Parameters.AddWithValue("@usertype", usertypetxt.Text);
+            command.Parameters.AddWithValue("@semestername", semestertxt.Text);
             connection.Open();
             command.ExecuteNonQuery();
             connection.Close();
             
-            if(usertypetx.Text == "Student") 
+            if(usertypetxt.Text == "Student") 
             {
                 connection.Open();
                 MySqlCommand command1 = new MySqlCommand(sqlStatement1, connection);
-                command1.Parameters.AddWithValue("@semestername", semestertx.Text);
+                command1.Parameters.AddWithValue("@semestername", semestertxt.Text);
                 command1.ExecuteNonQuery();
             }
 
@@ -97,5 +97,17 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
         {
 
         }
+
+        private void usernametxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usertypetxt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
