@@ -32,7 +32,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             if (reader.Read())
             {
                     
-                dispnl.Text = reader["CourseName"].ToString();
+                dispanel.Text = reader["CourseName"].ToString();
 
             }
             reader.Dispose();
@@ -59,11 +59,11 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             String sqlstatement = "SELECT * FROM course WHERE CourseDate = @coursedate";
             conn.Open();
             MySqlCommand command = new MySqlCommand(sqlstatement, conn);
-            command.Parameters.AddWithValue("@coursedate", CalendarpageStudent.static_year+ "-" + CalendarpageStudent.static_month + "-" + lbdays.Text);
+            command.Parameters.AddWithValue("@coursedate", Welcomepage.static_year+ "-" + Welcomepage.static_month + "-" + lbdays.Text);
             MySqlDataReader reader = command.ExecuteReader();
             if (reader.Read())
             {
-                dispnl.Text = reader["CourseName"].ToString();
+                dispanel.Text = reader["CourseName"].ToString();
             }
             reader.Dispose();
             command.Dispose();
@@ -76,6 +76,11 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         }
 
         private void dispnl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dispnl_Paint(object sender, PaintEventArgs e)
         {
 
         }

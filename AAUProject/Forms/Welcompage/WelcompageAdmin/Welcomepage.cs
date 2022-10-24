@@ -181,12 +181,35 @@ namespace AAUProject
 
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
 
-        private void NextButton_Click(object sender, EventArgs e)
+        }
+
+        private void royalButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Homebtn_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = HomeTab;
+        }
+
+        private void royalButton1_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = CalendarTab;
+        }
+
+        private void royalButton2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = HomeworkTab;
+        }
+
+        private void Prebtn_Click(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();
-            month++;
+            month--;
             static_month = month;
             static_year = year;
             String monthnam = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
@@ -209,10 +232,10 @@ namespace AAUProject
             }
         }
 
-        private void PreButton_Click_1(object sender, EventArgs e)
+        private void Nextbtn_Click(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();
-            month--;
+            month++;
             static_month = month;
             static_year = year;
             String monthnam = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);

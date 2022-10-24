@@ -46,5 +46,30 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             this.Hide();
             
         }
+
+        private void Savebtn_Click_1(object sender, EventArgs e)
+        {
+            MySqlConnection connection = new MySqlConnection(connString);
+            String sqlStatement = "INSERT INTO course(CourseDate, CourseName) VALUES(@coursedate, @coursename)";
+            MySqlCommand command = new MySqlCommand(sqlStatement, connection);
+            command.Parameters.AddWithValue("@coursedate", txdate.Text);
+            command.Parameters.AddWithValue("@coursename", txcourse.Text);
+            connection.Open();
+            command.ExecuteNonQuery();
+            MessageBox.Show("Saved");
+            command.Dispose();
+            connection.Close();
+            this.Hide();
+        }
+
+        private void txdate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txcourse_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

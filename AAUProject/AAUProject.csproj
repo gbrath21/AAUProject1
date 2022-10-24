@@ -391,12 +391,6 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Welcompage\WelcompageAdmin\CalendarpageAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Welcompage\WelcompageAdmin\CalendarpageAdmin.Designer.cs">
-      <DependentUpon>CalendarpageAdmin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Welcompage\WelcompageAdmin\CreateUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,16 +403,10 @@
     <Compile Include="Controllers\BlankUserControl.Designer.cs">
       <DependentUpon>BlankUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Welcompage\WelcompageStundet\CalendarpageStudent.cs">
+    <Compile Include="Forms\Welcompage\WelcompageAdmin\EventForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Welcompage\WelcompageStundet\CalendarpageStudent.Designer.cs">
-      <DependentUpon>CalendarpageStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Welcompage\WelcompageStundet\EventForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Welcompage\WelcompageStundet\EventForm.Designer.cs">
+    <Compile Include="Forms\Welcompage\WelcompageAdmin\EventForm.Designer.cs">
       <DependentUpon>EventForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\UserControlDays.cs">
@@ -436,23 +424,8 @@
     <Compile Include="Forms\Welcompage\WelcompageAdmin\Welcomepage.Designer.cs">
       <DependentUpon>Welcomepage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Welcompage\WelcompageStundet\WelcomepageStudent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Welcompage\WelcompageStundet\WelcomepageStudent.Designer.cs">
-      <DependentUpon>WelcomepageStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Welcompage\WelcompageTeacher\WelcomepageTeacher.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Welcompage\WelcompageTeacher\WelcomepageTeacher.Designer.cs">
-      <DependentUpon>WelcomepageTeacher.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Welcompage\WelcompageAdmin\CalendarpageAdmin.resx">
-      <DependentUpon>CalendarpageAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Welcompage\WelcompageAdmin\CreateUserForm.resx">
       <DependentUpon>CreateUserForm.cs</DependentUpon>
@@ -463,17 +436,11 @@
     <EmbeddedResource Include="Controllers\BlankUserControl.resx">
       <DependentUpon>BlankUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Welcompage\WelcompageStundet\CalendarpageStudent.resx">
-      <DependentUpon>CalendarpageStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Welcompage\WelcompageStundet\EventForm.resx">
+    <EmbeddedResource Include="Forms\Welcompage\WelcompageAdmin\EventForm.resx">
       <DependentUpon>EventForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controllers\UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Welcompage\WelcompageTeacher\WelcomepageTeacher.resx">
-      <DependentUpon>WelcomepageTeacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -486,9 +453,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\Welcompage\WelcompageStundet\WelcomepageStudent.resx">
-      <DependentUpon>WelcomepageStudent.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -518,9 +482,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\Welcompage\WelcompageAdmin\Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.6.6.4\build\Fody.targets" Condition="Exists('..\packages\Fody.6.6.4\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
