@@ -38,22 +38,15 @@ namespace AAUProject
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            ShowUsernameLabel.Text = MainForm.SetValueForUsername;
-            ShowPasswordLabel.Text = MainForm.SetValueForPassword;
-            ShowUserTypeLabel.Text = MainForm.SetValueForUsertype;
+            ShowUsernamelb.Text = MainForm.SetValueForUsername;
+            ShowPasswordlb.Text = MainForm.SetValueForPassword;
+            ShowUserTypelb.Text = MainForm.User_type;
             displayDays();
-            if(ShowUserTypeLabel.Text != "Admin")
+            if(ShowUserTypelb.Text != "admin")
             {
-                CreateUserButton.Hide();
+                CreateUserbtn.Hide();
             }
 
-        }
-
-        private void CreateUserButton_Click(object sender, EventArgs e)
-        {
-            CreateUserForm createuserform = new CreateUserForm();
-            createuserform.Show();
-            
         }
 
         private void CalendarButton_Click(object sender, EventArgs e)
@@ -138,11 +131,12 @@ namespace AAUProject
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void titlepanel_MouseDown(object sender, MouseEventArgs e)
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
 
         private void CrossButton_Click(object sender, EventArgs e)
         {
@@ -170,6 +164,24 @@ namespace AAUProject
         {
             tabControl1.SelectedTab = HomeworkTab;
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CreateUserbtn_Click(object sender, EventArgs e)
+        {
+            CreateUserForm createuserform = new CreateUserForm();
+            createuserform.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
 
         private void NextButton_Click(object sender, EventArgs e)
         {

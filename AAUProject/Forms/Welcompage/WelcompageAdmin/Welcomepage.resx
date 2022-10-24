@@ -200,24 +200,6 @@
         9xPu6x8g4jjeC9Ss4hXQP8wAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
-  </data>
-  <data name="ShowUsernameLabel.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(16, 36, 76); text-align: left; }</value>
-  </data>
-  <data name="ShowPasswordLabel.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(16, 36, 76); text-align: left; }</value>
-  </data>
-  <data name="ShowUserTypeLabel.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(16, 36, 76); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
-  </data>
-  <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(255, 255, 255); text-align: left; }</value>
-  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARAAAACSCAYAAACNBZVyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -242,18 +224,6 @@
         P/tjPP/zhW3IDg7/Gn//82JcXl6aTdrp6emrvW5tQAD+DwEBJhMQYKIx/gWa7fAFlH03AAAAAABJRU5E
         rkJggg==
 </value>
-  </data>
-  <data name="CreateUserButton.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACRSURBVHhe7dKxAUBAAMBAk/zK7GcM/WMAFdJdcVXaLGOb
-        +9jOE/4z93uspwDfGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuE
-        sUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFIGIuEsUgYi4SxSBiLhLFILGOdx1OA19Z5XLF9Eabs0yP2
-        AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Barlow Black'; font-size: 18pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(16, 36, 76); text-align: left; }</value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Barlow Black'; font-size: 18pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(16, 36, 76); text-align: center; }</value>
@@ -575,16 +545,6 @@
         TGWUcAuE69AqylRGCbdAuA6tokxllHALhOvQKspURgm3QLgOraJMZZRwC4Tr0CrKVEYJt0C4Dq2iTGWU
         cAuE69AqylRGCbdAuA6tokxllHALhOvQKspURgm3QLgOraJMZZRwC4Tr0CrKVEYJt0C4Dq2iTGWUcAuE
         6/DHRf1tdX28j/sz79eTrON4A+GybLWLEsYjAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="titlepanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAA8sAAAAeCAYAAAAb6oyuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADLSURBVHhe7dcxDcBAEMCw50+xXO66vCo1GOwlGHJm5lkA
-        AADgc24BAACAyywDAABAmGUAAAAIswwAAABhlgEAACDMMgAAAIRZBgAAgDDLAAAAEGYZAAAAwiwDAABA
-        mGUAAAAIswwAAABhlgEAACDMMgAAAIRZBgAAgDDLAAAAEGYZAAAAwiwDAABAmGUAAAAIswwAAABhlgEA
-        ACDMMgAAAIRZBgAAgDDLAAAAEGYZAAAAwiwDAABAmGUAAAAIswwAAABhlgEAAOBn9wUvYXs9kpgKMAAA
-        AABJRU5ErkJggg==
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
