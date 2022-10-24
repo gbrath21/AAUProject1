@@ -38,11 +38,11 @@ namespace AAUProject
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            ShowUsernamelb.Text = MainForm.SetValueForUsername;
+            ShowUserNamelb.Text = MainForm.SetValueForUsername;
             ShowPasswordlb.Text = MainForm.SetValueForPassword;
             ShowUserTypelb.Text = MainForm.User_type;
             displayDays();
-            if(ShowUserTypelb.Text != "admin")
+            if(ShowUserTypelb1.Text != "admin")
             {
                 CreateUserbtn.Hide();
             }

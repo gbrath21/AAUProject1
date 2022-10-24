@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcomepage));
-            this.Userinfopanel = new Bunifu.UI.WinForms.BunifuPanel();
-            this.ShowUserTypelb = new System.Windows.Forms.Label();
-            this.ShowPasswordlb = new System.Windows.Forms.Label();
-            this.ShowUsernamelb = new System.Windows.Forms.Label();
+            this.ShowUserTypelb1 = new System.Windows.Forms.Label();
+            this.ShowPasswordlb1 = new System.Windows.Forms.Label();
+            this.ShowUsernamelb1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,12 +63,6 @@
             this.lbdate = new ReaLTaiizor.Controls.BigLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.HomeworkTab = new System.Windows.Forms.TabPage();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.CrossButton = new FontAwesome.Sharp.IconButton();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -77,6 +70,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -84,7 +79,23 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.Userinfopanel.SuspendLayout();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.CrossButton = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.ShowUserNamelb = new System.Windows.Forms.Label();
+            this.ShowPasswordlb = new System.Windows.Forms.Label();
+            this.ShowUserTypelb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -98,65 +109,51 @@
             this.HomeworkTab.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Userinfopanel
+            // ShowUserTypelb1
             // 
-            this.Userinfopanel.BackgroundColor = System.Drawing.Color.Transparent;
-            this.Userinfopanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Userinfopanel.BackgroundImage")));
-            this.Userinfopanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Userinfopanel.BorderColor = System.Drawing.Color.Transparent;
-            this.Userinfopanel.BorderRadius = 3;
-            this.Userinfopanel.BorderThickness = 1;
-            this.Userinfopanel.Controls.Add(this.ShowUserTypelb);
-            this.Userinfopanel.Controls.Add(this.ShowPasswordlb);
-            this.Userinfopanel.Controls.Add(this.ShowUsernamelb);
-            this.Userinfopanel.Controls.Add(this.label3);
-            this.Userinfopanel.Controls.Add(this.label2);
-            this.Userinfopanel.Controls.Add(this.label1);
-            this.Userinfopanel.Controls.Add(this.pictureBox1);
-            this.Userinfopanel.Location = new System.Drawing.Point(59, 176);
-            this.Userinfopanel.Name = "Userinfopanel";
-            this.Userinfopanel.ShowBorders = true;
-            this.Userinfopanel.Size = new System.Drawing.Size(299, 185);
-            this.Userinfopanel.TabIndex = 12;
+            this.ShowUserTypelb1.AutoSize = true;
+            this.ShowUserTypelb1.BackColor = System.Drawing.Color.White;
+            this.ShowUserTypelb1.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
+            this.ShowUserTypelb1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.ShowUserTypelb1.Location = new System.Drawing.Point(143, 115);
+            this.ShowUserTypelb1.Name = "ShowUserTypelb1";
+            this.ShowUserTypelb1.Size = new System.Drawing.Size(89, 16);
+            this.ShowUserTypelb1.TabIndex = 20;
+            this.ShowUserTypelb1.Text = "ShowUserType";
             // 
-            // ShowUserTypelb
+            // ShowPasswordlb1
             // 
-            this.ShowUserTypelb.AutoSize = true;
-            this.ShowUserTypelb.BackColor = System.Drawing.Color.White;
-            this.ShowUserTypelb.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
-            this.ShowUserTypelb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.ShowUserTypelb.Location = new System.Drawing.Point(143, 115);
-            this.ShowUserTypelb.Name = "ShowUserTypelb";
-            this.ShowUserTypelb.Size = new System.Drawing.Size(89, 16);
-            this.ShowUserTypelb.TabIndex = 20;
-            this.ShowUserTypelb.Text = "ShowUserType";
+            this.ShowPasswordlb1.AutoSize = true;
+            this.ShowPasswordlb1.BackColor = System.Drawing.Color.White;
+            this.ShowPasswordlb1.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
+            this.ShowPasswordlb1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.ShowPasswordlb1.Location = new System.Drawing.Point(143, 69);
+            this.ShowPasswordlb1.Name = "ShowPasswordlb1";
+            this.ShowPasswordlb1.Size = new System.Drawing.Size(100, 16);
+            this.ShowPasswordlb1.TabIndex = 19;
+            this.ShowPasswordlb1.Text = "ShowPassword";
             // 
-            // ShowPasswordlb
+            // ShowUsernamelb1
             // 
-            this.ShowPasswordlb.AutoSize = true;
-            this.ShowPasswordlb.BackColor = System.Drawing.Color.White;
-            this.ShowPasswordlb.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
-            this.ShowPasswordlb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.ShowPasswordlb.Location = new System.Drawing.Point(143, 69);
-            this.ShowPasswordlb.Name = "ShowPasswordlb";
-            this.ShowPasswordlb.Size = new System.Drawing.Size(90, 16);
-            this.ShowPasswordlb.TabIndex = 19;
-            this.ShowPasswordlb.Text = "ShowPassword";
-            // 
-            // ShowUsernamelb
-            // 
-            this.ShowUsernamelb.AutoSize = true;
-            this.ShowUsernamelb.BackColor = System.Drawing.Color.White;
-            this.ShowUsernamelb.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
-            this.ShowUsernamelb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.ShowUsernamelb.Location = new System.Drawing.Point(143, 22);
-            this.ShowUsernamelb.Name = "ShowUsernamelb";
-            this.ShowUsernamelb.Size = new System.Drawing.Size(93, 16);
-            this.ShowUsernamelb.TabIndex = 18;
-            this.ShowUsernamelb.Text = "ShowUsername";
-            this.ShowUsernamelb.Click += new System.EventHandler(this.label4_Click);
+            this.ShowUsernamelb1.AutoSize = true;
+            this.ShowUsernamelb1.BackColor = System.Drawing.Color.White;
+            this.ShowUsernamelb1.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
+            this.ShowUsernamelb1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.ShowUsernamelb1.Location = new System.Drawing.Point(143, 22);
+            this.ShowUsernamelb1.Name = "ShowUsernamelb1";
+            this.ShowUsernamelb1.Size = new System.Drawing.Size(93, 16);
+            this.ShowUsernamelb1.TabIndex = 18;
+            this.ShowUsernamelb1.Text = "ShowUsername";
+            this.ShowUsernamelb1.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -354,9 +351,9 @@
             // 
             // HomeTab
             // 
+            this.HomeTab.Controls.Add(this.panel14);
             this.HomeTab.Controls.Add(this.CreateUserbtn);
             this.HomeTab.Controls.Add(this.label4);
-            this.HomeTab.Controls.Add(this.Userinfopanel);
             this.HomeTab.Location = new System.Drawing.Point(4, 22);
             this.HomeTab.Name = "HomeTab";
             this.HomeTab.Padding = new System.Windows.Forms.Padding(3);
@@ -557,84 +554,6 @@
             this.HomeworkTab.Text = "tabPage6";
             this.HomeworkTab.UseVisualStyleBackColor = true;
             // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(0, 79);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 8;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.panel7);
-            this.flowLayoutPanel1.Controls.Add(this.panel8);
-            this.flowLayoutPanel1.Controls.Add(this.panel9);
-            this.flowLayoutPanel1.Controls.Add(this.panel10);
-            this.flowLayoutPanel1.Controls.Add(this.panel11);
-            this.flowLayoutPanel1.Controls.Add(this.panel12);
-            this.flowLayoutPanel1.Controls.Add(this.panel13);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(171, 67);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(789, 583);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.White;
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 25;
-            this.iconButton2.Location = new System.Drawing.Point(875, 0);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(32, 30);
-            this.iconButton2.TabIndex = 4;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(907, 0);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(32, 30);
-            this.iconButton1.TabIndex = 3;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // CrossButton
-            // 
-            this.CrossButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CrossButton.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.CrossButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CrossButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.CrossButton.IconSize = 25;
-            this.CrossButton.Location = new System.Drawing.Point(939, 0);
-            this.CrossButton.Name = "CrossButton";
-            this.CrossButton.Rotation = 45D;
-            this.CrossButton.Size = new System.Drawing.Size(32, 30);
-            this.CrossButton.TabIndex = 2;
-            this.CrossButton.UseVisualStyleBackColor = true;
-            this.CrossButton.Click += new System.EventHandler(this.CrossButton_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.iconButton2);
-            this.panel2.Controls.Add(this.iconButton1);
-            this.panel2.Controls.Add(this.CrossButton);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(971, 30);
-            this.panel2.TabIndex = 17;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -712,6 +631,26 @@
             this.label19.TabIndex = 61;
             this.label19.Text = "Monday";
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(0, 79);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 8;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.panel7);
+            this.flowLayoutPanel1.Controls.Add(this.panel8);
+            this.flowLayoutPanel1.Controls.Add(this.panel9);
+            this.flowLayoutPanel1.Controls.Add(this.panel10);
+            this.flowLayoutPanel1.Controls.Add(this.panel11);
+            this.flowLayoutPanel1.Controls.Add(this.panel12);
+            this.flowLayoutPanel1.Controls.Add(this.panel13);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(171, 67);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(789, 583);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
             // panel7
             // 
             this.panel7.Location = new System.Drawing.Point(1, 1);
@@ -768,6 +707,215 @@
             this.panel13.Size = new System.Drawing.Size(110, 580);
             this.panel13.TabIndex = 14;
             // 
+            // iconButton2
+            // 
+            this.iconButton2.BackColor = System.Drawing.Color.White;
+            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 25;
+            this.iconButton2.Location = new System.Drawing.Point(875, 0);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(32, 30);
+            this.iconButton2.TabIndex = 4;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 25;
+            this.iconButton1.Location = new System.Drawing.Point(907, 0);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(32, 30);
+            this.iconButton1.TabIndex = 3;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // CrossButton
+            // 
+            this.CrossButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CrossButton.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.CrossButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CrossButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.CrossButton.IconSize = 25;
+            this.CrossButton.Location = new System.Drawing.Point(939, 0);
+            this.CrossButton.Name = "CrossButton";
+            this.CrossButton.Rotation = 45D;
+            this.CrossButton.Size = new System.Drawing.Size(32, 30);
+            this.CrossButton.TabIndex = 2;
+            this.CrossButton.UseVisualStyleBackColor = true;
+            this.CrossButton.Click += new System.EventHandler(this.CrossButton_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.iconButton2);
+            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Controls.Add(this.CrossButton);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(971, 30);
+            this.panel2.TabIndex = 17;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.panel15);
+            this.panel14.Controls.Add(this.panel20);
+            this.panel14.Controls.Add(this.panel19);
+            this.panel14.Controls.Add(this.panel18);
+            this.panel14.Controls.Add(this.panel17);
+            this.panel14.Controls.Add(this.panel16);
+            this.panel14.Location = new System.Drawing.Point(27, 154);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(276, 157);
+            this.panel14.TabIndex = 17;
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.label20.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(16, 13);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(100, 23);
+            this.label20.TabIndex = 18;
+            this.label20.Text = "Username";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Controls.Add(this.label20);
+            this.panel15.Location = new System.Drawing.Point(0, 1);
+            this.panel15.Margin = new System.Windows.Forms.Padding(0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(132, 47);
+            this.panel15.TabIndex = 20;
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.label22);
+            this.panel16.Location = new System.Drawing.Point(0, 47);
+            this.panel16.Margin = new System.Windows.Forms.Padding(0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(132, 47);
+            this.panel16.TabIndex = 21;
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.label23);
+            this.panel17.Location = new System.Drawing.Point(0, 94);
+            this.panel17.Margin = new System.Windows.Forms.Padding(0);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(132, 47);
+            this.panel17.TabIndex = 22;
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.White;
+            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel18.Controls.Add(this.ShowUserNamelb);
+            this.panel18.Location = new System.Drawing.Point(132, 1);
+            this.panel18.Margin = new System.Windows.Forms.Padding(0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(132, 47);
+            this.panel18.TabIndex = 23;
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.White;
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel19.Controls.Add(this.ShowPasswordlb);
+            this.panel19.Location = new System.Drawing.Point(132, 47);
+            this.panel19.Margin = new System.Windows.Forms.Padding(0);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(132, 47);
+            this.panel19.TabIndex = 24;
+            // 
+            // panel20
+            // 
+            this.panel20.BackColor = System.Drawing.Color.White;
+            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel20.Controls.Add(this.ShowUserTypelb);
+            this.panel20.Location = new System.Drawing.Point(132, 94);
+            this.panel20.Margin = new System.Windows.Forms.Padding(0);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(132, 47);
+            this.panel20.TabIndex = 25;
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.label22.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(16, 10);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(100, 23);
+            this.label22.TabIndex = 19;
+            this.label22.Text = "Password";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.label23.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(16, 9);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(100, 23);
+            this.label23.TabIndex = 20;
+            this.label23.Text = "Usertype";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ShowUserNamelb
+            // 
+            this.ShowUserNamelb.BackColor = System.Drawing.Color.White;
+            this.ShowUserNamelb.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
+            this.ShowUserNamelb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.ShowUserNamelb.Location = new System.Drawing.Point(17, 13);
+            this.ShowUserNamelb.Name = "ShowUserNamelb";
+            this.ShowUserNamelb.Size = new System.Drawing.Size(100, 23);
+            this.ShowUserNamelb.TabIndex = 21;
+            this.ShowUserNamelb.Text = "ShowUserName";
+            this.ShowUserNamelb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ShowPasswordlb
+            // 
+            this.ShowPasswordlb.BackColor = System.Drawing.Color.White;
+            this.ShowPasswordlb.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
+            this.ShowPasswordlb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.ShowPasswordlb.Location = new System.Drawing.Point(16, 12);
+            this.ShowPasswordlb.Name = "ShowPasswordlb";
+            this.ShowPasswordlb.Size = new System.Drawing.Size(100, 23);
+            this.ShowPasswordlb.TabIndex = 22;
+            this.ShowPasswordlb.Text = "ShowPassword";
+            this.ShowPasswordlb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ShowUserTypelb
+            // 
+            this.ShowUserTypelb.BackColor = System.Drawing.Color.White;
+            this.ShowUserTypelb.Font = new System.Drawing.Font("Barlow", 9F, System.Drawing.FontStyle.Bold);
+            this.ShowUserTypelb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.ShowUserTypelb.Location = new System.Drawing.Point(16, 12);
+            this.ShowUserTypelb.Name = "ShowUserTypelb";
+            this.ShowUserTypelb.Size = new System.Drawing.Size(100, 23);
+            this.ShowUserTypelb.TabIndex = 22;
+            this.ShowUserTypelb.Text = "ShowUserType";
+            this.ShowUserTypelb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Welcomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -780,8 +928,6 @@
             this.Name = "Welcomepage";
             this.Text = "Welcomepage";
             this.Load += new System.EventHandler(this.WelcomepageAdmin_Load);
-            this.Userinfopanel.ResumeLayout(false);
-            this.Userinfopanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -798,12 +944,18 @@
             this.HomeworkTab.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel17.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Bunifu.UI.WinForms.BunifuPanel Userinfopanel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel daycontainer;
@@ -819,9 +971,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label ShowUsernamelb;
-        private System.Windows.Forms.Label ShowPasswordlb;
-        private System.Windows.Forms.Label ShowUserTypelb;
+        private System.Windows.Forms.Label ShowUsernamelb1;
+        private System.Windows.Forms.Label ShowPasswordlb1;
+        private System.Windows.Forms.Label ShowUserTypelb1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button CreateUserbtn;
         private System.Windows.Forms.Panel panel2;
@@ -858,5 +1010,18 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.Label ShowUserTypelb;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Label ShowPasswordlb;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Label ShowUserNamelb;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label label22;
     }
 }
