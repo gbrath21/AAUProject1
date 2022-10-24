@@ -8,6 +8,7 @@ using System.ServiceModel.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 using MySqlConnector;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -21,7 +22,7 @@ namespace AAUProject
         }
 
         private void LoginForm_Load(object sender, EventArgs e) { }
-
+        String mysqlconnection = "server=users.cedkilyugxhq.eu-north-1.rds.amazonaws.com;user id=admin;database=users;port=3306;password=12345678";
         public bool IsLoggedIn = false;
         private void label1_Click(object sender, EventArgs e) { }
 
@@ -41,20 +42,12 @@ namespace AAUProject
         public static string SetValueForUsertype = "";
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            
-            string conn = "server=users.cedkilyugxhq.eu-north-1.rds.amazonaws.com;user id=admin;database=users;port=3306;password=12345678";
-            string sqlStatement = "SELECT * From user WHERE user_name = @username AND user_password = @password AND user_type = @usertype;";
-            //string sqlStatement1 = "SELECT user_type From user WHERE user_name = @username AND user_password = @password AND user_type = 'Student';";
-            //string sqlStatement2 = "SELECT user_type From user WHERE user_name = @username AND user_password = @password AND user_type = 'Teacher';";
-            //string sqlStatement3 = "SELECT user_type From user WHERE user_name = @username AND user_password = @password AND user_type = 'Admin';";
-            MySqlConnection connection = new MySqlConnection(conn);
-
+            string sqlStatement = "SELECT * From user WHERE user_name = @username AND user_password = @password;";
+            MySqlConnection connection = new MySqlConnection(mysqlconnection);
             MySqlCommand command = new MySqlCommand(sqlStatement, connection);
-            
+
             command.Parameters.AddWithValue("@username", Username.Text);
             command.Parameters.AddWithValue("@password", Password.Text);
-            //command.Parameters.AddWithValue("@usertype", UserType.Text);
-
             connection.Open();
             using (MySqlDataReader Reader = command.ExecuteReader())
             {
@@ -69,7 +62,6 @@ namespace AAUProject
                     MessageBox.Show("Please enter Correct Username and Password");
                 }
             }
-
             string check_user_type = "SELECT user_type FROM user WHERE user_name = @username AND user_password = @password;";
             MySqlCommand checkuser = new MySqlCommand(check_user_type, connection);
             checkuser.Parameters.AddWithValue("@username", Username.Text);
@@ -155,6 +147,10 @@ namespace AAUProject
 
         }
 
+        private void bunifuGroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
 
         private void foxLabel1_Click(object sender, EventArgs e)
         {
