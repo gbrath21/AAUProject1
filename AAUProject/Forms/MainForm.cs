@@ -73,49 +73,57 @@ namespace AAUProject
             command.Parameters.AddWithValue("@username", Username.Text);
             command.Parameters.AddWithValue("@password", Password.Text);
             command.Parameters.AddWithValue("@usertype", UserType.Text);
-
-            using (MySqlDataReader Reader = command.ExecuteReader())
+            if (IsLoggedIn is true) 
             {
-                if (Reader.HasRows)
+                using (MySqlDataReader Reader = command.ExecuteReader())
                 {
-                    SetValueForUsername = Username.Text;
-                    SetValueForPassword = Password.Text;
-                    SetValueForUsertype = UserType.Text;
-                    WelcomepageStudent welcomepageStudent = new WelcomepageStudent();
-                    welcomepageStudent.Show();
-                    Reader.Close();
-                }
+                    if (Reader.HasRows)
+                    {
+                        SetValueForUsername = Username.Text;
+                        SetValueForPassword = Password.Text;
+                        SetValueForUsertype = UserType.Text;
+                        Welcomepage welcomepage = new Welcomepage();
+                        welcomepage.Show();
+                        Reader.Close();
+                    }
+                } 
             }
             command = new MySqlCommand(sqlStatement2, connection);
             command.Parameters.AddWithValue("@username", Username.Text);
             command.Parameters.AddWithValue("@password", Password.Text);
             command.Parameters.AddWithValue("@usertype", UserType.Text);
-            using (MySqlDataReader Reader = command.ExecuteReader())
+            if (IsLoggedIn is true)
             {
-                if (Reader.HasRows)
+                using (MySqlDataReader Reader = command.ExecuteReader())
                 {
-                    SetValueForUsername = Username.Text;
-                    SetValueForPassword = Password.Text;
-                    SetValueForUsertype = UserType.Text;
-                    WelcomepageTeacher welcomepageTeacher = new WelcomepageTeacher();
-                    welcomepageTeacher.Show();                   
-                    Reader.Close();
+                    if (Reader.HasRows)
+                    {
+                        SetValueForUsername = Username.Text;
+                        SetValueForPassword = Password.Text;
+                        SetValueForUsertype = UserType.Text;
+                        Welcomepage welcomepage = new Welcomepage();
+                        welcomepage.Show();
+                        Reader.Close();
+                    }
                 }
             }
             command = new MySqlCommand(sqlStatement3, connection);
             command.Parameters.AddWithValue("@username", Username.Text);
             command.Parameters.AddWithValue("@password", Password.Text);
             command.Parameters.AddWithValue("@usertype", UserType.Text);
-            using (MySqlDataReader Reader = command.ExecuteReader())
+            if (IsLoggedIn is true)
             {
-                if (Reader.HasRows)
+                using (MySqlDataReader Reader = command.ExecuteReader())
                 {
-                    SetValueForUsername = Username.Text;
-                    SetValueForPassword = Password.Text;
-                    SetValueForUsertype = UserType.Text;
-                    WelcomepageAdmin welcomepageAdmin = new WelcomepageAdmin();
-                    welcomepageAdmin.Show();
-                    Reader.Close();
+                    if (Reader.HasRows)
+                    {
+                        SetValueForUsername = Username.Text;
+                        SetValueForPassword = Password.Text;
+                        SetValueForUsertype = UserType.Text;
+                        Welcomepage welcomepage = new Welcomepage();
+                        welcomepage.Show();
+                        Reader.Close();
+                    }
                 }
             }
         }

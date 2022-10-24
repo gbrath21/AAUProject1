@@ -71,7 +71,7 @@
             this.bunifuGroupBox1.LineStyle = Bunifu.UI.WinForms.BunifuGroupBox.LineStyles.Solid;
             this.bunifuGroupBox1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGroupBox1.Name = "bunifuGroupBox1";
-            this.bunifuGroupBox1.Size = new System.Drawing.Size(200, 647);
+            this.bunifuGroupBox1.Size = new System.Drawing.Size(200, 649);
             this.bunifuGroupBox1.TabIndex = 1;
             this.bunifuGroupBox1.TabStop = false;
             this.bunifuGroupBox1.Enter += new System.EventHandler(this.bunifuGroupBox1_Enter);
@@ -357,7 +357,7 @@
             this.bunifuPictureBox1.BorderRadius = 0;
             this.bunifuPictureBox1.Image = global::AAUProject.Properties.Resources.AAU_logo_2012;
             this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(43, 40);
+            this.bunifuPictureBox1.Location = new System.Drawing.Point(43, 41);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
             this.bunifuPictureBox1.Size = new System.Drawing.Size(101, 101);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -549,7 +549,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1130, 647);
+            this.ClientSize = new System.Drawing.Size(1130, 649);
             this.Controls.Add(this.coursedrop);
             this.Controls.Add(this.bunifuLabel5);
             this.Controls.Add(this.Userinfopanel);

@@ -27,7 +27,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             String sqlstatement = "SELECT * FROM course WHERE CourseDate = @coursedate";
             conn.Open();
             MySqlCommand command = new MySqlCommand(sqlstatement, conn);
-            command.Parameters.AddWithValue("@coursedate", WelcomepageAdmin.static_year + "-" + WelcomepageAdmin.static_month + "-" + lbdays.Text);
+            command.Parameters.AddWithValue("@coursedate", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);
             MySqlDataReader reader = command.ExecuteReader();
             if (reader.Read())
             {

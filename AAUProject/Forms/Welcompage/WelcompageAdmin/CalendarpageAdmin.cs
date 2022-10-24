@@ -21,7 +21,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
         private void HomeButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            WelcomepageAdmin welcomepageAdmin = new WelcomepageAdmin();
+            Welcomepage welcomepageAdmin = new Welcomepage();
             welcomepageAdmin.Show();
         }
 
