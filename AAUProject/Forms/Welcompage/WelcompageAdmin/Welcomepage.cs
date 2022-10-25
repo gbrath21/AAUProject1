@@ -42,7 +42,7 @@ namespace AAUProject
             ShowPasswordlb.Text = MainForm.SetValueForPassword;
             ShowUserTypelb.Text = MainForm.User_type;
             displayDays();
-            if(ShowUserTypelb1.Text != "admin")
+            if(MainForm.User_type != "admin")
             {
                 CreateUserbtn.Hide();
             }
