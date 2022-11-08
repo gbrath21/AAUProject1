@@ -14,7 +14,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
 {
     public partial class CreateUserForm : Form
     {
-        String connString = "server=users.cedkilyugxhq.eu-north-1.rds.amazonaws.com;user id=admin;database=users;port=3306;password=12345678";
+        String connString = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
         public CreateUserForm()
         {
             InitializeComponent();

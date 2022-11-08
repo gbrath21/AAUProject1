@@ -46,14 +46,13 @@
             this.usernametxt.ForeColor = System.Drawing.Color.DimGray;
             this.usernametxt.Image = null;
             this.usernametxt.Location = new System.Drawing.Point(73, 72);
-            this.usernametxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usernametxt.Margin = new System.Windows.Forms.Padding(2);
             this.usernametxt.MaxLength = 32767;
             this.usernametxt.Multiline = false;
             this.usernametxt.Name = "usernametxt";
             this.usernametxt.ReadOnly = false;
             this.usernametxt.Size = new System.Drawing.Size(209, 41);
             this.usernametxt.TabIndex = 11;
-            this.usernametxt.Text = "bigTextBox1";
             this.usernametxt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.usernametxt.UseSystemPasswordChar = false;
             this.usernametxt.TextChanged += new System.EventHandler(this.usernametxt_TextChanged);
@@ -65,14 +64,13 @@
             this.passwordtxt.ForeColor = System.Drawing.Color.DimGray;
             this.passwordtxt.Image = null;
             this.passwordtxt.Location = new System.Drawing.Point(73, 158);
-            this.passwordtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passwordtxt.Margin = new System.Windows.Forms.Padding(2);
             this.passwordtxt.MaxLength = 32767;
             this.passwordtxt.Multiline = false;
             this.passwordtxt.Name = "passwordtxt";
             this.passwordtxt.ReadOnly = false;
             this.passwordtxt.Size = new System.Drawing.Size(209, 41);
             this.passwordtxt.TabIndex = 12;
-            this.passwordtxt.Text = "bigTextBox1";
             this.passwordtxt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.passwordtxt.UseSystemPasswordChar = false;
             // 
@@ -85,7 +83,7 @@
             this.semestertxt.FormattingEnabled = true;
             this.semestertxt.ItemHeight = 20;
             this.semestertxt.Location = new System.Drawing.Point(73, 291);
-            this.semestertxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.semestertxt.Margin = new System.Windows.Forms.Padding(2);
             this.semestertxt.Name = "semestertxt";
             this.semestertxt.Size = new System.Drawing.Size(209, 26);
             this.semestertxt.TabIndex = 14;
@@ -156,7 +154,7 @@
             "Teacher",
             "Admin"});
             this.usertypetxt.Location = new System.Drawing.Point(73, 236);
-            this.usertypetxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usertypetxt.Margin = new System.Windows.Forms.Padding(2);
             this.usertypetxt.Name = "usertypetxt";
             this.usertypetxt.Size = new System.Drawing.Size(211, 26);
             this.usertypetxt.TabIndex = 13;
@@ -172,7 +170,7 @@
             this.createuser_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.createuser_button.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.createuser_button.Location = new System.Drawing.Point(168, 344);
-            this.createuser_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.createuser_button.Margin = new System.Windows.Forms.Padding(2);
             this.createuser_button.Name = "createuser_button";
             this.createuser_button.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.createuser_button.Size = new System.Drawing.Size(150, 35);
