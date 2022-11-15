@@ -1,5 +1,6 @@
 ﻿using AAUProject.Forms.Welcompage.WelcompageAdmin;
 using AAUProject.Forms.Welcompage.WelcompageStundet;
+
 using ReaLTaiizor.Child.Crown;
 using System;
 using System.Collections.Generic;
@@ -23,15 +24,57 @@ namespace AAUProject
         public Welcomepage()
         {
             InitializeComponent();
-        }
+            //m_Appointments = new List<Appointment>();
 
-        private void HomeButton_Click(object sender, EventArgs e)
-        {
-            //WelcomepageAdmin welcomepageAdmin = new WelcomepageAdmin();
-            //welcomepageAdmin.Refresh();
-            tabControl1.SelectedTab = HomeTab;
-        }
+            //DateTime m_Date = DateTime.Now;
 
+            //m_Date = m_Date.AddHours(10 - m_Date.Hour);
+            //m_Date = m_Date.AddMinutes(-m_Date.Minute);
+
+            //Appointment m_Appointment = new Appointment();
+            //m_Appointment.StartDate = m_Date;
+            //m_Appointment.EndDate = m_Date.AddHours(2);
+            //m_Appointment.Title = "test1\r\nmultiline";
+
+            //m_Appointments.Add(m_Appointment);
+
+            //m_Appointment = new Appointment();
+            //m_Appointment.StartDate = m_Date.AddHours(2);
+            //m_Appointment.EndDate = m_Date.AddHours(3);
+            //m_Appointment.Title = "test2\r\n locked one";
+            //m_Appointment.Color = System.Drawing.Color.LightBlue;
+            //m_Appointment.Locked = true;
+
+            //m_Appointments.Add(m_Appointment);
+
+            //m_Appointment = new Appointment();
+            //m_Appointment.StartDate = m_Date;
+            //m_Appointment.EndDate = m_Date.AddHours(4);
+            //m_Appointment.Color = System.Drawing.Color.Yellow;
+            //m_Appointment.Title = "test3\r\n some numbers 123456 and unicode chars (turkish) ÐÜÞÝÇÖÇI ";
+
+            //m_Appointments.Add(m_Appointment);
+
+            //m_Appointment = new Appointment();
+            //m_Appointment.StartDate = m_Date;
+            //m_Appointment.EndDate = m_Date.AddDays(2);
+            //m_Appointment.Title = "More than one day";
+            //m_Appointment.Color = System.Drawing.Color.Red;
+
+            //m_Appointments.Add(m_Appointment);
+
+            //m_Appointment = new Appointment();
+            //m_Appointment.StartDate = m_Date.AddDays(1);
+            //m_Appointment.EndDate = m_Date.AddDays(3);
+            //m_Appointment.Title = "More than one day (2)";
+            //m_Appointment.Color = System.Drawing.Color.Coral;
+
+            //m_Appointments.Add(m_Appointment);
+
+            
+
+        }
+      
         private void WelcomepageAdmin_Load(object sender, EventArgs e)
         {
             this.Text = String.Empty;
@@ -42,21 +85,33 @@ namespace AAUProject
             ShowPasswordlb.Text = MainForm.SetValueForPassword;
             ShowUserTypelb.Text = MainForm.User_type;
             displayDays();
-            if(MainForm.User_type != "admin")
+            if (MainForm.User_type != "admin")
             {
                 CreateUserbtn.Hide();
             }
-
+            //dayView1.ViewType = 
         }
 
-        private void CalendarButton_Click(object sender, EventArgs e)
+        //
+        //Buttons on mainform
+        //
+        private void Homebtn_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //CalendarpageAdmin calendarpageAdmin = new CalendarpageAdmin();
-            //calendarpageAdmin.Show();
-            tabControl1.SelectedTab = CalendarTab;
-            
+            tabControl1.SelectedTab = HomeTab;
         }
+
+        private void royalButton1_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = CalendarTab;
+        }
+
+        private void royalButton2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = HomeworkTab;
+        }
+        //
+        //Buttons on mainform
+        //
 
         private void bunifuPictureBox1_Click(object sender, EventArgs e)
         {
@@ -70,7 +125,7 @@ namespace AAUProject
 
         private void crownDropDownList1_Click(object sender, EventArgs e)
         {
-        
+
         }
 
         private void crownDockPanel1_Load(object sender, EventArgs e)
@@ -111,6 +166,9 @@ namespace AAUProject
                 daycontainer.Controls.Add(ucdays);
             }
         }
+        //
+        //Calendar
+        //
 
         private void bunifuLabel6_Click(object sender, EventArgs e)
         {
@@ -126,7 +184,10 @@ namespace AAUProject
         {
 
         }
-        //Drag form
+
+        //
+        //Drag form + buttons
+        //
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -159,11 +220,11 @@ namespace AAUProject
         {
             WindowState = FormWindowState.Minimized;
         }
+        //
+        //Drag form + buttons
+        //
 
-        private void HomeworkButton_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = HomeworkTab;
-        }
+
 
         private void label4_Click(object sender, EventArgs e)
         {
@@ -191,20 +252,7 @@ namespace AAUProject
 
         }
 
-        private void Homebtn_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = HomeTab;
-        }
-
-        private void royalButton1_Click_1(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = CalendarTab;
-        }
-
-        private void royalButton2_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = HomeworkTab;
-        }
+        
 
         private void Prebtn_Click(object sender, EventArgs e)
         {
@@ -257,5 +305,16 @@ namespace AAUProject
                 daycontainer.Controls.Add(ucdays);
             }
         }
+
+        //
+        //homework
+        //
+
+       
+        private void monthCalendar2_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            //dayView1.StartDate = monthCalendar2.SelectionStart;
+        }
+
     }
 }

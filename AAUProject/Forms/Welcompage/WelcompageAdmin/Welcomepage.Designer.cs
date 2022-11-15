@@ -76,24 +76,20 @@
             this.lbdate = new ReaLTaiizor.Controls.BigLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.HomeworkTab = new System.Windows.Forms.TabPage();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.MinimizeButton = new FontAwesome.Sharp.IconButton();
+            this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.CrossButton = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -114,7 +110,9 @@
             this.panel16.SuspendLayout();
             this.CalendarTab.SuspendLayout();
             this.HomeworkTab.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -522,7 +520,7 @@
             this.CreateUserbtn.Name = "CreateUserbtn";
             this.CreateUserbtn.Size = new System.Drawing.Size(150, 34);
             this.CreateUserbtn.TabIndex = 16;
-            this.CreateUserbtn.Text = "CreateUser";
+            this.CreateUserbtn.Text = "Create User";
             this.CreateUserbtn.UseVisualStyleBackColor = false;
             this.CreateUserbtn.Click += new System.EventHandler(this.CreateUserbtn_Click);
             // 
@@ -688,15 +686,8 @@
             // 
             // HomeworkTab
             // 
-            this.HomeworkTab.Controls.Add(this.label13);
-            this.HomeworkTab.Controls.Add(this.label14);
-            this.HomeworkTab.Controls.Add(this.label15);
-            this.HomeworkTab.Controls.Add(this.label16);
-            this.HomeworkTab.Controls.Add(this.label17);
-            this.HomeworkTab.Controls.Add(this.label18);
-            this.HomeworkTab.Controls.Add(this.label19);
-            this.HomeworkTab.Controls.Add(this.monthCalendar1);
-            this.HomeworkTab.Controls.Add(this.flowLayoutPanel1);
+            this.HomeworkTab.Controls.Add(this.panel8);
+            this.HomeworkTab.Controls.Add(this.panel7);
             this.HomeworkTab.Location = new System.Drawing.Point(4, 22);
             this.HomeworkTab.Name = "HomeworkTab";
             this.HomeworkTab.Padding = new System.Windows.Forms.Padding(3);
@@ -705,82 +696,101 @@
             this.HomeworkTab.Text = "tabPage6";
             this.HomeworkTab.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // panel8
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.label13.Location = new System.Drawing.Point(863, 42);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(62, 22);
-            this.label13.TabIndex = 67;
-            this.label13.Text = "Sunday";
+            this.panel8.Controls.Add(this.flowLayoutPanel1);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(185, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(772, 647);
+            this.panel8.TabIndex = 23;
             // 
-            // label14
+            // flowLayoutPanel1
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.label14.Location = new System.Drawing.Point(749, 42);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 22);
-            this.label14.TabIndex = 66;
-            this.label14.Text = "Saturday";
+            this.flowLayoutPanel1.Controls.Add(this.panel9);
+            this.flowLayoutPanel1.Controls.Add(this.panel10);
+            this.flowLayoutPanel1.Controls.Add(this.panel11);
+            this.flowLayoutPanel1.Controls.Add(this.panel12);
+            this.flowLayoutPanel1.Controls.Add(this.panel13);
+            this.flowLayoutPanel1.Controls.Add(this.panel21);
+            this.flowLayoutPanel1.Controls.Add(this.panel22);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(772, 647);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // label15
+            // panel9
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.label15.Location = new System.Drawing.Point(643, 42);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(54, 22);
-            this.label15.TabIndex = 65;
-            this.label15.Text = "Friday";
+            this.panel9.Location = new System.Drawing.Point(1, 1);
+            this.panel9.Margin = new System.Windows.Forms.Padding(1);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(108, 639);
+            this.panel9.TabIndex = 0;
             // 
-            // label16
+            // panel10
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.label16.Location = new System.Drawing.Point(523, 42);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 22);
-            this.label16.TabIndex = 64;
-            this.label16.Text = "Thursday";
+            this.panel10.Location = new System.Drawing.Point(111, 1);
+            this.panel10.Margin = new System.Windows.Forms.Padding(1);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(108, 639);
+            this.panel10.TabIndex = 1;
             // 
-            // label17
+            // panel11
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.label17.Location = new System.Drawing.Point(403, 42);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(92, 22);
-            this.label17.TabIndex = 63;
-            this.label17.Text = "Wednesday";
+            this.panel11.Location = new System.Drawing.Point(221, 1);
+            this.panel11.Margin = new System.Windows.Forms.Padding(1);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(108, 639);
+            this.panel11.TabIndex = 2;
             // 
-            // label18
+            // panel12
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.label18.Location = new System.Drawing.Point(307, 42);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(69, 22);
-            this.label18.TabIndex = 62;
-            this.label18.Text = "Tuesday";
+            this.panel12.Location = new System.Drawing.Point(331, 1);
+            this.panel12.Margin = new System.Windows.Forms.Padding(1);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(108, 639);
+            this.panel12.TabIndex = 3;
             // 
-            // label19
+            // panel13
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Barlow SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.label19.Location = new System.Drawing.Point(203, 42);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(64, 22);
-            this.label19.TabIndex = 61;
-            this.label19.Text = "Monday";
+            this.panel13.Location = new System.Drawing.Point(441, 1);
+            this.panel13.Margin = new System.Windows.Forms.Padding(1);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(108, 639);
+            this.panel13.TabIndex = 4;
+            // 
+            // panel21
+            // 
+            this.panel21.Location = new System.Drawing.Point(551, 1);
+            this.panel21.Margin = new System.Windows.Forms.Padding(1);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(108, 639);
+            this.panel21.TabIndex = 5;
+            // 
+            // panel22
+            // 
+            this.panel22.Location = new System.Drawing.Point(661, 1);
+            this.panel22.Margin = new System.Windows.Forms.Padding(1);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(108, 639);
+            this.panel22.TabIndex = 6;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.monthCalendar2);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(182, 647);
+            this.panel7.TabIndex = 22;
+            // 
+            // monthCalendar2
+            // 
+            this.monthCalendar2.Location = new System.Drawing.Point(5, 30);
+            this.monthCalendar2.Name = "monthCalendar2";
+            this.monthCalendar2.TabIndex = 20;
+            this.monthCalendar2.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar2_DateChanged);
             // 
             // monthCalendar1
             // 
@@ -788,104 +798,34 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 8;
             // 
-            // flowLayoutPanel1
+            // MinimizeButton
             // 
-            this.flowLayoutPanel1.Controls.Add(this.panel7);
-            this.flowLayoutPanel1.Controls.Add(this.panel8);
-            this.flowLayoutPanel1.Controls.Add(this.panel9);
-            this.flowLayoutPanel1.Controls.Add(this.panel10);
-            this.flowLayoutPanel1.Controls.Add(this.panel11);
-            this.flowLayoutPanel1.Controls.Add(this.panel12);
-            this.flowLayoutPanel1.Controls.Add(this.panel13);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(171, 67);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(789, 583);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.MinimizeButton.BackColor = System.Drawing.Color.White;
+            this.MinimizeButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MinimizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.MinimizeButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MinimizeButton.IconSize = 25;
+            this.MinimizeButton.Location = new System.Drawing.Point(875, 0);
+            this.MinimizeButton.Name = "MinimizeButton";
+            this.MinimizeButton.Size = new System.Drawing.Size(32, 30);
+            this.MinimizeButton.TabIndex = 4;
+            this.MinimizeButton.UseVisualStyleBackColor = false;
+            this.MinimizeButton.Click += new System.EventHandler(this.iconButton2_Click);
             // 
-            // panel7
+            // MaximizeButton
             // 
-            this.panel7.Location = new System.Drawing.Point(1, 1);
-            this.panel7.Margin = new System.Windows.Forms.Padding(1);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(110, 580);
-            this.panel7.TabIndex = 8;
-            // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(113, 1);
-            this.panel8.Margin = new System.Windows.Forms.Padding(1);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(110, 580);
-            this.panel8.TabIndex = 9;
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(225, 1);
-            this.panel9.Margin = new System.Windows.Forms.Padding(1);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(110, 580);
-            this.panel9.TabIndex = 10;
-            // 
-            // panel10
-            // 
-            this.panel10.Location = new System.Drawing.Point(337, 1);
-            this.panel10.Margin = new System.Windows.Forms.Padding(1);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(110, 580);
-            this.panel10.TabIndex = 11;
-            // 
-            // panel11
-            // 
-            this.panel11.Location = new System.Drawing.Point(449, 1);
-            this.panel11.Margin = new System.Windows.Forms.Padding(1);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(110, 580);
-            this.panel11.TabIndex = 12;
-            // 
-            // panel12
-            // 
-            this.panel12.Location = new System.Drawing.Point(561, 1);
-            this.panel12.Margin = new System.Windows.Forms.Padding(1);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(110, 580);
-            this.panel12.TabIndex = 13;
-            // 
-            // panel13
-            // 
-            this.panel13.Location = new System.Drawing.Point(673, 1);
-            this.panel13.Margin = new System.Windows.Forms.Padding(1);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(110, 580);
-            this.panel13.TabIndex = 14;
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.BackColor = System.Drawing.Color.White;
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 25;
-            this.iconButton2.Location = new System.Drawing.Point(875, 0);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(32, 30);
-            this.iconButton2.TabIndex = 4;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(907, 0);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(32, 30);
-            this.iconButton1.TabIndex = 3;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.MaximizeButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MaximizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.MaximizeButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.MaximizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MaximizeButton.IconSize = 25;
+            this.MaximizeButton.Location = new System.Drawing.Point(907, 0);
+            this.MaximizeButton.Name = "MaximizeButton";
+            this.MaximizeButton.Size = new System.Drawing.Size(32, 30);
+            this.MaximizeButton.TabIndex = 3;
+            this.MaximizeButton.UseVisualStyleBackColor = true;
+            this.MaximizeButton.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // CrossButton
             // 
@@ -905,8 +845,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.iconButton2);
-            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Controls.Add(this.MinimizeButton);
+            this.panel2.Controls.Add(this.MaximizeButton);
             this.panel2.Controls.Add(this.CrossButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
@@ -948,8 +888,9 @@
             this.CalendarTab.ResumeLayout(false);
             this.CalendarTab.PerformLayout();
             this.HomeworkTab.ResumeLayout(false);
-            this.HomeworkTab.PerformLayout();
+            this.panel8.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -964,9 +905,8 @@
         private System.Windows.Forms.TabPage HomeTab;
         private System.Windows.Forms.TabPage HomeworkTab;
         private FontAwesome.Sharp.IconButton CrossButton;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private FontAwesome.Sharp.IconButton MinimizeButton;
+        private FontAwesome.Sharp.IconButton MaximizeButton;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -996,20 +936,6 @@
         private System.Windows.Forms.Label label6;
         private ReaLTaiizor.Controls.BigLabel lbdate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
@@ -1023,5 +949,16 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.MonthCalendar monthCalendar2;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel panel22;
     }
 }

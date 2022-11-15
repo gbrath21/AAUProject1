@@ -22,17 +22,18 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 
         private void UserControlDays_Load(object sender, EventArgs e)
         {
-            string connstring = "server=localhost;user id=root;database=aau;port=3306;password=PA10na2013";
+            string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
             MySqlConnection conn = new MySqlConnection(connstring);
-            String sqlstatement = "SELECT * FROM course WHERE CourseDate = @coursedate";
+            String sqlstatement = "SELECT * FROM course_info WHERE cal_time = @cal_time";
             conn.Open();
             MySqlCommand command = new MySqlCommand(sqlstatement, conn);
-            command.Parameters.AddWithValue("@coursedate", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);
+            command.Parameters.AddWithValue("@cal_time", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);
             MySqlDataReader reader = command.ExecuteReader();
-            if (reader.Read())
+            DataTable dt = new DataTable();
+            while (reader.Read())
             {
-                    
-                dispanel.Text = reader["CourseName"].ToString();
+
+                coursedis.Items.Add(reader.GetString("info_headline"));
 
             }
             reader.Dispose();
@@ -54,16 +55,18 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 
         private void displayCourse()
         {
-            string connstring = "server=localhost;user id=root;database=aau;port=3306;password=PA10na2013";
+            string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
             MySqlConnection conn = new MySqlConnection(connstring);
-            String sqlstatement = "SELECT * FROM course WHERE CourseDate = @coursedate";
+            String sqlstatement = "SELECT * FROM course_info WHERE caltime = @cal_time";
             conn.Open();
             MySqlCommand command = new MySqlCommand(sqlstatement, conn);
-            command.Parameters.AddWithValue("@coursedate", Welcomepage.static_year+ "-" + Welcomepage.static_month + "-" + lbdays.Text);
+            command.Parameters.AddWithValue("@cal_time", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);
             MySqlDataReader reader = command.ExecuteReader();
-            if (reader.Read())
+            while (reader.Read())
             {
-                dispanel.Text = reader["CourseName"].ToString();
+
+                coursedis.Items.Add(reader.GetString("info_headline"));
+
             }
             reader.Dispose();
             command.Dispose();
@@ -76,11 +79,6 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         }
 
         private void dispnl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dispnl_Paint(object sender, PaintEventArgs e)
         {
 
         }

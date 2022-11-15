@@ -32,6 +32,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbdays = new System.Windows.Forms.Label();
             this.dispanel = new System.Windows.Forms.Panel();
+            this.coursedis = new System.Windows.Forms.ListBox();
+            this.dispanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -42,7 +44,7 @@
             // 
             this.lbdays.AutoSize = true;
             this.lbdays.Font = new System.Drawing.Font("Barlow Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.lbdays.Location = new System.Drawing.Point(3, 6);
+            this.lbdays.Location = new System.Drawing.Point(3, 0);
             this.lbdays.Name = "lbdays";
             this.lbdays.Size = new System.Drawing.Size(30, 22);
             this.lbdays.TabIndex = 2;
@@ -50,13 +52,23 @@
             // 
             // dispanel
             // 
+            this.dispanel.Controls.Add(this.coursedis);
             this.dispanel.Font = new System.Drawing.Font("Barlow SemiBold", 9F, System.Drawing.FontStyle.Bold);
             this.dispanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.dispanel.Location = new System.Drawing.Point(3, 31);
+            this.dispanel.Location = new System.Drawing.Point(3, 20);
             this.dispanel.Name = "dispanel";
-            this.dispanel.Size = new System.Drawing.Size(114, 40);
+            this.dispanel.Size = new System.Drawing.Size(114, 47);
             this.dispanel.TabIndex = 3;
-            this.dispanel.Paint += new System.Windows.Forms.PaintEventHandler(this.dispnl_Paint);
+            this.dispanel.Click += new System.EventHandler(this.UserControlDays_Click);
+            // 
+            // coursedis
+            // 
+            this.coursedis.FormattingEnabled = true;
+            this.coursedis.ItemHeight = 16;
+            this.coursedis.Location = new System.Drawing.Point(4, 4);
+            this.coursedis.Name = "coursedis";
+            this.coursedis.Size = new System.Drawing.Size(107, 36);
+            this.coursedis.TabIndex = 0;
             // 
             // UserControlDays
             // 
@@ -70,6 +82,7 @@
             this.Size = new System.Drawing.Size(120, 70);
             this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.Click += new System.EventHandler(this.UserControlDays_Click);
+            this.dispanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,5 +92,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbdays;
         private System.Windows.Forms.Panel dispanel;
+        private System.Windows.Forms.ListBox coursedis;
     }
 }
