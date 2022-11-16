@@ -481,6 +481,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\UserControlAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\UserControlAppointment.Designer.cs">
+      <DependentUpon>UserControlAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\UserControldayschedule.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -526,6 +532,9 @@
     <Compile Include="Forms\Welcompage\WelcompageAdmin\Welcomepage.Designer.cs">
       <DependentUpon>Welcomepage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controllers\UserControlAppointment.resx">
+      <DependentUpon>UserControlAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controllers\UserControldayschedule.resx">
       <DependentUpon>UserControldayschedule.cs</DependentUpon>
     </EmbeddedResource>

@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -77,22 +76,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.HomeworkTab = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
+            this.WeekdaysPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.monthCalendar2 = new System.Windows.Forms.MonthCalendar();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.MinimizeButton = new FontAwesome.Sharp.IconButton();
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.CrossButton = new FontAwesome.Sharp.IconButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -111,9 +103,9 @@
             this.CalendarTab.SuspendLayout();
             this.HomeworkTab.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ShowUserTypelb1
@@ -188,16 +180,6 @@
             this.label1.Size = new System.Drawing.Size(63, 16);
             this.label1.TabIndex = 15;
             this.label1.Text = "Username";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(272, 146);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
             // 
             // daycontainer
             // 
@@ -698,83 +680,21 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.flowLayoutPanel1);
+            this.panel8.Controls.Add(this.WeekdaysPanel);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(185, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(772, 647);
             this.panel8.TabIndex = 23;
             // 
-            // flowLayoutPanel1
+            // WeekdaysPanel
             // 
-            this.flowLayoutPanel1.Controls.Add(this.panel9);
-            this.flowLayoutPanel1.Controls.Add(this.panel10);
-            this.flowLayoutPanel1.Controls.Add(this.panel11);
-            this.flowLayoutPanel1.Controls.Add(this.panel12);
-            this.flowLayoutPanel1.Controls.Add(this.panel13);
-            this.flowLayoutPanel1.Controls.Add(this.panel21);
-            this.flowLayoutPanel1.Controls.Add(this.panel22);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(772, 647);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(1, 1);
-            this.panel9.Margin = new System.Windows.Forms.Padding(1);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(108, 639);
-            this.panel9.TabIndex = 0;
-            // 
-            // panel10
-            // 
-            this.panel10.Location = new System.Drawing.Point(111, 1);
-            this.panel10.Margin = new System.Windows.Forms.Padding(1);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(108, 639);
-            this.panel10.TabIndex = 1;
-            // 
-            // panel11
-            // 
-            this.panel11.Location = new System.Drawing.Point(221, 1);
-            this.panel11.Margin = new System.Windows.Forms.Padding(1);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(108, 639);
-            this.panel11.TabIndex = 2;
-            // 
-            // panel12
-            // 
-            this.panel12.Location = new System.Drawing.Point(331, 1);
-            this.panel12.Margin = new System.Windows.Forms.Padding(1);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(108, 639);
-            this.panel12.TabIndex = 3;
-            // 
-            // panel13
-            // 
-            this.panel13.Location = new System.Drawing.Point(441, 1);
-            this.panel13.Margin = new System.Windows.Forms.Padding(1);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(108, 639);
-            this.panel13.TabIndex = 4;
-            // 
-            // panel21
-            // 
-            this.panel21.Location = new System.Drawing.Point(551, 1);
-            this.panel21.Margin = new System.Windows.Forms.Padding(1);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(108, 639);
-            this.panel21.TabIndex = 5;
-            // 
-            // panel22
-            // 
-            this.panel22.Location = new System.Drawing.Point(661, 1);
-            this.panel22.Margin = new System.Windows.Forms.Padding(1);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(108, 639);
-            this.panel22.TabIndex = 6;
+            this.WeekdaysPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WeekdaysPanel.Location = new System.Drawing.Point(0, 0);
+            this.WeekdaysPanel.Margin = new System.Windows.Forms.Padding(0);
+            this.WeekdaysPanel.Name = "WeekdaysPanel";
+            this.WeekdaysPanel.Size = new System.Drawing.Size(772, 647);
+            this.WeekdaysPanel.TabIndex = 0;
             // 
             // panel7
             // 
@@ -787,8 +707,9 @@
             // 
             // monthCalendar2
             // 
-            this.monthCalendar2.Location = new System.Drawing.Point(5, 30);
+            this.monthCalendar2.Location = new System.Drawing.Point(-7, 26);
             this.monthCalendar2.Name = "monthCalendar2";
+            this.monthCalendar2.ShowWeekNumbers = true;
             this.monthCalendar2.TabIndex = 20;
             this.monthCalendar2.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar2_DateChanged);
             // 
@@ -797,6 +718,20 @@
             this.monthCalendar1.Location = new System.Drawing.Point(0, 79);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 8;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.MinimizeButton);
+            this.panel2.Controls.Add(this.MaximizeButton);
+            this.panel2.Controls.Add(this.CrossButton);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(971, 30);
+            this.panel2.TabIndex = 17;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // MinimizeButton
             // 
@@ -842,19 +777,15 @@
             this.CrossButton.UseVisualStyleBackColor = true;
             this.CrossButton.Click += new System.EventHandler(this.CrossButton_Click);
             // 
-            // panel2
+            // pictureBox1
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.MinimizeButton);
-            this.panel2.Controls.Add(this.MaximizeButton);
-            this.panel2.Controls.Add(this.CrossButton);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(971, 30);
-            this.panel2.TabIndex = 17;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(272, 146);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // Welcomepage
             // 
@@ -868,7 +799,6 @@
             this.Name = "Welcomepage";
             this.Text = "Welcomepage";
             this.Load += new System.EventHandler(this.WelcomepageAdmin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -889,9 +819,9 @@
             this.CalendarTab.PerformLayout();
             this.HomeworkTab.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -952,13 +882,6 @@
         private System.Windows.Forms.MonthCalendar monthCalendar2;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Panel panel22;
+        private System.Windows.Forms.FlowLayoutPanel WeekdaysPanel;
     }
 }

@@ -31,14 +31,16 @@
             this.Weekdaylb = new System.Windows.Forms.Label();
             this.Datelb = new System.Windows.Forms.Label();
             this.Appointmentpanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Homeworklist = new System.Windows.Forms.ListBox();
             this.Appointmentpanel.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Weekdaylb
             // 
             this.Weekdaylb.AutoSize = true;
-            this.Weekdaylb.Location = new System.Drawing.Point(3, 12);
+            this.Weekdaylb.Location = new System.Drawing.Point(3, 9);
             this.Weekdaylb.Name = "Weekdaylb";
             this.Weekdaylb.Size = new System.Drawing.Size(53, 13);
             this.Weekdaylb.TabIndex = 0;
@@ -47,7 +49,7 @@
             // Datelb
             // 
             this.Datelb.AutoSize = true;
-            this.Datelb.Location = new System.Drawing.Point(71, 12);
+            this.Datelb.Location = new System.Drawing.Point(3, 35);
             this.Datelb.Name = "Datelb";
             this.Datelb.Size = new System.Drawing.Size(30, 13);
             this.Datelb.TabIndex = 1;
@@ -55,29 +57,45 @@
             // 
             // Appointmentpanel
             // 
-            this.Appointmentpanel.Controls.Add(this.panel1);
-            this.Appointmentpanel.Location = new System.Drawing.Point(0, 42);
+            this.Appointmentpanel.Controls.Add(this.Homeworklist);
+            this.Appointmentpanel.Location = new System.Drawing.Point(0, 51);
             this.Appointmentpanel.Name = "Appointmentpanel";
-            this.Appointmentpanel.Size = new System.Drawing.Size(109, 594);
+            this.Appointmentpanel.Size = new System.Drawing.Size(107, 587);
             this.Appointmentpanel.TabIndex = 2;
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 85);
-            this.panel1.TabIndex = 0;
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel2.Controls.Add(this.Weekdaylb);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(106, 32);
+            this.panel2.TabIndex = 3;
+            // 
+            // Homeworklist
+            // 
+            this.Homeworklist.FormattingEnabled = true;
+            this.Homeworklist.Location = new System.Drawing.Point(3, 3);
+            this.Homeworklist.Name = "Homeworklist";
+            this.Homeworklist.Size = new System.Drawing.Size(99, 576);
+            this.Homeworklist.TabIndex = 0;
+            this.Homeworklist.SelectedIndexChanged += new System.EventHandler(this.Homeworklist_SelectedIndexChanged);
             // 
             // UserControldayschedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.Appointmentpanel);
             this.Controls.Add(this.Datelb);
-            this.Controls.Add(this.Weekdaylb);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "UserControldayschedule";
-            this.Size = new System.Drawing.Size(108, 639);
+            this.Size = new System.Drawing.Size(105, 637);
+            this.Load += new System.EventHandler(this.UserControldayschedule_Load);
             this.Appointmentpanel.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,6 +106,7 @@
         private System.Windows.Forms.Label Weekdaylb;
         private System.Windows.Forms.Label Datelb;
         private System.Windows.Forms.FlowLayoutPanel Appointmentpanel;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ListBox Homeworklist;
     }
 }
