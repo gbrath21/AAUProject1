@@ -24,20 +24,26 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         {
             string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
             MySqlConnection conn = new MySqlConnection(connstring);
-            String sqlstatement = "SELECT * FROM course_info WHERE cal_time = @cal_time";
+            
             conn.Open();
-            MySqlCommand command = new MySqlCommand(sqlstatement, conn);
-            command.Parameters.AddWithValue("@cal_time", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);
-            MySqlDataReader reader = command.ExecuteReader();
             DataTable dt = new DataTable();
-            while (reader.Read())
+
+            //Viser kun timer du er tilmeldt
+            foreach (var item in AAUProject.MainForm.courselist)
             {
-
-                coursedis.Items.Add(reader.GetString("info_headline"));
-
+                String sqlstatement = "SELECT * FROM course_info WHERE cal_time = @cal_time AND course_course_id = @course_id";
+                MySqlCommand command = new MySqlCommand(sqlstatement, conn);
+                command.Parameters.AddWithValue("@course_id", item);
+                command.Parameters.AddWithValue("@cal_time", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    coursedis.Items.Add(reader.GetString("info_headline"));
+                }
+                reader.Dispose();
+                command.Dispose();
             }
-            reader.Dispose();
-            command.Dispose();
+            
             conn.Close();
         }
         public void days(int numday)
