@@ -29,7 +29,6 @@ namespace AAUProject
 
         private void WelcomepageAdmin_Load(object sender, EventArgs e)
         {
-            SetDate = monthCalendar2.SelectionStart;
             this.Text = String.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
@@ -44,7 +43,6 @@ namespace AAUProject
                 CreateUserbtn.Hide();
             } 
         }
-        public static bool click = false;
         //
         //Buttons on mainform
         //
@@ -61,10 +59,6 @@ namespace AAUProject
         private void royalButton2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = HomeworkTab;
-            if (tabControl1.SelectedTab == HomeworkTab)
-            {
-                click = true;
-            }
         }
         private void CreateUserbtn_Click(object sender, EventArgs e)
         {
@@ -263,29 +257,18 @@ namespace AAUProject
         //
         public static DateTime SetDate;
         public static string datelblblb = DateTime.Now.ToString("dd");
-        public void monthCalendar2_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            
-            SetDate = monthCalendar2.SelectionStart;
-            datelblblb = monthCalendar2.SelectionStart.ToString("yyyy-MM-dd");
-            WeekdaysPanel.Controls.Clear();
-            weekdayDisplay();
-        }
 
-       
-
-        public static int S =1;
         private void weekdayDisplay()
         {
             //days in a week
-            int days = 7;                        
+            int days = 7;
+            int x = 0;
             for (int i = 1; i <= days; i++)
             {
                 UserControldayschedule ucschedule = new UserControldayschedule();
                 WeekdaysPanel.Controls.Add(ucschedule);
-                ucschedule.date(i-1);
-                S++;
-                
+                ucschedule.date(SetDate.AddDays(x));
+                x++;
             } 
 
         }
