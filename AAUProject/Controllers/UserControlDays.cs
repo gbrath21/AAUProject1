@@ -22,23 +22,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 
         private void UserControlDays_Load(object sender, EventArgs e)
         {
-            string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
-            MySqlConnection conn = new MySqlConnection(connstring);
-            String sqlstatement = "SELECT * FROM course_info WHERE cal_time = @cal_time";
-            conn.Open();
-            MySqlCommand command = new MySqlCommand(sqlstatement, conn);
-            command.Parameters.AddWithValue("@cal_time", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);
-            MySqlDataReader reader = command.ExecuteReader();
-            DataTable dt = new DataTable();
-            while (reader.Read())
-            {
-
-                coursedis.Items.Add(reader.GetString("info_headline"));
-
-            }
-            reader.Dispose();
-            command.Dispose();
-            conn.Close();
+            displayCourse();
         }
         public void days(int numday)
         {
@@ -57,7 +41,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         {
             string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
             MySqlConnection conn = new MySqlConnection(connstring);
-            String sqlstatement = "SELECT * FROM course_info WHERE caltime = @cal_time";
+            String sqlstatement = "SELECT * FROM course_info WHERE cal_time = @cal_time";
             conn.Open();
             MySqlCommand command = new MySqlCommand(sqlstatement, conn);
             command.Parameters.AddWithValue("@cal_time", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);

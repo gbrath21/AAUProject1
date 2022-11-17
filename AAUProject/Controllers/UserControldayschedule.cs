@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
+using MySql.Data.MySqlClient;
+using AAUProject.Forms.Welcompage.WelcompageStundet;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 
 namespace AAUProject.Controllers
 {
@@ -18,24 +21,57 @@ namespace AAUProject.Controllers
         {
             InitializeComponent();
         }
-        int day;
-        string date1 = "";
+        
         
         private void UserControldayschedule_Load(object sender, EventArgs e)
         {
+            displayHomework();
             
         }
+        public static string dato = "";  
         public void date(int daynum)
         {
-            var Date = DateTime.Now.AddDays(daynum).ToShortDateString();
-            var today = DateTime.Now.AddDays(daynum);
-            Datelb.Text = Date;
+            //sætter datecal lig med SetDate fra welcomepage som er datoen fra calenderen 
+            DateTime datecal = Welcomepage.SetDate;    
+            //
+            var Datestring = datecal.AddDays(daynum).ToString("yyyy-MM-dd");
+            var Datestring1 = datecal.AddDays(daynum + 1).ToString("yyyy-MM-dd");
+            var today = datecal.AddDays(daynum);
+            Datelb.Text = Datestring;
             Weekdaylb.Text = today.ToString("dddd");
+            dato = Datestring1;
+            if (Datelb.Text == datecal.AddDays(daynum).ToString("yyyy-MM-dd"))
+            {
+                Datelb.Text = Datestring;
+            }
+            else if (Datelb.Text == "")
+            {
+                Datelb.Text = dato;
+            }
         }
 
-        private void Homeworklist_SelectedIndexChanged(object sender, EventArgs e)
+        public void displayHomework()
         {
+            if (Datelb.Text == "")
+            {
+                Datelb.Text = dato;
+            }
+            string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
+            MySqlConnection conn = new MySqlConnection(connstring);
+            String sqlstatement = "SELECT info_hw FROM course_info WHERE cal_time = @cal_time";
+            conn.Open();
+            MySqlCommand command = new MySqlCommand(sqlstatement, conn);
+            command.Parameters.AddWithValue("@cal_time", Datelb.Text);  
+            MySqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
 
+                Homeworklist.Items.Add(reader.GetString("info_hw"));
+               
+            }
+            reader.Dispose();
+            command.Dispose();
+            conn.Close();
         }
     }
 }

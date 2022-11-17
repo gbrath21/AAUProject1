@@ -37,63 +37,6 @@ namespace AAUProject
         public static string SetValueForUsertype = "";
         public static string User_type = "";
 
-        //    command = new MySqlCommand(sqlStatement1, connection);
-        //    command.Parameters.AddWithValue("@username", Username.Text);
-        //    command.Parameters.AddWithValue("@password", Password.Text);
-        //    command.Parameters.AddWithValue("@usertype", UserType.Text);
-        //    if (IsLoggedIn is true) 
-        //    {
-        //        using (MySqlDataReader Reader = command.ExecuteReader())
-        //        {
-        //            if (Reader.HasRows)
-        //            {
-        //                SetValueForUsername = Username.Text;
-        //                SetValueForPassword = Password.Text;
-        //                SetValueForUsertype = UserType.Text;
-        //                Welcomepage welcomepage = new Welcomepage();
-        //                welcomepage.Show();
-        //                Reader.Close();
-        //            }
-        //        } 
-        //    }
-        //    command = new MySqlCommand(sqlStatement2, connection);
-        //    command.Parameters.AddWithValue("@username", Username.Text);
-        //    command.Parameters.AddWithValue("@password", Password.Text);
-        //    command.Parameters.AddWithValue("@usertype", UserType.Text);
-        //    if (IsLoggedIn is true)
-        //    {
-        //        using (MySqlDataReader Reader = command.ExecuteReader())
-        //        {
-        //            if (Reader.HasRows)
-        //            {
-        //                SetValueForUsername = Username.Text;
-        //                SetValueForPassword = Password.Text;
-        //                SetValueForUsertype = UserType.Text;
-        //                Welcomepage welcomepage = new Welcomepage();
-        //                welcomepage.Show();
-        //                Reader.Close();
-        //            }
-        //        }
-        //    }
-        //    command = new MySqlCommand(sqlStatement3, connection);
-        //    command.Parameters.AddWithValue("@username", Username.Text);
-        //    command.Parameters.AddWithValue("@password", Password.Text);
-        //    command.Parameters.AddWithValue("@usertype", UserType.Text);
-        //    if (IsLoggedIn is true)
-        //    {
-        //        using (MySqlDataReader Reader = command.ExecuteReader())
-        //        {
-        //            if (Reader.HasRows)
-        //            {
-        //                SetValueForUsername = Username.Text;
-        //                SetValueForPassword = Password.Text;
-        //                SetValueForUsertype = UserType.Text;
-        //                Welcomepage welcomepage = new Welcomepage();
-        //                welcomepage.Show();
-        //                Reader.Close();
-        //            }
-        //        }
-        //    }
         
 
         private void UserType_SelectedIndexChanged(object sender, EventArgs e)

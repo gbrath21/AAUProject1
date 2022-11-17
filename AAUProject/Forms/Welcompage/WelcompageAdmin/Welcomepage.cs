@@ -29,6 +29,7 @@ namespace AAUProject
 
         private void WelcomepageAdmin_Load(object sender, EventArgs e)
         {
+            SetDate = monthCalendar2.SelectionStart;
             this.Text = String.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
@@ -43,7 +44,7 @@ namespace AAUProject
                 CreateUserbtn.Hide();
             } 
         }
-
+        public static bool click = false;
         //
         //Buttons on mainform
         //
@@ -60,6 +61,10 @@ namespace AAUProject
         private void royalButton2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = HomeworkTab;
+            if (tabControl1.SelectedTab == HomeworkTab)
+            {
+                click = true;
+            }
         }
         private void CreateUserbtn_Click(object sender, EventArgs e)
         {
@@ -144,7 +149,6 @@ namespace AAUProject
                 daycontainer.Controls.Add(ucdays);
             }
         }
-
         private void Nextbtn_Click(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();
@@ -201,8 +205,6 @@ namespace AAUProject
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-
         private void CrossButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -234,19 +236,14 @@ namespace AAUProject
         {
 
         }
-
-
-
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
         }
-
         private void royalButton1_Click(object sender, EventArgs e)
         {
 
@@ -259,27 +256,19 @@ namespace AAUProject
         //
         //homework
         //
-        private void monthCalendar2_DateChanged(object sender, DateRangeEventArgs e)
+        public static DateTime SetDate = DateTime.Now;
+        public static string datelblblb = DateTime.Now.ToString("dd");
+        public void monthCalendar2_DateChanged(object sender, DateRangeEventArgs e)
         {
-            //dayView1.StartDate = monthCalendar2.SelectionStart;
+            SetDate = monthCalendar2.SelectionStart;
+            datelblblb = monthCalendar2.SelectionStart.ToString("yyyy-MM-dd");
+            WeekdaysPanel.Controls.Clear();
+            weekdayDisplay();
         }
         private void weekdayDisplay()
         {
-            DateTime now = DateTime.Now;
-            month = now.Month;
-            year = now.Year;
-
-            //String daynam = DateTimeFormatInfo.CurrentInfo.GetDayName(day);
-            //Weekdaylb.Text = daynam + " " + year;
-
-            static_month = month;
-            static_year = year;
-            //firstday
-            DateTime startofthemonth = new DateTime(year, month, 1);
-            //Count of days
-            int days = 7;
-            //convert to int
-            int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"));
+            //days in a week
+            int days = 7;                        
             for (int i = 1; i <= days; i++)
             {
                 UserControldayschedule ucschedule = new UserControldayschedule();

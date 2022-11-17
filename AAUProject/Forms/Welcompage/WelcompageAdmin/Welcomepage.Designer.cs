@@ -879,9 +879,9 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.MonthCalendar monthCalendar2;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.FlowLayoutPanel WeekdaysPanel;
+        public System.Windows.Forms.MonthCalendar monthCalendar2;
     }
 }
