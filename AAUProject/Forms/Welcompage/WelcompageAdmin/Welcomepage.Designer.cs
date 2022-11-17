@@ -85,6 +85,7 @@
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.CrossButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CreateEventBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -519,6 +520,7 @@
             // 
             // CalendarTab
             // 
+            this.CalendarTab.Controls.Add(this.CreateEventBTN);
             this.CalendarTab.Controls.Add(this.Nextbtn);
             this.CalendarTab.Controls.Add(this.Prebtn);
             this.CalendarTab.Controls.Add(this.label12);
@@ -787,6 +789,19 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // CreateEventBTN
+            // 
+            this.CreateEventBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CreateEventBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CreateEventBTN.ForeColor = System.Drawing.Color.White;
+            this.CreateEventBTN.Location = new System.Drawing.Point(773, 63);
+            this.CreateEventBTN.Name = "CreateEventBTN";
+            this.CreateEventBTN.Size = new System.Drawing.Size(119, 28);
+            this.CreateEventBTN.TabIndex = 63;
+            this.CreateEventBTN.Text = "Create course event";
+            this.CreateEventBTN.UseVisualStyleBackColor = false;
+            this.CreateEventBTN.Click += new System.EventHandler(this.CreateEventBTN_Click);
+            // 
             // Welcomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -883,5 +898,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.FlowLayoutPanel WeekdaysPanel;
         public System.Windows.Forms.MonthCalendar monthCalendar2;
+        private System.Windows.Forms.Button CreateEventBTN;
     }
 }

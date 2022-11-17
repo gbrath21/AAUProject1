@@ -28,33 +28,39 @@ namespace AAUProject.Controllers
             displayHomework();
             
         }
-        public static string dato = "";  
+        public static string dato = "";
+        public static DateTime asd = Welcomepage.SetDate;
         public void date(int daynum)
         {
-            //sætter datecal lig med SetDate fra welcomepage som er datoen fra calenderen 
-            DateTime datecal = Welcomepage.SetDate;    
-            //
+            //sætter datecal lig med SetDate fra welcomepage som er datoen fra calenderen
+            DateTime datecal = asd;
+
             var Datestring = datecal.AddDays(daynum).ToString("yyyy-MM-dd");
-            var Datestring1 = datecal.AddDays(daynum + 1).ToString("yyyy-MM-dd");
+            //var Datestring1 = datecal.AddDays(daynum + 1).ToString("yyyy-MM-dd");
             var today = datecal.AddDays(daynum);
             Datelb.Text = Datestring;
             Weekdaylb.Text = today.ToString("dddd");
-            dato = Datestring1;
-            if (Datelb.Text == datecal.AddDays(daynum).ToString("yyyy-MM-dd"))
-            {
-                Datelb.Text = Datestring;
-            }
-            else if (Datelb.Text == "")
-            {
-                Datelb.Text = dato;
-            }
+            //dato = Datestring1;
+            //if (Datelb.Text == datecal.AddDays(daynum).ToString("yyyy-MM-dd"))
+            //{
+            //    Datelb.Text = Datestring;
+            //    MessageBox.Show(Datelb.Text);
+            //}
+            //else if (Datelb.Text == "")
+            //{
+            //    Datelb.Text = dato;
+            //    MessageBox.Show(Datelb.Text);
+            //}
+
         }
 
         public void displayHomework()
         {
+            
             if (Datelb.Text == "")
             {
-                Datelb.Text = dato;
+                Datelb.Text = Welcomepage.SetDate.ToString("yyyy-MM-dd");
+                MessageBox.Show(Datelb.Text );
             }
             string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
             MySqlConnection conn = new MySqlConnection(connstring);
@@ -64,10 +70,8 @@ namespace AAUProject.Controllers
             command.Parameters.AddWithValue("@cal_time", Datelb.Text);  
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
-            {
-
+            {          
                 Homeworklist.Items.Add(reader.GetString("info_hw"));
-               
             }
             reader.Dispose();
             command.Dispose();

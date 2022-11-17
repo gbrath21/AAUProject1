@@ -193,6 +193,11 @@ namespace AAUProject
 
         }
 
+        private void CreateEventBTN_Click(object sender, EventArgs e)
+        {
+            EventForm eventform = new EventForm();
+            eventform.Show();
+        }
         //
         //Drag form + buttons
         //
@@ -256,15 +261,20 @@ namespace AAUProject
         //
         //homework
         //
-        public static DateTime SetDate = DateTime.Now;
+        public static DateTime SetDate;
         public static string datelblblb = DateTime.Now.ToString("dd");
         public void monthCalendar2_DateChanged(object sender, DateRangeEventArgs e)
         {
+            
             SetDate = monthCalendar2.SelectionStart;
             datelblblb = monthCalendar2.SelectionStart.ToString("yyyy-MM-dd");
             WeekdaysPanel.Controls.Clear();
             weekdayDisplay();
         }
+
+       
+
+        public static int S =1;
         private void weekdayDisplay()
         {
             //days in a week
@@ -274,6 +284,7 @@ namespace AAUProject
                 UserControldayschedule ucschedule = new UserControldayschedule();
                 WeekdaysPanel.Controls.Add(ucschedule);
                 ucschedule.date(i-1);
+                S++;
                 
             } 
 

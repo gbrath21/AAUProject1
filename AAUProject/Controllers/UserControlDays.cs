@@ -22,6 +22,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 
         private void UserControlDays_Load(object sender, EventArgs e)
         {
+            
             string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
             MySqlConnection conn = new MySqlConnection(connstring);
             
@@ -31,7 +32,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             //Viser kun timer du er tilmeldt
             foreach (var item in AAUProject.MainForm.courselist)
             {
-                String sqlstatement = "SELECT * FROM course_info WHERE cal_time = @cal_time AND course_course_id = @course_id";
+                String sqlstatement = "SELECT * FROM course_info WHERE cal_time = @cal_time AND course_course_id = @course_id ORDER BY time_start";
                 MySqlCommand command = new MySqlCommand(sqlstatement, conn);
                 command.Parameters.AddWithValue("@course_id", item);
                 command.Parameters.AddWithValue("@cal_time", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);
@@ -49,14 +50,15 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         public void days(int numday)
         {
             lbdays.Text = numday+"";
+
         }
 
         private void UserControlDays_Click(object sender, EventArgs e)
         {
             static_day = lbdays.Text;
             timer1.Start();
-            EventForm eventform = new EventForm();
-            eventform.Show();
+
+
         }
 
         private void displayCourse()
