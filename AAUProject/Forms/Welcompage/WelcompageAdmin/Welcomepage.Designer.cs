@@ -63,6 +63,7 @@
             this.CreateUserbtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.CalendarTab = new System.Windows.Forms.TabPage();
+            this.CreateEventBTN = new System.Windows.Forms.Button();
             this.Nextbtn = new System.Windows.Forms.Button();
             this.Prebtn = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -85,7 +86,6 @@
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.CrossButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.CreateEventBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -542,6 +542,20 @@
             this.CalendarTab.UseVisualStyleBackColor = true;
             this.CalendarTab.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // CreateEventBTN
+            // 
+            this.CreateEventBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CreateEventBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CreateEventBTN.ForeColor = System.Drawing.Color.White;
+            this.CreateEventBTN.Location = new System.Drawing.Point(773, 63);
+            this.CreateEventBTN.Name = "CreateEventBTN";
+            this.CreateEventBTN.Size = new System.Drawing.Size(119, 28);
+            this.CreateEventBTN.TabIndex = 63;
+            this.CreateEventBTN.Text = "Create course event";
+            this.CreateEventBTN.UseVisualStyleBackColor = false;
+            this.CreateEventBTN.Click += new System.EventHandler(this.CreateEventBTN_Click);
+            this.CreateEventBTN.Leave += new System.EventHandler(this.CreateEventBTN_Leave);
+            // 
             // Nextbtn
             // 
             this.Nextbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -788,19 +802,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // CreateEventBTN
-            // 
-            this.CreateEventBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CreateEventBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CreateEventBTN.ForeColor = System.Drawing.Color.White;
-            this.CreateEventBTN.Location = new System.Drawing.Point(773, 63);
-            this.CreateEventBTN.Name = "CreateEventBTN";
-            this.CreateEventBTN.Size = new System.Drawing.Size(119, 28);
-            this.CreateEventBTN.TabIndex = 63;
-            this.CreateEventBTN.Text = "Create course event";
-            this.CreateEventBTN.UseVisualStyleBackColor = false;
-            this.CreateEventBTN.Click += new System.EventHandler(this.CreateEventBTN_Click);
             // 
             // Welcomepage
             // 

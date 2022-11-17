@@ -55,13 +55,11 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 
         private void UserControlDays_Click(object sender, EventArgs e)
         {
-            static_day = lbdays.Text;
-            timer1.Start();
 
 
         }
 
-        private void displayCourse()
+        public void displayCourse()
         {
             string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
             MySqlConnection conn = new MySqlConnection(connstring);
@@ -84,6 +82,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         private void timer1_Tick(object sender, EventArgs e)
         {
             displayCourse();
+            
         }
 
         private void dispnl_Click(object sender, EventArgs e)

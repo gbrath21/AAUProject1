@@ -42,7 +42,16 @@ namespace AAUProject
             if (MainForm.User_type != "admin")
             {
                 CreateUserbtn.Hide();
-            } 
+            }
+            if (MainForm.User_type == "student")
+            {
+                CreateEventBTN.Hide();
+            }
+            if(EventForm.saved is true)
+            {
+                daycontainer.Controls.Clear();
+                displayDays();
+            }
         }
         public static bool click = false;
         //
@@ -95,6 +104,11 @@ namespace AAUProject
         //
         //Calendar
         //
+        private void CreateEventBTN_Leave(object sender, EventArgs e)
+        {
+            daycontainer.Controls.Clear();
+            displayDays();
+        }
         private void displayDays()
         {
             DateTime now = DateTime.Now;
@@ -124,6 +138,7 @@ namespace AAUProject
                 daycontainer.Controls.Add(ucdays);
             }
         }
+
         private void Prebtn_Click(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();
@@ -272,7 +287,7 @@ namespace AAUProject
             weekdayDisplay();
         }
 
-       
+        
 
         public static int S =1;
         private void weekdayDisplay()

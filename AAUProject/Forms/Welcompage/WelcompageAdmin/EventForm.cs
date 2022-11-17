@@ -43,7 +43,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
                 }
             }
         }
-
+        public static bool saved = false;
         private void Savebtn_Click_1(object sender, EventArgs e)
         {
             MySqlConnection connection = new MySqlConnection(connString);
@@ -61,32 +61,17 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             command.Dispose();
             connection.Close();
             this.Hide();
-        }
-
-        private void txdate_TextChanged(object sender, EventArgs e)
-        {
+            saved = true;
 
         }
 
-        private void txcourse_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-            
-            MessageBox.Show(dateTimePicker1.Value.ToString("yyyy-MM-dd"));
-        }
+       
 
         private void timer1_Tick(object sender, EventArgs e)
         {
 
         }
 
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }
