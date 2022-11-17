@@ -23,7 +23,10 @@ namespace AAUProject
         }
 
         private void LoginForm_Load(object sender, EventArgs e) { }
+        
         String mysqlconnection = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
+        public static string semester = "";
+        public static List<string> courselist = new List<string>();
         public bool IsLoggedIn = false;
         private void label1_Click(object sender, EventArgs e) { }
 
@@ -104,6 +107,27 @@ namespace AAUProject
                         welcomepage.Show();
                         Reader.Close();
                     }
+                }
+            }
+            string check_semester = "SELECT semester_id FROM user WHERE user_name = @username AND user_password = @password;";
+            MySqlCommand checksemester = new MySqlCommand(check_semester, connection);
+            checksemester.Parameters.AddWithValue("@username", Username.Text);
+            checksemester.Parameters.AddWithValue("@password", Password.Text);
+            using (MySqlDataReader Reader = checksemester.ExecuteReader())
+            {
+                if (Reader.Read())
+                {
+                    semester = Reader.GetString(0);
+                }
+            }
+            string sem_courses = "SELECT course_id FROM semester WHERE semester_id = @semester;";
+            MySqlCommand semcourses = new MySqlCommand(sem_courses, connection);
+            semcourses.Parameters.AddWithValue("@semester", semester);
+            using (MySqlDataReader Reader = semcourses.ExecuteReader())
+            {
+                while (Reader.Read())
+                {
+                    courselist.Add(Reader.GetString("course_id"));
                 }
             }
         }
