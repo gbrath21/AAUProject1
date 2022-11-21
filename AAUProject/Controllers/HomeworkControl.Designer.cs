@@ -52,9 +52,9 @@
             this.time.Location = new System.Drawing.Point(10, 31);
             this.time.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.time.Name = "time";
-            this.time.Size = new System.Drawing.Size(26, 13);
+            this.time.Size = new System.Drawing.Size(34, 13);
             this.time.TabIndex = 1;
-            this.time.Text = "time";
+            this.time.Text = "10:00";
             // 
             // homework
             // 
@@ -68,20 +68,21 @@
             // time2
             // 
             this.time2.AutoSize = true;
-            this.time2.Location = new System.Drawing.Point(48, 31);
+            this.time2.Location = new System.Drawing.Point(64, 31);
             this.time2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.time2.Name = "time2";
-            this.time2.Size = new System.Drawing.Size(35, 13);
+            this.time2.Size = new System.Drawing.Size(34, 13);
             this.time2.TabIndex = 3;
-            this.time2.Text = "label1";
+            this.time2.Text = "11:11";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 31);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(47, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(10, 13);
+            this.label1.Size = new System.Drawing.Size(14, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "-";
             this.label1.Click += new System.EventHandler(this.label1_Click);

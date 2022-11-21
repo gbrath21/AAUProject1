@@ -77,8 +77,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.HomeworkTab = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.next_week = new MindFusion.UI.WinForms.Button();
-            this.prev_week = new MindFusion.UI.WinForms.Button();
             this.WeekdaysPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -86,6 +84,8 @@
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.CrossButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Previous_WeekBTN = new System.Windows.Forms.Button();
+            this.Next_WeekBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -223,7 +223,7 @@
             this.royalButton2.Image = null;
             this.royalButton2.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
             this.royalButton2.Location = new System.Drawing.Point(25, 31);
-            this.royalButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.royalButton2.Margin = new System.Windows.Forms.Padding(2);
             this.royalButton2.Name = "royalButton2";
             this.royalButton2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.royalButton2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -255,7 +255,7 @@
             this.royalButton1.Image = null;
             this.royalButton1.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
             this.royalButton1.Location = new System.Drawing.Point(25, 31);
-            this.royalButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.royalButton1.Margin = new System.Windows.Forms.Padding(2);
             this.royalButton1.Name = "royalButton1";
             this.royalButton1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.royalButton1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -287,7 +287,7 @@
             this.Homebtn.Image = null;
             this.Homebtn.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
             this.Homebtn.Location = new System.Drawing.Point(25, 31);
-            this.Homebtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Homebtn.Margin = new System.Windows.Forms.Padding(2);
             this.Homebtn.Name = "Homebtn";
             this.Homebtn.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Homebtn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -336,7 +336,7 @@
             this.HomeTab.Controls.Add(this.label4);
             this.HomeTab.Location = new System.Drawing.Point(4, 22);
             this.HomeTab.Name = "HomeTab";
-            this.HomeTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.HomeTab.Padding = new System.Windows.Forms.Padding(3);
             this.HomeTab.Size = new System.Drawing.Size(963, 646);
             this.HomeTab.TabIndex = 1;
             this.HomeTab.Text = "tabPage5";
@@ -534,8 +534,8 @@
             this.CalendarTab.Controls.Add(this.daycontainer);
             this.CalendarTab.Location = new System.Drawing.Point(4, 22);
             this.CalendarTab.Name = "CalendarTab";
-            this.CalendarTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.CalendarTab.Size = new System.Drawing.Size(963, 528);
+            this.CalendarTab.Padding = new System.Windows.Forms.Padding(3);
+            this.CalendarTab.Size = new System.Drawing.Size(963, 646);
             this.CalendarTab.TabIndex = 0;
             this.CalendarTab.Text = "tabPage4";
             this.CalendarTab.UseVisualStyleBackColor = true;
@@ -547,7 +547,7 @@
             this.CreateEventBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.CreateEventBTN.ForeColor = System.Drawing.Color.White;
             this.CreateEventBTN.Location = new System.Drawing.Point(757, 67);
-            this.CreateEventBTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CreateEventBTN.Margin = new System.Windows.Forms.Padding(2);
             this.CreateEventBTN.Name = "CreateEventBTN";
             this.CreateEventBTN.Size = new System.Drawing.Size(134, 24);
             this.CreateEventBTN.TabIndex = 63;
@@ -687,7 +687,7 @@
             this.HomeworkTab.Controls.Add(this.panel8);
             this.HomeworkTab.Location = new System.Drawing.Point(4, 22);
             this.HomeworkTab.Name = "HomeworkTab";
-            this.HomeworkTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.HomeworkTab.Padding = new System.Windows.Forms.Padding(3);
             this.HomeworkTab.Size = new System.Drawing.Size(963, 646);
             this.HomeworkTab.TabIndex = 2;
             this.HomeworkTab.Text = "tabPage6";
@@ -695,60 +695,14 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.next_week);
-            this.panel8.Controls.Add(this.prev_week);
+            this.panel8.Controls.Add(this.Next_WeekBTN);
+            this.panel8.Controls.Add(this.Previous_WeekBTN);
             this.panel8.Controls.Add(this.WeekdaysPanel);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(772, 640);
+            this.panel8.Size = new System.Drawing.Size(908, 640);
             this.panel8.TabIndex = 23;
-            // 
-            // next_week
-            // 
-            this.next_week.BackgroundBrush = new MindFusion.Drawing.SolidBrush("#FFF0F0F0");
-            this.next_week.BackgroundBrushDisabled = new MindFusion.Drawing.SolidBrush("#FFDEDEDE");
-            this.next_week.BackgroundBrushDown = new MindFusion.Drawing.SolidBrush("#FFAEAEAE");
-            this.next_week.BackgroundBrushOver = new MindFusion.Drawing.SolidBrush("#FFC5C5C5");
-            this.next_week.BorderBrush = new MindFusion.Drawing.SolidBrush("#FFA6A6A6");
-            this.next_week.BorderBrushDisabled = new MindFusion.Drawing.SolidBrush("#FFA6A6A6");
-            this.next_week.BorderBrushDown = new MindFusion.Drawing.SolidBrush("#FF777777");
-            this.next_week.BorderBrushOver = new MindFusion.Drawing.SolidBrush("#FFA6A6A6");
-            this.next_week.BorderThickness = 0;
-            this.next_week.ForegroundBrush = new MindFusion.Drawing.SolidBrush("#FF000000");
-            this.next_week.ForegroundBrushDisabled = new MindFusion.Drawing.SolidBrush("#FF777777");
-            this.next_week.ForegroundBrushDown = new MindFusion.Drawing.SolidBrush("#FF000000");
-            this.next_week.ForegroundBrushOver = new MindFusion.Drawing.SolidBrush("#FF000000");
-            this.next_week.Location = new System.Drawing.Point(449, 22);
-            this.next_week.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.next_week.Name = "next_week";
-            this.next_week.Size = new System.Drawing.Size(38, 12);
-            this.next_week.TabIndex = 2;
-            this.next_week.Text = "button2";
-            this.next_week.Click += new System.EventHandler(this.next_week_Click);
-            // 
-            // prev_week
-            // 
-            this.prev_week.BackgroundBrush = new MindFusion.Drawing.SolidBrush("#FFF0F0F0");
-            this.prev_week.BackgroundBrushDisabled = new MindFusion.Drawing.SolidBrush("#FFDEDEDE");
-            this.prev_week.BackgroundBrushDown = new MindFusion.Drawing.SolidBrush("#FFAEAEAE");
-            this.prev_week.BackgroundBrushOver = new MindFusion.Drawing.SolidBrush("#FFC5C5C5");
-            this.prev_week.BorderBrush = new MindFusion.Drawing.SolidBrush("#FFA6A6A6");
-            this.prev_week.BorderBrushDisabled = new MindFusion.Drawing.SolidBrush("#FFA6A6A6");
-            this.prev_week.BorderBrushDown = new MindFusion.Drawing.SolidBrush("#FF777777");
-            this.prev_week.BorderBrushOver = new MindFusion.Drawing.SolidBrush("#FFA6A6A6");
-            this.prev_week.BorderThickness = 0;
-            this.prev_week.ForegroundBrush = new MindFusion.Drawing.SolidBrush("#FF000000");
-            this.prev_week.ForegroundBrushDisabled = new MindFusion.Drawing.SolidBrush("#FF777777");
-            this.prev_week.ForegroundBrushDown = new MindFusion.Drawing.SolidBrush("#FF000000");
-            this.prev_week.ForegroundBrushOver = new MindFusion.Drawing.SolidBrush("#FF000000");
-            this.prev_week.Location = new System.Drawing.Point(163, 10);
-            this.prev_week.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.prev_week.Name = "prev_week";
-            this.prev_week.Size = new System.Drawing.Size(38, 12);
-            this.prev_week.TabIndex = 1;
-            this.prev_week.Text = "button1";
-            this.prev_week.Click += new System.EventHandler(this.prev_week_Click);
             // 
             // WeekdaysPanel
             // 
@@ -756,7 +710,7 @@
             this.WeekdaysPanel.Location = new System.Drawing.Point(0, 38);
             this.WeekdaysPanel.Margin = new System.Windows.Forms.Padding(0);
             this.WeekdaysPanel.Name = "WeekdaysPanel";
-            this.WeekdaysPanel.Size = new System.Drawing.Size(772, 602);
+            this.WeekdaysPanel.Size = new System.Drawing.Size(908, 602);
             this.WeekdaysPanel.TabIndex = 0;
             // 
             // monthCalendar1
@@ -832,6 +786,30 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // Previous_WeekBTN
+            // 
+            this.Previous_WeekBTN.Font = new System.Drawing.Font("Barlow", 9.749999F);
+            this.Previous_WeekBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.Previous_WeekBTN.Location = new System.Drawing.Point(666, 11);
+            this.Previous_WeekBTN.Name = "Previous_WeekBTN";
+            this.Previous_WeekBTN.Size = new System.Drawing.Size(111, 23);
+            this.Previous_WeekBTN.TabIndex = 3;
+            this.Previous_WeekBTN.Text = "Previous Week";
+            this.Previous_WeekBTN.UseVisualStyleBackColor = true;
+            this.Previous_WeekBTN.Click += new System.EventHandler(this.Previous_WeekBTN_Click);
+            // 
+            // Next_WeekBTN
+            // 
+            this.Next_WeekBTN.Font = new System.Drawing.Font("Barlow", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Next_WeekBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.Next_WeekBTN.Location = new System.Drawing.Point(789, 11);
+            this.Next_WeekBTN.Name = "Next_WeekBTN";
+            this.Next_WeekBTN.Size = new System.Drawing.Size(111, 23);
+            this.Next_WeekBTN.TabIndex = 4;
+            this.Next_WeekBTN.Text = "Next Week";
+            this.Next_WeekBTN.UseVisualStyleBackColor = true;
+            this.Next_WeekBTN.Click += new System.EventHandler(this.Next_WeekBTN_Click);
             // 
             // Welcomepage
             // 
@@ -926,9 +904,9 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.FlowLayoutPanel WeekdaysPanel;
-        private MindFusion.UI.WinForms.Button next_week;
-        private MindFusion.UI.WinForms.Button prev_week;
         public System.Windows.Forms.MonthCalendar monthCalendar2;
         private System.Windows.Forms.Button CreateEventBTN;
+        private System.Windows.Forms.Button Next_WeekBTN;
+        private System.Windows.Forms.Button Previous_WeekBTN;
     }
 }

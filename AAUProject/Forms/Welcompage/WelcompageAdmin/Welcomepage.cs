@@ -303,6 +303,35 @@ namespace AAUProject
             }
         }
 
+        private void Previous_WeekBTN_Click(object sender, EventArgs e)
+        {
+            WeekdaysPanel.Controls.Clear();
+            SetDate = SetDate.AddDays(-7);
+            int days = 7;
+            int x = 0;
+            for (int i = 1; i <= days; i++)
+            {
+                UserControldayschedule ucschedule = new UserControldayschedule();
+                WeekdaysPanel.Controls.Add(ucschedule);
+                ucschedule.date(SetDate.AddDays(x));
+                x++;
+            }
+        }
+
+        private void Next_WeekBTN_Click(object sender, EventArgs e)
+        {
+            WeekdaysPanel.Controls.Clear();
+            SetDate = SetDate.AddDays(7);
+            int days = 7;
+            int x = 0;
+            for (int i = 1; i <= days; i++)
+            {
+                UserControldayschedule ucschedule = new UserControldayschedule();
+                WeekdaysPanel.Controls.Add(ucschedule);
+                ucschedule.date(SetDate.AddDays(x));
+                x++;
+            }
+        }
 
         public static string datelblblb = DateTime.Now.ToString("dd");
 
