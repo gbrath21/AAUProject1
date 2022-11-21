@@ -45,7 +45,7 @@
             this.Homebtn = new ReaLTaiizor.Controls.RoyalButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Couseoverviewtab = new System.Windows.Forms.TabControl();
             this.HomeTab = new System.Windows.Forms.TabPage();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -77,6 +77,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.HomeworkTab = new System.Windows.Forms.TabPage();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.Next_WeekBTN = new System.Windows.Forms.Button();
+            this.Previous_WeekBTN = new System.Windows.Forms.Button();
             this.WeekdaysPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -84,15 +86,18 @@
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.CrossButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Previous_WeekBTN = new System.Windows.Forms.Button();
-            this.Next_WeekBTN = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.CoursesflowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            this.Couseoverviewtab.SuspendLayout();
             this.HomeTab.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -106,6 +111,8 @@
             this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // ShowUserTypelb1
@@ -316,18 +323,19 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // tabControl1
+            // Couseoverviewtab
             // 
-            this.tabControl1.Controls.Add(this.HomeTab);
-            this.tabControl1.Controls.Add(this.CalendarTab);
-            this.tabControl1.Controls.Add(this.HomeworkTab);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(200, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(971, 672);
-            this.tabControl1.TabIndex = 19;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.Couseoverviewtab.Controls.Add(this.HomeTab);
+            this.Couseoverviewtab.Controls.Add(this.CalendarTab);
+            this.Couseoverviewtab.Controls.Add(this.HomeworkTab);
+            this.Couseoverviewtab.Controls.Add(this.tabPage1);
+            this.Couseoverviewtab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Couseoverviewtab.Location = new System.Drawing.Point(200, 0);
+            this.Couseoverviewtab.Name = "Couseoverviewtab";
+            this.Couseoverviewtab.SelectedIndex = 0;
+            this.Couseoverviewtab.Size = new System.Drawing.Size(971, 672);
+            this.Couseoverviewtab.TabIndex = 19;
+            this.Couseoverviewtab.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // HomeTab
             // 
@@ -704,6 +712,30 @@
             this.panel8.Size = new System.Drawing.Size(908, 640);
             this.panel8.TabIndex = 23;
             // 
+            // Next_WeekBTN
+            // 
+            this.Next_WeekBTN.Font = new System.Drawing.Font("Barlow", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Next_WeekBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.Next_WeekBTN.Location = new System.Drawing.Point(789, 11);
+            this.Next_WeekBTN.Name = "Next_WeekBTN";
+            this.Next_WeekBTN.Size = new System.Drawing.Size(111, 23);
+            this.Next_WeekBTN.TabIndex = 4;
+            this.Next_WeekBTN.Text = "Next Week";
+            this.Next_WeekBTN.UseVisualStyleBackColor = true;
+            this.Next_WeekBTN.Click += new System.EventHandler(this.Next_WeekBTN_Click);
+            // 
+            // Previous_WeekBTN
+            // 
+            this.Previous_WeekBTN.Font = new System.Drawing.Font("Barlow", 9.749999F);
+            this.Previous_WeekBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.Previous_WeekBTN.Location = new System.Drawing.Point(666, 11);
+            this.Previous_WeekBTN.Name = "Previous_WeekBTN";
+            this.Previous_WeekBTN.Size = new System.Drawing.Size(111, 23);
+            this.Previous_WeekBTN.TabIndex = 3;
+            this.Previous_WeekBTN.Text = "Previous Week";
+            this.Previous_WeekBTN.UseVisualStyleBackColor = true;
+            this.Previous_WeekBTN.Click += new System.EventHandler(this.Previous_WeekBTN_Click);
+            // 
             // WeekdaysPanel
             // 
             this.WeekdaysPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -787,29 +819,52 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // Previous_WeekBTN
+            // tabPage1
             // 
-            this.Previous_WeekBTN.Font = new System.Drawing.Font("Barlow", 9.749999F);
-            this.Previous_WeekBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.Previous_WeekBTN.Location = new System.Drawing.Point(666, 11);
-            this.Previous_WeekBTN.Name = "Previous_WeekBTN";
-            this.Previous_WeekBTN.Size = new System.Drawing.Size(111, 23);
-            this.Previous_WeekBTN.TabIndex = 3;
-            this.Previous_WeekBTN.Text = "Previous Week";
-            this.Previous_WeekBTN.UseVisualStyleBackColor = true;
-            this.Previous_WeekBTN.Click += new System.EventHandler(this.Previous_WeekBTN_Click);
+            this.tabPage1.Controls.Add(this.CoursesflowLayoutPanel);
+            this.tabPage1.Controls.Add(this.panel7);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(963, 646);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // Next_WeekBTN
+            // panel7
             // 
-            this.Next_WeekBTN.Font = new System.Drawing.Font("Barlow", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Next_WeekBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.Next_WeekBTN.Location = new System.Drawing.Point(789, 11);
-            this.Next_WeekBTN.Name = "Next_WeekBTN";
-            this.Next_WeekBTN.Size = new System.Drawing.Size(111, 23);
-            this.Next_WeekBTN.TabIndex = 4;
-            this.Next_WeekBTN.Text = "Next Week";
-            this.Next_WeekBTN.UseVisualStyleBackColor = true;
-            this.Next_WeekBTN.Click += new System.EventHandler(this.Next_WeekBTN_Click);
+            this.panel7.Controls.Add(this.label13);
+            this.panel7.Controls.Add(this.comboBox1);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(957, 45);
+            this.panel7.TabIndex = 1;
+            // 
+            // CoursesflowLayoutPanel
+            // 
+            this.CoursesflowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CoursesflowLayoutPanel.Location = new System.Drawing.Point(3, 48);
+            this.CoursesflowLayoutPanel.Name = "CoursesflowLayoutPanel";
+            this.CoursesflowLayoutPanel.Size = new System.Drawing.Size(957, 595);
+            this.CoursesflowLayoutPanel.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(811, 11);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 0;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(760, 14);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(45, 13);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "Courses";
             // 
             // Welcomepage
             // 
@@ -817,7 +872,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1171, 672);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Couseoverviewtab);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Welcomepage";
@@ -829,7 +884,7 @@
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            this.Couseoverviewtab.ResumeLayout(false);
             this.HomeTab.ResumeLayout(false);
             this.HomeTab.PerformLayout();
             this.panel14.ResumeLayout(false);
@@ -845,6 +900,9 @@
             this.panel8.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -853,7 +911,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel daycontainer;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl Couseoverviewtab;
         private System.Windows.Forms.TabPage CalendarTab;
         private System.Windows.Forms.TabPage HomeTab;
         private System.Windows.Forms.TabPage HomeworkTab;
@@ -908,5 +966,10 @@
         private System.Windows.Forms.Button CreateEventBTN;
         private System.Windows.Forms.Button Next_WeekBTN;
         private System.Windows.Forms.Button Previous_WeekBTN;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.FlowLayoutPanel CoursesflowLayoutPanel;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

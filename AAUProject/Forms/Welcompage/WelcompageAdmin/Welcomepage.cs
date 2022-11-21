@@ -57,17 +57,17 @@ namespace AAUProject
         //
         private void Homebtn_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = HomeTab;
+            Couseoverviewtab.SelectedTab = HomeTab;
         }
 
         private void royalButton1_Click_1(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = CalendarTab;
+            Couseoverviewtab.SelectedTab = CalendarTab;
         }
 
         private void royalButton2_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = HomeworkTab;
+            Couseoverviewtab.SelectedTab = HomeworkTab;
             weekdayDisplay();
 
         }
