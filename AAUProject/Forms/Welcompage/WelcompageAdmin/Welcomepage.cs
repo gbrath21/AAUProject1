@@ -303,6 +303,7 @@ namespace AAUProject
             }
         }
 
+
         public static string datelblblb = DateTime.Now.ToString("dd");
 
         private void weekdayDisplay()
