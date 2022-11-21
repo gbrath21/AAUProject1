@@ -52,7 +52,7 @@ namespace AAUProject.Controllers
                 {
                     HomeworkControl hwcon = new HomeworkControl();
                     hwcon.insertHomework(Datelb.Text);
-                    hwpanel.Controls.Add(hwcon);
+                    Appointmentpanel.Controls.Add(hwcon);
                 }
                 reader.Dispose();
 
