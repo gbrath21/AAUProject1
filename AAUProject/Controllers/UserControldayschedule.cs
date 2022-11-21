@@ -50,8 +50,12 @@ namespace AAUProject.Controllers
                 MySqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
+                    string course_name = reader.GetString("course_course_id");
+                    string homework = reader.GetString("info_hw");
+                    TimeSpan time1 = reader.GetTimeSpan("time_start");
+                    TimeSpan time3 = reader.GetTimeSpan("time_end");
                     HomeworkControl hwcon = new HomeworkControl();
-                    hwcon.insertHomework(Datelb.Text);
+                    hwcon.insertHomework(course_name,homework,time1,time3);
                     Appointmentpanel.Controls.Add(hwcon);
                 }
                 reader.Dispose();
