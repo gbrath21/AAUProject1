@@ -59,7 +59,7 @@
             this.homework.Location = new System.Drawing.Point(3, 116);
             this.homework.Multiline = true;
             this.homework.Name = "homework";
-            this.homework.Size = new System.Drawing.Size(188, 190);
+            this.homework.Size = new System.Drawing.Size(235, 190);
             this.homework.TabIndex = 2;
             // 
             // time2
@@ -92,7 +92,7 @@
             this.Controls.Add(this.time);
             this.Controls.Add(this.course_name);
             this.Name = "HomeworkControl";
-            this.Size = new System.Drawing.Size(192, 307);
+            this.Size = new System.Drawing.Size(241, 307);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -31,9 +31,9 @@
             this.Weekdaylb = new System.Windows.Forms.Label();
             this.Datelb = new System.Windows.Forms.Label();
             this.Appointmentpanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.hwpanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.daglb = new System.Windows.Forms.Label();
-            this.hwpanel = new System.Windows.Forms.FlowLayoutPanel();
             this.Appointmentpanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -63,8 +63,16 @@
             this.Appointmentpanel.Location = new System.Drawing.Point(0, 98);
             this.Appointmentpanel.Margin = new System.Windows.Forms.Padding(6);
             this.Appointmentpanel.Name = "Appointmentpanel";
-            this.Appointmentpanel.Size = new System.Drawing.Size(214, 1129);
+            this.Appointmentpanel.Size = new System.Drawing.Size(235, 1129);
             this.Appointmentpanel.TabIndex = 2;
+            // 
+            // hwpanel
+            // 
+            this.hwpanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.hwpanel.Location = new System.Drawing.Point(3, 3);
+            this.hwpanel.Name = "hwpanel";
+            this.hwpanel.Size = new System.Drawing.Size(200, 1121);
+            this.hwpanel.TabIndex = 1;
             // 
             // panel2
             // 
@@ -73,7 +81,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(212, 62);
+            this.panel2.Size = new System.Drawing.Size(242, 62);
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -86,14 +94,6 @@
             this.daglb.Size = new System.Drawing.Size(0, 25);
             this.daglb.TabIndex = 4;
             // 
-            // hwpanel
-            // 
-            this.hwpanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.hwpanel.Location = new System.Drawing.Point(3, 3);
-            this.hwpanel.Name = "hwpanel";
-            this.hwpanel.Size = new System.Drawing.Size(200, 1121);
-            this.hwpanel.TabIndex = 1;
-            // 
             // UserControldayschedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -105,7 +105,7 @@
             this.Controls.Add(this.Datelb);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControldayschedule";
-            this.Size = new System.Drawing.Size(210, 1225);
+            this.Size = new System.Drawing.Size(241, 1225);
             this.Load += new System.EventHandler(this.UserControldayschedule_Load);
             this.Appointmentpanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
