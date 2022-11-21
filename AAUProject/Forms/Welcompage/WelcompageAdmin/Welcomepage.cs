@@ -36,7 +36,6 @@ namespace AAUProject
             ShowUserNamelb.Text = MainForm.SetValueForUsername;
             ShowPasswordlb.Text = MainForm.SetValueForPassword;
             ShowUserTypelb.Text = MainForm.User_type;
-            weekdayDisplay();
             displayDays();
             if (MainForm.User_type != "admin")
             {
@@ -69,6 +68,8 @@ namespace AAUProject
         private void royalButton2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = HomeworkTab;
+            weekdayDisplay();
+
         }
         private void CreateUserbtn_Click(object sender, EventArgs e)
         {
@@ -267,11 +268,41 @@ namespace AAUProject
 
 
 
-
         //
         //homework
         //
-        public static DateTime SetDate;
+        public static DateTime SetDate = DateTime.Now;
+
+        private void prev_week_Click(object sender, EventArgs e)
+        {
+            WeekdaysPanel.Controls.Clear();
+            SetDate = SetDate.AddDays(-7);
+            int days = 7;
+            int x = 0;
+            for (int i = 1; i <= days; i++)
+            {
+                UserControldayschedule ucschedule = new UserControldayschedule();
+                WeekdaysPanel.Controls.Add(ucschedule);
+                ucschedule.date(SetDate.AddDays(x));
+                x++;
+            }
+        }
+
+        private void next_week_Click(object sender, EventArgs e)
+        {
+            WeekdaysPanel.Controls.Clear();
+            SetDate = SetDate.AddDays(7);
+            int days = 7;
+            int x = 0;
+            for (int i = 1; i <= days; i++)
+            {
+                UserControldayschedule ucschedule = new UserControldayschedule();
+                WeekdaysPanel.Controls.Add(ucschedule);
+                ucschedule.date(SetDate.AddDays(x));
+                x++;
+            }
+        }
+
         public static string datelblblb = DateTime.Now.ToString("dd");
 
         private void weekdayDisplay()
@@ -288,6 +319,8 @@ namespace AAUProject
             } 
 
         }
+
+
         //
         //homework
         //        
