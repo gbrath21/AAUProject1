@@ -16,5 +16,20 @@ namespace AAUProject.Controllers
         {
             InitializeComponent();
         }
+
+        private void Full_course_view_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void displaycourseinfo(string name,string hw, string date)
+        {
+            info_headline.Text = name;
+            hwtext.Text = hw;
+            dato_fullview.Text = date;
+
+        }
+
+
     }
 }
