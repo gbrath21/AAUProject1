@@ -491,6 +491,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Full_course_view.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controllers\Full_course_view.Designer.cs">
+      <DependentUpon>Full_course_view.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\HomeworkControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -542,6 +548,9 @@
     <Compile Include="Forms\Welcompage\WelcompageAdmin\Welcomepage.Designer.cs">
       <DependentUpon>Welcomepage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controllers\Full_course_view.resx">
+      <DependentUpon>Full_course_view.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controllers\HomeworkControl.resx">
       <DependentUpon>HomeworkControl.cs</DependentUpon>
     </EmbeddedResource>
