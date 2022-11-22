@@ -39,8 +39,9 @@ namespace AAUProject
         public static string SetValueForPassword = "";
         public static string SetValueForUsertype = "";
         public static string User_type = "";
+        public static string Semester_id = "";
+        public static string SetValueForSemester_id = "";
 
-        
 
         private void UserType_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -89,7 +90,7 @@ namespace AAUProject
                     MessageBox.Show("Please enter Correct Username and Password");
                 }
             }
-            string check_user_type = "SELECT user_type FROM user WHERE user_name = @username AND user_password = @password;";
+            string check_user_type = "SELECT * FROM user WHERE user_name = @username AND user_password = @password;";
             MySqlCommand checkuser = new MySqlCommand(check_user_type, connection);
             checkuser.Parameters.AddWithValue("@username", Username.Text);
             checkuser.Parameters.AddWithValue("@password", Password.Text);
@@ -97,9 +98,11 @@ namespace AAUProject
             {
                 if (Reader.Read())
                 {
-                    User_type = Reader.GetString(0);
+                    User_type = Reader.GetString(1);
+                    Semester_id = Reader.GetString(4);
                     if (IsLoggedIn is true)
                     {
+                        SetValueForSemester_id = Semester_id;
                         SetValueForUsername = Username.Text;
                         SetValueForPassword = Password.Text;
                         SetValueForUsertype = User_type;

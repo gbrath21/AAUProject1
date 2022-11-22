@@ -14,6 +14,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using MindFusion.Vsx;
 
 namespace AAUProject
 {
@@ -45,12 +47,26 @@ namespace AAUProject
             {
                 CreateEventBTN.Hide();
             }
-            if(EventForm.saved is true)
+            if (EventForm.saved is true)
             {
                 daycontainer.Controls.Clear();
                 displayDays();
             }
+            MySqlConnection connection = new MySqlConnection(MainForm.mysqlconnection);
+            string sem_courses = "SELECT course_id FROM semester WHERE semester_id = @semester;";
+            MySqlCommand semcourses = new MySqlCommand(sem_courses, connection);
+            connection.Open();
+            semcourses.Parameters.AddWithValue("@semester", MainForm.SetValueForSemester_id);
+            using (MySqlDataReader Reader = semcourses.ExecuteReader())
+            {
+                while (Reader.Read())
+                {
+                    comboBox1.Items.Add(Reader.GetString("course_id"));
+                    CourseslistBox1.Items.Add(Reader.GetString("course_id"));
+                }
+            }
         }
+
         public static bool click = false;
         //
         //Buttons on mainform
@@ -333,6 +349,8 @@ namespace AAUProject
             }
         }
 
+        
+
         public static string datelblblb = DateTime.Now.ToString("dd");
 
         private void weekdayDisplay()
@@ -353,6 +371,18 @@ namespace AAUProject
 
         //
         //homework
-        //        
+        //
+        
+        //
+        //Course Overview
+        //
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Couseoverviewtab.SelectedTab = tabPage1;
+            comboBox1.SelectedItem = CourseslistBox1.SelectedItem;
+        }
+        //
+        //Course Overview
+        //
     }
 }
