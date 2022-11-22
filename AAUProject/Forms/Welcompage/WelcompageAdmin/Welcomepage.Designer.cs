@@ -193,7 +193,7 @@
             // daycontainer
             // 
             this.daycontainer.Location = new System.Drawing.Point(12, 288);
-            this.daycontainer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.daycontainer.Margin = new System.Windows.Forms.Padding(6);
             this.daycontainer.Name = "daycontainer";
             this.daycontainer.Size = new System.Drawing.Size(1770, 883);
             this.daycontainer.TabIndex = 51;
@@ -207,7 +207,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 1292);
             this.panel1.TabIndex = 18;
@@ -217,7 +217,7 @@
             this.panel6.Controls.Add(this.royalButton2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 601);
-            this.panel6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel6.Margin = new System.Windows.Forms.Padding(6);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(400, 192);
             this.panel6.TabIndex = 23;
@@ -235,7 +235,7 @@
             this.royalButton2.Image = null;
             this.royalButton2.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
             this.royalButton2.Location = new System.Drawing.Point(50, 60);
-            this.royalButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.royalButton2.Margin = new System.Windows.Forms.Padding(4);
             this.royalButton2.Name = "royalButton2";
             this.royalButton2.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.royalButton2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -250,7 +250,7 @@
             this.panel5.Controls.Add(this.royalButton1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 409);
-            this.panel5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel5.Margin = new System.Windows.Forms.Padding(6);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(400, 192);
             this.panel5.TabIndex = 22;
@@ -268,7 +268,7 @@
             this.royalButton1.Image = null;
             this.royalButton1.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
             this.royalButton1.Location = new System.Drawing.Point(50, 60);
-            this.royalButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.royalButton1.Margin = new System.Windows.Forms.Padding(4);
             this.royalButton1.Name = "royalButton1";
             this.royalButton1.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.royalButton1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -283,7 +283,7 @@
             this.panel4.Controls.Add(this.Homebtn);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 217);
-            this.panel4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel4.Margin = new System.Windows.Forms.Padding(6);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(400, 192);
             this.panel4.TabIndex = 21;
@@ -301,7 +301,7 @@
             this.Homebtn.Image = null;
             this.Homebtn.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
             this.Homebtn.Location = new System.Drawing.Point(50, 60);
-            this.Homebtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Homebtn.Margin = new System.Windows.Forms.Padding(4);
             this.Homebtn.Name = "Homebtn";
             this.Homebtn.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Homebtn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -316,7 +316,7 @@
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(400, 217);
             this.panel3.TabIndex = 20;
@@ -325,7 +325,7 @@
             // 
             this.pictureBox2.Image = global::AAUProject.Properties.Resources.AAU_logo_2012;
             this.pictureBox2.Location = new System.Drawing.Point(94, 6);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(202, 194);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -340,7 +340,7 @@
             this.Couseoverviewtab.Controls.Add(this.tabPage1);
             this.Couseoverviewtab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Couseoverviewtab.Location = new System.Drawing.Point(400, 0);
-            this.Couseoverviewtab.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Couseoverviewtab.Margin = new System.Windows.Forms.Padding(6);
             this.Couseoverviewtab.Name = "Couseoverviewtab";
             this.Couseoverviewtab.SelectedIndex = 0;
             this.Couseoverviewtab.Size = new System.Drawing.Size(1942, 1292);
@@ -355,9 +355,9 @@
             this.HomeTab.Controls.Add(this.CreateUserbtn);
             this.HomeTab.Controls.Add(this.label4);
             this.HomeTab.Location = new System.Drawing.Point(8, 39);
-            this.HomeTab.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.HomeTab.Margin = new System.Windows.Forms.Padding(6);
             this.HomeTab.Name = "HomeTab";
-            this.HomeTab.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.HomeTab.Padding = new System.Windows.Forms.Padding(6);
             this.HomeTab.Size = new System.Drawing.Size(1926, 1245);
             this.HomeTab.TabIndex = 1;
             this.HomeTab.Text = "tabPage5";
@@ -366,18 +366,19 @@
             // CourseslistBox1
             // 
             this.CourseslistBox1.FormattingEnabled = true;
-            this.CourseslistBox1.Location = new System.Drawing.Point(425, 169);
+            this.CourseslistBox1.ItemHeight = 25;
+            this.CourseslistBox1.Location = new System.Drawing.Point(54, 187);
             this.CourseslistBox1.Name = "CourseslistBox1";
-            this.CourseslistBox1.Size = new System.Drawing.Size(120, 95);
+            this.CourseslistBox1.Size = new System.Drawing.Size(173, 79);
             this.CourseslistBox1.TabIndex = 19;
             this.CourseslistBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(422, 133);
+            this.label14.Location = new System.Drawing.Point(60, 136);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(70, 13);
+            this.label14.Size = new System.Drawing.Size(144, 25);
             this.label14.TabIndex = 18;
             this.label14.Text = "Your Courses";
             // 
@@ -390,7 +391,7 @@
             this.panel14.Controls.Add(this.panel17);
             this.panel14.Controls.Add(this.panel16);
             this.panel14.Location = new System.Drawing.Point(54, 296);
-            this.panel14.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel14.Margin = new System.Windows.Forms.Padding(6);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(552, 302);
             this.panel14.TabIndex = 17;
@@ -544,7 +545,7 @@
             this.CreateUserbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
             this.CreateUserbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateUserbtn.ForeColor = System.Drawing.Color.White;
-            this.CreateUserbtn.Location = new System.Drawing.Point(785, 112);
+            this.CreateUserbtn.Location = new System.Drawing.Point(1042, 75);
             this.CreateUserbtn.Name = "CreateUserbtn";
             this.CreateUserbtn.Size = new System.Drawing.Size(300, 65);
             this.CreateUserbtn.TabIndex = 16;
@@ -557,7 +558,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.label4.Location = new System.Drawing.Point(88, 75);
+            this.label4.Location = new System.Drawing.Point(44, 48);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(800, 55);
@@ -580,9 +581,9 @@
             this.CalendarTab.Controls.Add(this.label5);
             this.CalendarTab.Controls.Add(this.daycontainer);
             this.CalendarTab.Location = new System.Drawing.Point(8, 39);
-            this.CalendarTab.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CalendarTab.Margin = new System.Windows.Forms.Padding(6);
             this.CalendarTab.Name = "CalendarTab";
-            this.CalendarTab.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CalendarTab.Padding = new System.Windows.Forms.Padding(6);
             this.CalendarTab.Size = new System.Drawing.Size(1926, 1245);
             this.CalendarTab.TabIndex = 0;
             this.CalendarTab.Text = "tabPage4";
@@ -595,7 +596,7 @@
             this.CreateEventBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.CreateEventBTN.ForeColor = System.Drawing.Color.White;
             this.CreateEventBTN.Location = new System.Drawing.Point(1514, 129);
-            this.CreateEventBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CreateEventBTN.Margin = new System.Windows.Forms.Padding(4);
             this.CreateEventBTN.Name = "CreateEventBTN";
             this.CreateEventBTN.Size = new System.Drawing.Size(268, 46);
             this.CreateEventBTN.TabIndex = 63;
@@ -610,7 +611,7 @@
             this.Nextbtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Nextbtn.ForeColor = System.Drawing.Color.White;
             this.Nextbtn.Location = new System.Drawing.Point(1618, 1183);
-            this.Nextbtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Nextbtn.Margin = new System.Windows.Forms.Padding(6);
             this.Nextbtn.Name = "Nextbtn";
             this.Nextbtn.Size = new System.Drawing.Size(166, 54);
             this.Nextbtn.TabIndex = 62;
@@ -624,7 +625,7 @@
             this.Prebtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Prebtn.ForeColor = System.Drawing.Color.White;
             this.Prebtn.Location = new System.Drawing.Point(1382, 1183);
-            this.Prebtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Prebtn.Margin = new System.Windows.Forms.Padding(6);
             this.Prebtn.Name = "Prebtn";
             this.Prebtn.Size = new System.Drawing.Size(166, 54);
             this.Prebtn.TabIndex = 61;
@@ -745,9 +746,9 @@
             // 
             this.HomeworkTab.Controls.Add(this.panel8);
             this.HomeworkTab.Location = new System.Drawing.Point(8, 39);
-            this.HomeworkTab.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.HomeworkTab.Margin = new System.Windows.Forms.Padding(6);
             this.HomeworkTab.Name = "HomeworkTab";
-            this.HomeworkTab.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.HomeworkTab.Padding = new System.Windows.Forms.Padding(6);
             this.HomeworkTab.Size = new System.Drawing.Size(1926, 1245);
             this.HomeworkTab.TabIndex = 2;
             this.HomeworkTab.Text = "tabPage6";
@@ -760,7 +761,7 @@
             this.panel8.Controls.Add(this.WeekdaysPanel);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(6, 6);
-            this.panel8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel8.Margin = new System.Windows.Forms.Padding(6);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1816, 1233);
             this.panel8.TabIndex = 23;
@@ -770,7 +771,7 @@
             this.Next_WeekBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Next_WeekBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
             this.Next_WeekBTN.Location = new System.Drawing.Point(1578, 21);
-            this.Next_WeekBTN.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Next_WeekBTN.Margin = new System.Windows.Forms.Padding(6);
             this.Next_WeekBTN.Name = "Next_WeekBTN";
             this.Next_WeekBTN.Size = new System.Drawing.Size(222, 44);
             this.Next_WeekBTN.TabIndex = 4;
@@ -783,7 +784,7 @@
             this.Previous_WeekBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F);
             this.Previous_WeekBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
             this.Previous_WeekBTN.Location = new System.Drawing.Point(1332, 21);
-            this.Previous_WeekBTN.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Previous_WeekBTN.Margin = new System.Windows.Forms.Padding(6);
             this.Previous_WeekBTN.Name = "Previous_WeekBTN";
             this.Previous_WeekBTN.Size = new System.Drawing.Size(222, 44);
             this.Previous_WeekBTN.TabIndex = 3;
@@ -804,10 +805,10 @@
             // 
             this.tabPage1.Controls.Add(this.CoursesflowLayoutPanel);
             this.tabPage1.Controls.Add(this.panel7);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(8, 39);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(963, 646);
+            this.tabPage1.Size = new System.Drawing.Size(1926, 1245);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -818,7 +819,7 @@
             this.CoursesflowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CoursesflowLayoutPanel.Location = new System.Drawing.Point(3, 48);
             this.CoursesflowLayoutPanel.Name = "CoursesflowLayoutPanel";
-            this.CoursesflowLayoutPanel.Size = new System.Drawing.Size(957, 595);
+            this.CoursesflowLayoutPanel.Size = new System.Drawing.Size(1920, 1194);
             this.CoursesflowLayoutPanel.TabIndex = 2;
             // 
             // panel7
@@ -828,7 +829,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(3, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(957, 45);
+            this.panel7.Size = new System.Drawing.Size(1920, 45);
             this.panel7.TabIndex = 1;
             // 
             // label13
@@ -836,17 +837,18 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(760, 14);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 13);
+            this.label13.Size = new System.Drawing.Size(92, 25);
             this.label13.TabIndex = 1;
             this.label13.Text = "Courses";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(811, 11);
+            this.comboBox1.Location = new System.Drawing.Point(939, 11);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(121, 33);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
             // monthCalendar1
             // 
@@ -862,7 +864,7 @@
             this.panel2.Controls.Add(this.CrossButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(400, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1942, 58);
             this.panel2.TabIndex = 17;
@@ -878,7 +880,7 @@
             this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MinimizeButton.IconSize = 25;
             this.MinimizeButton.Location = new System.Drawing.Point(1750, 0);
-            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MinimizeButton.Margin = new System.Windows.Forms.Padding(6);
             this.MinimizeButton.Name = "MinimizeButton";
             this.MinimizeButton.Size = new System.Drawing.Size(64, 58);
             this.MinimizeButton.TabIndex = 4;
@@ -893,7 +895,7 @@
             this.MaximizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MaximizeButton.IconSize = 25;
             this.MaximizeButton.Location = new System.Drawing.Point(1814, 0);
-            this.MaximizeButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MaximizeButton.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeButton.Name = "MaximizeButton";
             this.MaximizeButton.Size = new System.Drawing.Size(64, 58);
             this.MaximizeButton.TabIndex = 3;
@@ -908,7 +910,7 @@
             this.CrossButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.CrossButton.IconSize = 25;
             this.CrossButton.Location = new System.Drawing.Point(1878, 0);
-            this.CrossButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CrossButton.Margin = new System.Windows.Forms.Padding(6);
             this.CrossButton.Name = "CrossButton";
             this.CrossButton.Rotation = 45D;
             this.CrossButton.Size = new System.Drawing.Size(64, 58);
@@ -935,7 +937,7 @@
             this.Controls.Add(this.Couseoverviewtab);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Welcomepage";
             this.Text = "Welcomepage";
             this.Load += new System.EventHandler(this.WelcomepageAdmin_Load);

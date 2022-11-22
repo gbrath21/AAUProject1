@@ -16,7 +16,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
     public partial class EventForm : Form
     {
         String connString = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
-
+        public static int id;
         public EventForm()
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             String sqlStatement = "SELECT course_id FROM semester WHERE semester_id = (select semester_id from user where user_name = @username)";
             MySqlCommand command = new MySqlCommand(sqlStatement, connection);
             command.Parameters.AddWithValue("@username", MainForm.SetValueForUsername);
-
+            
             connection.Open();
             using (MySqlDataReader Reader = command.ExecuteReader())
             {
@@ -44,6 +44,21 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             }
         }
         public static bool saved = false;
+        public static bool updated = false;
+
+        public void editevent(string name, string hw, DateTime date, string starttime, string course, string endtime, int id_ind)
+        {
+            id = id_ind;
+            dateTimePicker1.Value = date;
+            txcoursename.Text = name;
+            txhomework.Text = hw;
+            course_idbox.Text = course;
+            Starttimebox.Text = starttime;
+            Endtimebox.Text = endtime;
+            Savebtn.Visible = false;
+            updatebtn.Visible = true;
+            deletebtn.Visible = true;
+        }
         private void Savebtn_Click_1(object sender, EventArgs e)
         {
             MySqlConnection connection = new MySqlConnection(connString);
@@ -72,6 +87,42 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 
         }
 
-        
+        private void updatebtn_Click(object sender, EventArgs e)
+        {
+            MySqlConnection connection = new MySqlConnection(connString);
+            String sqlStatement = "UPDATE course_info SET info_hw = @homework, info_headline = @headline, course_course_id = @courseid, cal_time = @coursedate, time_start = @timestart, time_end = @timeend WHERE info_id = @id";
+            MySqlCommand command = new MySqlCommand(sqlStatement, connection);
+            command.Parameters.AddWithValue("@coursedate", dateTimePicker1.Value.ToString("yyyy-MM-dd"));
+            command.Parameters.AddWithValue("@headline", txcoursename.Text);
+            command.Parameters.AddWithValue("@homework", txhomework.Text);
+            command.Parameters.AddWithValue("@courseid", course_idbox.Text);
+            command.Parameters.AddWithValue("@timestart", Starttimebox.Text);
+            command.Parameters.AddWithValue("@timeend", Endtimebox.Text);
+            command.Parameters.AddWithValue("@id", id);
+            connection.Open();
+            command.ExecuteNonQuery();
+            MessageBox.Show("Updated");
+            command.Dispose();
+            connection.Close();
+            this.Hide();
+            updated = true;
+
+        }
+
+        private void deletebtn_Click(object sender, EventArgs e)
+        {
+            MySqlConnection connection = new MySqlConnection(connString);
+            String sqlStatement = "DELETE FROM course_info WHERE info_id = @id";
+            MySqlCommand command = new MySqlCommand(sqlStatement, connection);
+            command.Parameters.AddWithValue("@id", id);
+            connection.Open();
+            command.ExecuteNonQuery();
+            MessageBox.Show("Deleted");
+            command.Dispose();
+            connection.Close();
+            this.Hide();
+            updated = true;
+
+        }
     }
 }

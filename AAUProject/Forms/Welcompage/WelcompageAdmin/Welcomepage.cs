@@ -15,7 +15,6 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 using MindFusion.Vsx;
 
 namespace AAUProject
@@ -40,7 +39,6 @@ namespace AAUProject
             ShowUserNamelb.Text = MainForm.SetValueForUsername;
             ShowPasswordlb.Text = MainForm.SetValueForPassword;
             ShowUserTypelb.Text = MainForm.User_type;
-            semlabel.Text = MainForm.Semester;
             displayDays();
             if (MainForm.User_type != "admin")
             {
@@ -55,18 +53,11 @@ namespace AAUProject
                 daycontainer.Controls.Clear();
                 displayDays();
             }
-            MySqlConnection connection = new MySqlConnection(MainForm.mysqlconnection);
-            string sem_courses = "SELECT course_id FROM semester WHERE semester_id = @semester;";
-            MySqlCommand semcourses = new MySqlCommand(sem_courses, connection);
-            connection.Open();
-            semcourses.Parameters.AddWithValue("@semester", MainForm.SetValueForSemester_id);
-            using (MySqlDataReader Reader = semcourses.ExecuteReader())
+
+            foreach (string i in MainForm.courselist)
             {
-                while (Reader.Read())
-                {
-                    comboBox1.Items.Add(Reader.GetString("course_id"));
-                    CourseslistBox1.Items.Add(Reader.GetString("course_id"));
-                }
+                comboBox1.Items.Add(i);
+                CourseslistBox1.Items.Add(i);
             }
         }
 
@@ -354,30 +345,17 @@ namespace AAUProject
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
-            MySqlConnection conn = new MySqlConnection(connstring);
-            conn.Open();
-            String sqlstatement = "SELECT * FROM course_info WHERE course_course_id = @course_id ORDER BY time_start";
-            MySqlCommand command = new MySqlCommand(sqlstatement, conn);
-            command.Parameters.AddWithValue("@course_id", comboBox1.Text);
-            MySqlDataReader reader = command.ExecuteReader();
-            while (reader.Read())
-            {
-                string course_name = reader.GetString("course_course_id");
-                string homework = reader.GetString("info_hw");
-                string date = reader.GetString("cal_time");
-                Full_course_view fullview = new Full_course_view();
-                fullview.displaycourseinfo(course_name, homework, date);
-                CoursesflowLayoutPanel.Controls.Add(fullview);
-            }
-            reader.Dispose();
-            command.Dispose();
-            conn.Close();
         }
 
 
 
         public static string datelblblb = DateTime.Now.ToString("dd");
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            CourseslistBox1.SelectedItem = comboBox1.SelectedItem;
+
+        }
 
         private void weekdayDisplay()
         {
@@ -405,6 +383,32 @@ namespace AAUProject
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             Couseoverviewtab.SelectedTab = tabPage1;
+            CoursesflowLayoutPanel.Controls.Clear();
+            string selected = this.CourseslistBox1.GetItemText(this.CourseslistBox1.SelectedItem);
+            string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
+            MySqlConnection conn = new MySqlConnection(connstring);
+            conn.Open();
+            String sqlstatement = "SELECT * FROM course_info WHERE course_course_id = @course_id ORDER BY time_start";
+            MySqlCommand command = new MySqlCommand(sqlstatement, conn);
+            command.Parameters.AddWithValue("@course_id", selected);
+            MySqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                string course_name = reader.GetString("course_course_id");
+                string course_headline = reader.GetString("course_course_id");
+                string start = reader.GetString("time_start");
+                string end = reader.GetString("time_end");
+                int id = reader.GetInt32("info_id");
+                string homework = reader.GetString("info_hw");
+                DateTime date = reader.GetDateTime("cal_time");
+                string user_type = "teacher";
+                Full_course_view fullview = new Full_course_view();
+                fullview.displaycourseinfo(course_headline, course_name, homework, date,user_type, start, end, id);
+                CoursesflowLayoutPanel.Controls.Add(fullview);
+            }
+            reader.Dispose();
+            command.Dispose();
+            conn.Close();
             comboBox1.SelectedItem = CourseslistBox1.SelectedItem;
         }
         //

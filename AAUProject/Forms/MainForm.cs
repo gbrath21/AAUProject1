@@ -7,6 +7,7 @@ using System.Linq;
 using System.ServiceModel.Security;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Forms;
 //using MySql.Data.MySqlClient;
@@ -40,7 +41,6 @@ namespace AAUProject
         public static string SetValueForUsertype = "";
         public static string User_type = "";
         public static string Semester_id = "";
-        public static string SetValueForSemester_id = "";
 
 
         private void UserType_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,17 +102,31 @@ namespace AAUProject
                     Semester_id = Reader.GetString(4);
                     if (IsLoggedIn is true)
                     {
-                        SetValueForSemester_id = Semester_id;
                         SetValueForUsername = Username.Text;
                         SetValueForPassword = Password.Text;
                         SetValueForUsertype = User_type;
-                        Welcomepage welcomepage = new Welcomepage();
-                        welcomepage.Show();
-                        Reader.Close();
+                        
                     }
+
                 }
             }
-            
+            string sem_courses = "SELECT course_id FROM semester WHERE semester_id = @semester;";
+            MySqlCommand semcourses = new MySqlCommand(sem_courses, connection);
+            semcourses.Parameters.AddWithValue("@semester", Semester_id);
+            using (MySqlDataReader Reader = semcourses.ExecuteReader())
+            {
+                while (Reader.Read())
+                {
+                    courselist.Add(Reader.GetString("course_id"));
+                   
+                }
+                if (IsLoggedIn is true)
+                {
+                    Welcomepage welcomepage = new Welcomepage();
+                    welcomepage.Show();
+                }
+            }
+
 
         }
         private void Username_KeyDown(object sender, KeyEventArgs e)
