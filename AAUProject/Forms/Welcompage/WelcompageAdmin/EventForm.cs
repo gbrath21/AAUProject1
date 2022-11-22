@@ -55,7 +55,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             course_idbox.Text = course;
             Starttimebox.Text = starttime;
             Endtimebox.Text = endtime;
-            Savebtn.Visible = false;
+            Savebtn.Text = "Save as new";
             updatebtn.Visible = true;
             deletebtn.Visible = true;
         }

@@ -16,6 +16,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MindFusion.Vsx;
+using Org.BouncyCastle.Bcpg;
 
 namespace AAUProject
 {
@@ -401,6 +402,7 @@ namespace AAUProject
                 int id = reader.GetInt32("info_id");
                 string homework = reader.GetString("info_hw");
                 DateTime date = reader.GetDateTime("cal_time");
+        //SKAL ÆNDRES TIL MainForm.User_Type
                 string user_type = "teacher";
                 Full_course_view fullview = new Full_course_view();
                 fullview.displaycourseinfo(course_headline, course_name, homework, date,user_type, start, end, id);
