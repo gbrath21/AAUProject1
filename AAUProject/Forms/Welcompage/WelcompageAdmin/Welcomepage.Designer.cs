@@ -44,13 +44,11 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.Homebtn = new ReaLTaiizor.Controls.RoyalButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Couseoverviewtab = new System.Windows.Forms.TabControl();
             this.HomeTab = new System.Windows.Forms.TabPage();
             this.CreateCoursebtn = new System.Windows.Forms.Button();
             this.updateuserbtn = new System.Windows.Forms.Button();
             this.logout = new System.Windows.Forms.Button();
-            this.logoutbtn = new System.Windows.Forms.Button();
             this.CourseslistBox1 = new System.Windows.Forms.ListBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
@@ -89,17 +87,17 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.UpdateCourseBTN = new System.Windows.Forms.Button();
             this.MinimizeButton = new FontAwesome.Sharp.IconButton();
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.CrossButton = new FontAwesome.Sharp.IconButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.UpdateCourseBTN = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Couseoverviewtab.SuspendLayout();
             this.HomeTab.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -113,6 +111,7 @@
             this.tabPage1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,7 +206,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 554);
+            this.panel1.Size = new System.Drawing.Size(200, 676);
             this.panel1.TabIndex = 18;
             // 
             // panel6
@@ -315,16 +314,6 @@
             this.panel3.Size = new System.Drawing.Size(200, 113);
             this.panel3.TabIndex = 20;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::AAUProject.Properties.Resources.AAU_logo_2012;
-            this.pictureBox2.Location = new System.Drawing.Point(47, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(101, 101);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // Couseoverviewtab
             // 
             this.Couseoverviewtab.Controls.Add(this.HomeTab);
@@ -335,7 +324,7 @@
             this.Couseoverviewtab.Location = new System.Drawing.Point(200, 0);
             this.Couseoverviewtab.Name = "Couseoverviewtab";
             this.Couseoverviewtab.SelectedIndex = 0;
-            this.Couseoverviewtab.Size = new System.Drawing.Size(971, 554);
+            this.Couseoverviewtab.Size = new System.Drawing.Size(983, 676);
             this.Couseoverviewtab.TabIndex = 19;
             this.Couseoverviewtab.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -344,7 +333,6 @@
             this.HomeTab.Controls.Add(this.UpdateCourseBTN);
             this.HomeTab.Controls.Add(this.CreateCoursebtn);
             this.HomeTab.Controls.Add(this.updateuserbtn);
-            this.HomeTab.Controls.Add(this.logoutbtn);
             this.HomeTab.Controls.Add(this.CourseslistBox1);
             this.HomeTab.Controls.Add(this.label14);
             this.HomeTab.Controls.Add(this.panel14);
@@ -353,7 +341,7 @@
             this.HomeTab.Location = new System.Drawing.Point(4, 22);
             this.HomeTab.Name = "HomeTab";
             this.HomeTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.HomeTab.Size = new System.Drawing.Size(963, 528);
+            this.HomeTab.Size = new System.Drawing.Size(975, 650);
             this.HomeTab.TabIndex = 1;
             this.HomeTab.Text = "tabPage5";
             this.HomeTab.UseVisualStyleBackColor = true;
@@ -399,19 +387,6 @@
             this.logout.Text = "Logout";
             this.logout.UseVisualStyleBackColor = false;
             this.logout.Click += new System.EventHandler(this.logout_Click);
-            // 
-            // logoutbtn
-            // 
-            this.logoutbtn.BackColor = System.Drawing.Color.Maroon;
-            this.logoutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutbtn.ForeColor = System.Drawing.Color.White;
-            this.logoutbtn.Location = new System.Drawing.Point(1074, 28);
-            this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.Size = new System.Drawing.Size(300, 65);
-            this.logoutbtn.TabIndex = 20;
-            this.logoutbtn.Text = "Logout";
-            this.logoutbtn.UseVisualStyleBackColor = false;
-            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // CourseslistBox1
             // 
@@ -585,7 +560,7 @@
             this.CalendarTab.Location = new System.Drawing.Point(4, 22);
             this.CalendarTab.Name = "CalendarTab";
             this.CalendarTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.CalendarTab.Size = new System.Drawing.Size(963, 656);
+            this.CalendarTab.Size = new System.Drawing.Size(963, 528);
             this.CalendarTab.TabIndex = 0;
             this.CalendarTab.Text = "tabPage4";
             this.CalendarTab.UseVisualStyleBackColor = true;
@@ -738,7 +713,7 @@
             this.HomeworkTab.Location = new System.Drawing.Point(4, 22);
             this.HomeworkTab.Name = "HomeworkTab";
             this.HomeworkTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.HomeworkTab.Size = new System.Drawing.Size(963, 656);
+            this.HomeworkTab.Size = new System.Drawing.Size(963, 650);
             this.HomeworkTab.TabIndex = 2;
             this.HomeworkTab.Text = "tabPage6";
             this.HomeworkTab.UseVisualStyleBackColor = true;
@@ -751,7 +726,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(908, 650);
+            this.panel8.Size = new System.Drawing.Size(908, 644);
             this.panel8.TabIndex = 23;
             // 
             // Next_WeekBTN
@@ -781,7 +756,7 @@
             // WeekdaysPanel
             // 
             this.WeekdaysPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.WeekdaysPanel.Location = new System.Drawing.Point(0, 48);
+            this.WeekdaysPanel.Location = new System.Drawing.Point(0, 42);
             this.WeekdaysPanel.Margin = new System.Windows.Forms.Padding(0);
             this.WeekdaysPanel.Name = "WeekdaysPanel";
             this.WeekdaysPanel.Size = new System.Drawing.Size(908, 602);
@@ -795,7 +770,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(963, 656);
+            this.tabPage1.Size = new System.Drawing.Size(963, 528);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -807,7 +782,7 @@
             this.CoursesflowLayoutPanel.Location = new System.Drawing.Point(2, 25);
             this.CoursesflowLayoutPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CoursesflowLayoutPanel.Name = "CoursesflowLayoutPanel";
-            this.CoursesflowLayoutPanel.Size = new System.Drawing.Size(959, 629);
+            this.CoursesflowLayoutPanel.Size = new System.Drawing.Size(959, 501);
             this.CoursesflowLayoutPanel.TabIndex = 2;
             // 
             // panel7
@@ -856,64 +831,10 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(971, 30);
+            this.panel2.Size = new System.Drawing.Size(983, 30);
             this.panel2.TabIndex = 17;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            // 
-            // MinimizeButton
-            // 
-            this.MinimizeButton.BackColor = System.Drawing.Color.White;
-            this.MinimizeButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MinimizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.MinimizeButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.MinimizeButton.IconSize = 25;
-            this.MinimizeButton.Location = new System.Drawing.Point(875, 0);
-            this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(32, 30);
-            this.MinimizeButton.TabIndex = 4;
-            this.MinimizeButton.UseVisualStyleBackColor = false;
-            this.MinimizeButton.Click += new System.EventHandler(this.iconButton2_Click);
-            // 
-            // MaximizeButton
-            // 
-            this.MaximizeButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.MaximizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.MaximizeButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.MaximizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.MaximizeButton.IconSize = 25;
-            this.MaximizeButton.Location = new System.Drawing.Point(907, 0);
-            this.MaximizeButton.Name = "MaximizeButton";
-            this.MaximizeButton.Size = new System.Drawing.Size(32, 30);
-            this.MaximizeButton.TabIndex = 3;
-            this.MaximizeButton.UseVisualStyleBackColor = true;
-            this.MaximizeButton.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // CrossButton
-            // 
-            this.CrossButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.CrossButton.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.CrossButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.CrossButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.CrossButton.IconSize = 25;
-            this.CrossButton.Location = new System.Drawing.Point(939, 0);
-            this.CrossButton.Name = "CrossButton";
-            this.CrossButton.Rotation = 45D;
-            this.CrossButton.Size = new System.Drawing.Size(32, 30);
-            this.CrossButton.TabIndex = 2;
-            this.CrossButton.UseVisualStyleBackColor = true;
-            this.CrossButton.Click += new System.EventHandler(this.CrossButton_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(272, 146);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
             // 
             // UpdateCourseBTN
             // 
@@ -929,11 +850,75 @@
             this.UpdateCourseBTN.UseVisualStyleBackColor = false;
             this.UpdateCourseBTN.Click += new System.EventHandler(this.UpdateCourseBTN_Click);
             // 
+            // MinimizeButton
+            // 
+            this.MinimizeButton.BackColor = System.Drawing.Color.White;
+            this.MinimizeButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MinimizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.MinimizeButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MinimizeButton.IconSize = 25;
+            this.MinimizeButton.Location = new System.Drawing.Point(887, 0);
+            this.MinimizeButton.Name = "MinimizeButton";
+            this.MinimizeButton.Size = new System.Drawing.Size(32, 30);
+            this.MinimizeButton.TabIndex = 4;
+            this.MinimizeButton.UseVisualStyleBackColor = false;
+            this.MinimizeButton.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // MaximizeButton
+            // 
+            this.MaximizeButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.MaximizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.MaximizeButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.MaximizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MaximizeButton.IconSize = 25;
+            this.MaximizeButton.Location = new System.Drawing.Point(919, 0);
+            this.MaximizeButton.Name = "MaximizeButton";
+            this.MaximizeButton.Size = new System.Drawing.Size(32, 30);
+            this.MaximizeButton.TabIndex = 3;
+            this.MaximizeButton.UseVisualStyleBackColor = true;
+            this.MaximizeButton.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // CrossButton
+            // 
+            this.CrossButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.CrossButton.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.CrossButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CrossButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.CrossButton.IconSize = 25;
+            this.CrossButton.Location = new System.Drawing.Point(951, 0);
+            this.CrossButton.Name = "CrossButton";
+            this.CrossButton.Rotation = 45D;
+            this.CrossButton.Size = new System.Drawing.Size(32, 30);
+            this.CrossButton.TabIndex = 2;
+            this.CrossButton.UseVisualStyleBackColor = true;
+            this.CrossButton.Click += new System.EventHandler(this.CrossButton_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::AAUProject.Properties.Resources.AAU_logo_2012;
+            this.pictureBox2.Location = new System.Drawing.Point(47, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(101, 101);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(272, 146);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // Welcomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1171, 554);
+            this.ClientSize = new System.Drawing.Size(1183, 676);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Couseoverviewtab);
             this.Controls.Add(this.panel1);
@@ -946,7 +931,6 @@
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Couseoverviewtab.ResumeLayout(false);
             this.HomeTab.ResumeLayout(false);
             this.HomeTab.PerformLayout();
@@ -963,6 +947,7 @@
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -1030,7 +1015,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ListBox CourseslistBox1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button logoutbtn;
         private System.Windows.Forms.Button logout;
         private System.Windows.Forms.Button CreateCoursebtn;
         private System.Windows.Forms.Button updateuserbtn;
