@@ -379,6 +379,13 @@ namespace AAUProject
             logud.Show();
         }
 
+        private void logout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MainForm logud = new MainForm();
+            logud.Show();
+        }
+
 
         //
         //homework
