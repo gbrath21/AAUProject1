@@ -38,10 +38,9 @@ namespace AAUProject
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             ShowUserNamelb.Text = MainForm.SetValueForUsername;
-            ShowPasswordlb.Text = MainForm.SetValueForPassword;
             ShowUserTypelb.Text = MainForm.User_type;
             displayDays();
-            if (MainForm.User_type != "admin")
+            if (MainForm.User_type != "Admin")
             {
                 CreateUserbtn.Hide();
             }
@@ -373,15 +372,27 @@ namespace AAUProject
 
         }
 
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            MainForm logud = new MainForm();
+            logud.Show();
+        }
+
 
         //
         //homework
         //
-        
+
         //
         //Course Overview
         //
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Full_view();
+        }
+
+        public void Full_view()
         {
             Couseoverviewtab.SelectedTab = tabPage1;
             CoursesflowLayoutPanel.Controls.Clear();
@@ -389,7 +400,7 @@ namespace AAUProject
             string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
             MySqlConnection conn = new MySqlConnection(connstring);
             conn.Open();
-            String sqlstatement = "SELECT * FROM course_info WHERE course_course_id = @course_id ORDER BY time_start";
+            String sqlstatement = "SELECT * FROM lectures WHERE course_course_id = @course_id ORDER BY time_start";
             MySqlCommand command = new MySqlCommand(sqlstatement, conn);
             command.Parameters.AddWithValue("@course_id", selected);
             MySqlDataReader reader = command.ExecuteReader();
@@ -402,10 +413,10 @@ namespace AAUProject
                 int id = reader.GetInt32("info_id");
                 string homework = reader.GetString("info_hw");
                 DateTime date = reader.GetDateTime("cal_time");
-        //SKAL ÆNDRES TIL MainForm.User_Type
-                string user_type = "teacher";
+                //SKAL ÆNDRES TIL MainForm.User_Type
+                string user_type = MainForm.User_type;
                 Full_course_view fullview = new Full_course_view();
-                fullview.displaycourseinfo(course_headline, course_name, homework, date,user_type, start, end, id);
+                fullview.displaycourseinfo(course_headline, course_name, homework, date, user_type, start, end, id);
                 CoursesflowLayoutPanel.Controls.Add(fullview);
             }
             reader.Dispose();
@@ -413,6 +424,7 @@ namespace AAUProject
             conn.Close();
             comboBox1.SelectedItem = CourseslistBox1.SelectedItem;
         }
+
         //
         //Course Overview
         //

@@ -41,6 +41,8 @@ namespace AAUProject
         public static string SetValueForUsertype = "";
         public static string User_type = "";
         public static string Semester_id = "";
+        public static int user_id;
+
 
 
         private void UserType_SelectedIndexChanged(object sender, EventArgs e)
@@ -98,32 +100,60 @@ namespace AAUProject
             {
                 if (Reader.Read())
                 {
-                    User_type = Reader.GetString(1);
-                    Semester_id = Reader.GetString(4);
+                    User_type = Reader.GetString("user_type");
+                    user_id = Reader.GetInt32("user_id");
+                    if (!Reader.IsDBNull(4))
+                    {
+                        Semester_id = Reader.GetString(4);
+                    }
                     if (IsLoggedIn is true)
                     {
                         SetValueForUsername = Username.Text;
                         SetValueForPassword = Password.Text;
                         SetValueForUsertype = User_type;
+
                         
                     }
 
                 }
             }
             string sem_courses = "SELECT course_id FROM semester WHERE semester_id = @semester;";
+            string teacher_courses = "SELECT course_id FROM semester WHERE teacher_id = @teacher;";
             MySqlCommand semcourses = new MySqlCommand(sem_courses, connection);
+            MySqlCommand teachercourses = new MySqlCommand(teacher_courses, connection);
             semcourses.Parameters.AddWithValue("@semester", Semester_id);
-            using (MySqlDataReader Reader = semcourses.ExecuteReader())
+            teachercourses.Parameters.AddWithValue("@teacher", user_id);
+
+            if (User_type != "Teacher")
             {
-                while (Reader.Read())
+                using (MySqlDataReader Reader = semcourses.ExecuteReader())
                 {
-                    courselist.Add(Reader.GetString("course_id"));
-                   
+                    while (Reader.Read())
+                    {
+                        courselist.Add(Reader.GetString("course_id"));
+
+
+                    }
+                    if (IsLoggedIn is true)
+                    {
+                        Welcomepage welcomepage = new Welcomepage();
+                        welcomepage.Show();
+                    }
                 }
-                if (IsLoggedIn is true)
+            }
+            else
+            {
+                using (MySqlDataReader Reader = teachercourses.ExecuteReader())
                 {
-                    Welcomepage welcomepage = new Welcomepage();
-                    welcomepage.Show();
+                    while (Reader.Read())
+                    {
+                        courselist.Add(Reader.GetString("course_id"));
+                    }
+                    if (IsLoggedIn is true)
+                    {
+                        Welcomepage welcomepage = new Welcomepage();
+                        welcomepage.Show();
+                    }
                 }
             }
 
