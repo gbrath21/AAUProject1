@@ -68,7 +68,6 @@
             this.coursedis.ItemHeight = 16;
             this.coursedis.Location = new System.Drawing.Point(4, 4);
             this.coursedis.Name = "coursedis";
-            this.coursedis.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.coursedis.Size = new System.Drawing.Size(107, 48);
             this.coursedis.TabIndex = 0;
             // 

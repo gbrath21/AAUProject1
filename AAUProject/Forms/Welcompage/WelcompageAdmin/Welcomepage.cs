@@ -41,11 +41,11 @@ namespace AAUProject
             ShowPasswordlb.Text = MainForm.SetValueForPassword;
             ShowUserTypelb.Text = MainForm.User_type;
             displayDays();
-            if (MainForm.User_type != "admin")
+            if (MainForm.User_type != "Admin")
             {
                 CreateUserbtn.Hide();
             }
-            if (MainForm.User_type == "student")
+            if (MainForm.User_type == "Student")
             {
                 CreateEventBTN.Hide();
             }

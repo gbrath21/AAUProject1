@@ -23,7 +23,10 @@ namespace AAUProject
             InitializeComponent();
         }
 
-        private void LoginForm_Load(object sender, EventArgs e) { }
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            Username.Select();
+        }
         
         public static string mysqlconnection = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
         
@@ -98,7 +101,7 @@ namespace AAUProject
             {
                 if (Reader.Read())
                 {
-                    User_type = Reader.GetString(1);
+                    User_type = Reader.GetString(3);
                     Semester_id = Reader.GetString(4);
                     if (IsLoggedIn is true)
                     {

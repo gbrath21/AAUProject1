@@ -37,34 +37,38 @@
             // info_headline
             // 
             this.info_headline.AutoSize = true;
-            this.info_headline.Location = new System.Drawing.Point(22, 22);
+            this.info_headline.Location = new System.Drawing.Point(11, 11);
+            this.info_headline.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.info_headline.Name = "info_headline";
-            this.info_headline.Size = new System.Drawing.Size(141, 25);
+            this.info_headline.Size = new System.Drawing.Size(70, 13);
             this.info_headline.TabIndex = 0;
             this.info_headline.Text = "info_headline";
             // 
             // dato_fullview
             // 
             this.dato_fullview.AutoSize = true;
-            this.dato_fullview.Location = new System.Drawing.Point(22, 90);
+            this.dato_fullview.Location = new System.Drawing.Point(11, 47);
+            this.dato_fullview.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dato_fullview.Name = "dato_fullview";
-            this.dato_fullview.Size = new System.Drawing.Size(57, 25);
+            this.dato_fullview.Size = new System.Drawing.Size(30, 13);
             this.dato_fullview.TabIndex = 1;
             this.dato_fullview.Text = "Dato";
             // 
             // hwtext
             // 
-            this.hwtext.Location = new System.Drawing.Point(280, 90);
+            this.hwtext.Location = new System.Drawing.Point(140, 47);
+            this.hwtext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hwtext.Multiline = true;
             this.hwtext.Name = "hwtext";
-            this.hwtext.Size = new System.Drawing.Size(949, 287);
+            this.hwtext.Size = new System.Drawing.Size(476, 151);
             this.hwtext.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1354, 219);
+            this.button1.Location = new System.Drawing.Point(677, 114);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 73);
+            this.button1.Size = new System.Drawing.Size(94, 38);
             this.button1.TabIndex = 2;
             this.button1.Text = "Edit";
             this.button1.UseVisualStyleBackColor = true;
@@ -72,14 +76,15 @@
             // 
             // Full_course_view
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.hwtext);
             this.Controls.Add(this.dato_fullview);
             this.Controls.Add(this.info_headline);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Full_course_view";
-            this.Size = new System.Drawing.Size(1699, 421);
+            this.Size = new System.Drawing.Size(850, 219);
             this.Load += new System.EventHandler(this.Full_course_view_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

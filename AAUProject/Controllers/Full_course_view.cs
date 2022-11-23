@@ -25,7 +25,10 @@ namespace AAUProject.Controllers
 
         private void Full_course_view_Load(object sender, EventArgs e)
         {
-
+            if (MainForm.User_type == "Student")
+            {
+                button1.Hide();
+            }
         }
 
         public void displaycourseinfo(string name,string course, string hw, DateTime date, string user_type,string start, string end, int id)
