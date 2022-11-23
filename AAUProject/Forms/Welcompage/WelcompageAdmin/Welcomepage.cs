@@ -43,6 +43,7 @@ namespace AAUProject
             if (MainForm.User_type != "Admin")
             {
                 CreateUserbtn.Hide();
+                updateuserbtn.Hide();
             }
             if (MainForm.User_type == "Student")
             {
@@ -390,6 +391,12 @@ namespace AAUProject
         {
             CreateCourseForm createCourseForm = new CreateCourseForm();
             createCourseForm.Show();
+        }
+
+        private void updateuserbtn_Click(object sender, EventArgs e)
+        {
+            UpdateUser updateUser = new UpdateUser();
+            updateUser.Show();
         }
 
 
