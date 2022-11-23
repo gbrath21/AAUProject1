@@ -530,7 +530,7 @@
             this.CreateUserbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
             this.CreateUserbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateUserbtn.ForeColor = System.Drawing.Color.White;
-            this.CreateUserbtn.Location = new System.Drawing.Point(521, 39);
+            this.CreateUserbtn.Location = new System.Drawing.Point(785, 48);
             this.CreateUserbtn.Margin = new System.Windows.Forms.Padding(2);
             this.CreateUserbtn.Name = "CreateUserbtn";
             this.CreateUserbtn.Size = new System.Drawing.Size(150, 34);
