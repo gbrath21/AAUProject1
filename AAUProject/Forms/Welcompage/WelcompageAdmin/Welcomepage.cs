@@ -399,6 +399,12 @@ namespace AAUProject
             updateUser.Show();
         }
 
+        private void UpdateCourseBTN_Click(object sender, EventArgs e)
+        {
+            UpdateCourseForm updateCourseForm = new UpdateCourseForm();
+            updateCourseForm.Show();
+        }
+
 
         //
         //homework
