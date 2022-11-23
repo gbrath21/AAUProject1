@@ -47,13 +47,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Couseoverviewtab = new System.Windows.Forms.TabControl();
             this.HomeTab = new System.Windows.Forms.TabPage();
+            this.logoutbtn = new System.Windows.Forms.Button();
             this.CourseslistBox1 = new System.Windows.Forms.ListBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
-            this.ShowUserTypelb = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.ShowUserTypelb = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.ShowUserNamelb = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -89,7 +90,6 @@
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.CrossButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.logoutbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -350,10 +350,23 @@
             this.HomeTab.Text = "tabPage5";
             this.HomeTab.UseVisualStyleBackColor = true;
             // 
+            // logoutbtn
+            // 
+            this.logoutbtn.BackColor = System.Drawing.Color.Maroon;
+            this.logoutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.ForeColor = System.Drawing.Color.White;
+            this.logoutbtn.Location = new System.Drawing.Point(1074, 28);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(300, 65);
+            this.logoutbtn.TabIndex = 20;
+            this.logoutbtn.Text = "Logout";
+            this.logoutbtn.UseVisualStyleBackColor = false;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
+            // 
             // CourseslistBox1
             // 
             this.CourseslistBox1.FormattingEnabled = true;
-            this.CourseslistBox1.Location = new System.Drawing.Point(27, 97);
+            this.CourseslistBox1.Location = new System.Drawing.Point(52, 360);
             this.CourseslistBox1.Margin = new System.Windows.Forms.Padding(2);
             this.CourseslistBox1.Name = "CourseslistBox1";
             this.CourseslistBox1.Size = new System.Drawing.Size(88, 43);
@@ -378,7 +391,7 @@
             this.panel14.Location = new System.Drawing.Point(54, 127);
             this.panel14.Margin = new System.Windows.Forms.Padding(6);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(529, 186);
+            this.panel14.Size = new System.Drawing.Size(273, 104);
             this.panel14.TabIndex = 17;
             // 
             // panel15
@@ -404,29 +417,29 @@
             this.label20.Text = "Username";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.White;
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel19.Controls.Add(this.ShowUserTypelb);
+            this.panel19.Location = new System.Drawing.Point(132, 48);
+            this.panel19.Margin = new System.Windows.Forms.Padding(0);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(132, 47);
+            this.panel19.TabIndex = 24;
+            // 
             // ShowUserTypelb
             // 
             this.ShowUserTypelb.BackColor = System.Drawing.Color.White;
             this.ShowUserTypelb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.ShowUserTypelb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.ShowUserTypelb.Location = new System.Drawing.Point(34, 19);
+            this.ShowUserTypelb.Location = new System.Drawing.Point(18, 4);
             this.ShowUserTypelb.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ShowUserTypelb.Name = "ShowUserTypelb";
             this.ShowUserTypelb.Size = new System.Drawing.Size(100, 23);
             this.ShowUserTypelb.TabIndex = 22;
             this.ShowUserTypelb.Text = "ShowUserType";
             this.ShowUserTypelb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.White;
-            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Controls.Add(this.ShowUserTypelb);
-            this.panel19.Location = new System.Drawing.Point(264, 90);
-            this.panel19.Margin = new System.Windows.Forms.Padding(0);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(132, 47);
-            this.panel19.TabIndex = 24;
             // 
             // panel18
             // 
@@ -479,7 +492,7 @@
             this.CreateUserbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
             this.CreateUserbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateUserbtn.ForeColor = System.Drawing.Color.White;
-            this.CreateUserbtn.Location = new System.Drawing.Point(785, 48);
+            this.CreateUserbtn.Location = new System.Drawing.Point(739, 59);
             this.CreateUserbtn.Margin = new System.Windows.Forms.Padding(2);
             this.CreateUserbtn.Name = "CreateUserbtn";
             this.CreateUserbtn.Size = new System.Drawing.Size(150, 34);
@@ -846,19 +859,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            // 
-            // logoutbtn
-            // 
-            this.logoutbtn.BackColor = System.Drawing.Color.Maroon;
-            this.logoutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutbtn.ForeColor = System.Drawing.Color.White;
-            this.logoutbtn.Location = new System.Drawing.Point(1074, 28);
-            this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.Size = new System.Drawing.Size(300, 65);
-            this.logoutbtn.TabIndex = 20;
-            this.logoutbtn.Text = "Logout";
-            this.logoutbtn.UseVisualStyleBackColor = false;
-            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // Welcomepage
             // 
