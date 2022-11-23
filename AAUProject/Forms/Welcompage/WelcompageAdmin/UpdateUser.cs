@@ -92,5 +92,20 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
                 }
             }
         }
+
+        private void deletebtn_Click(object sender, EventArgs e)
+        {
+            MySqlConnection connection = new MySqlConnection(connString);
+            String sqlStatement = "DELETE FROM user WHERE user_id = @user_id;";
+            MySqlCommand command = new MySqlCommand(sqlStatement, connection);
+            command.Parameters.AddWithValue("@user_id", user_id);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
+            MessageBox.Show("User Deleted");
+            command.Dispose();
+            connection.Close();
+            this.Hide();
+        }
     }
 }
