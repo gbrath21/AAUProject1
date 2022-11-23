@@ -386,6 +386,12 @@ namespace AAUProject
             logud.Show();
         }
 
+        private void CreateCoursebtn_Click(object sender, EventArgs e)
+        {
+            CreateCourseForm createCourseForm = new CreateCourseForm();
+            createCourseForm.Show();
+        }
+
 
         //
         //homework

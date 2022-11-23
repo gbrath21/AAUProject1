@@ -91,6 +91,7 @@
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.CrossButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CreateCoursebtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -228,7 +229,7 @@
             this.royalButton2.Image = null;
             this.royalButton2.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
             this.royalButton2.Location = new System.Drawing.Point(25, 31);
-            this.royalButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.royalButton2.Margin = new System.Windows.Forms.Padding(2);
             this.royalButton2.Name = "royalButton2";
             this.royalButton2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.royalButton2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -260,7 +261,7 @@
             this.royalButton1.Image = null;
             this.royalButton1.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
             this.royalButton1.Location = new System.Drawing.Point(25, 31);
-            this.royalButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.royalButton1.Margin = new System.Windows.Forms.Padding(2);
             this.royalButton1.Name = "royalButton1";
             this.royalButton1.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.royalButton1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -292,7 +293,7 @@
             this.Homebtn.Image = null;
             this.Homebtn.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
             this.Homebtn.Location = new System.Drawing.Point(25, 31);
-            this.Homebtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Homebtn.Margin = new System.Windows.Forms.Padding(2);
             this.Homebtn.Name = "Homebtn";
             this.Homebtn.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Homebtn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -337,6 +338,7 @@
             // 
             // HomeTab
             // 
+            this.HomeTab.Controls.Add(this.CreateCoursebtn);
             this.HomeTab.Controls.Add(this.logout);
             this.HomeTab.Controls.Add(this.logoutbtn);
             this.HomeTab.Controls.Add(this.CourseslistBox1);
@@ -346,8 +348,8 @@
             this.HomeTab.Controls.Add(this.label4);
             this.HomeTab.Location = new System.Drawing.Point(4, 22);
             this.HomeTab.Name = "HomeTab";
-            this.HomeTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.HomeTab.Size = new System.Drawing.Size(963, 528);
+            this.HomeTab.Padding = new System.Windows.Forms.Padding(3);
+            this.HomeTab.Size = new System.Drawing.Size(963, 656);
             this.HomeTab.TabIndex = 1;
             this.HomeTab.Text = "tabPage5";
             this.HomeTab.UseVisualStyleBackColor = true;
@@ -358,7 +360,7 @@
             this.logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logout.ForeColor = System.Drawing.Color.White;
             this.logout.Location = new System.Drawing.Point(785, 86);
-            this.logout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logout.Margin = new System.Windows.Forms.Padding(2);
             this.logout.Name = "logout";
             this.logout.Size = new System.Drawing.Size(150, 34);
             this.logout.TabIndex = 21;
@@ -383,7 +385,7 @@
             // 
             this.CourseslistBox1.FormattingEnabled = true;
             this.CourseslistBox1.Location = new System.Drawing.Point(52, 371);
-            this.CourseslistBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CourseslistBox1.Margin = new System.Windows.Forms.Padding(2);
             this.CourseslistBox1.Name = "CourseslistBox1";
             this.CourseslistBox1.Size = new System.Drawing.Size(88, 43);
             this.CourseslistBox1.TabIndex = 19;
@@ -405,7 +407,7 @@
             this.panel14.Controls.Add(this.panel18);
             this.panel14.Controls.Add(this.panel16);
             this.panel14.Location = new System.Drawing.Point(54, 127);
-            this.panel14.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel14.Margin = new System.Windows.Forms.Padding(6);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(270, 107);
             this.panel14.TabIndex = 17;
@@ -509,7 +511,7 @@
             this.CreateUserbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateUserbtn.ForeColor = System.Drawing.Color.White;
             this.CreateUserbtn.Location = new System.Drawing.Point(785, 48);
-            this.CreateUserbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CreateUserbtn.Margin = new System.Windows.Forms.Padding(2);
             this.CreateUserbtn.Name = "CreateUserbtn";
             this.CreateUserbtn.Size = new System.Drawing.Size(150, 34);
             this.CreateUserbtn.TabIndex = 16;
@@ -545,7 +547,7 @@
             this.CalendarTab.Controls.Add(this.daycontainer);
             this.CalendarTab.Location = new System.Drawing.Point(4, 22);
             this.CalendarTab.Name = "CalendarTab";
-            this.CalendarTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.CalendarTab.Padding = new System.Windows.Forms.Padding(3);
             this.CalendarTab.Size = new System.Drawing.Size(963, 656);
             this.CalendarTab.TabIndex = 0;
             this.CalendarTab.Text = "tabPage4";
@@ -558,7 +560,7 @@
             this.CreateEventBTN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.CreateEventBTN.ForeColor = System.Drawing.Color.White;
             this.CreateEventBTN.Location = new System.Drawing.Point(757, 67);
-            this.CreateEventBTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CreateEventBTN.Margin = new System.Windows.Forms.Padding(2);
             this.CreateEventBTN.Name = "CreateEventBTN";
             this.CreateEventBTN.Size = new System.Drawing.Size(134, 24);
             this.CreateEventBTN.TabIndex = 63;
@@ -698,8 +700,8 @@
             this.HomeworkTab.Controls.Add(this.panel8);
             this.HomeworkTab.Location = new System.Drawing.Point(4, 22);
             this.HomeworkTab.Name = "HomeworkTab";
-            this.HomeworkTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.HomeworkTab.Size = new System.Drawing.Size(963, 661);
+            this.HomeworkTab.Padding = new System.Windows.Forms.Padding(3);
+            this.HomeworkTab.Size = new System.Drawing.Size(963, 656);
             this.HomeworkTab.TabIndex = 2;
             this.HomeworkTab.Text = "tabPage6";
             this.HomeworkTab.UseVisualStyleBackColor = true;
@@ -712,7 +714,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(908, 655);
+            this.panel8.Size = new System.Drawing.Size(908, 650);
             this.panel8.TabIndex = 23;
             // 
             // Next_WeekBTN
@@ -742,7 +744,7 @@
             // WeekdaysPanel
             // 
             this.WeekdaysPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.WeekdaysPanel.Location = new System.Drawing.Point(0, 53);
+            this.WeekdaysPanel.Location = new System.Drawing.Point(0, 48);
             this.WeekdaysPanel.Margin = new System.Windows.Forms.Padding(0);
             this.WeekdaysPanel.Name = "WeekdaysPanel";
             this.WeekdaysPanel.Size = new System.Drawing.Size(908, 602);
@@ -753,10 +755,10 @@
             this.tabPage1.Controls.Add(this.CoursesflowLayoutPanel);
             this.tabPage1.Controls.Add(this.panel7);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(963, 661);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(963, 656);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -766,9 +768,9 @@
             this.CoursesflowLayoutPanel.AutoScroll = true;
             this.CoursesflowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CoursesflowLayoutPanel.Location = new System.Drawing.Point(2, 25);
-            this.CoursesflowLayoutPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CoursesflowLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
             this.CoursesflowLayoutPanel.Name = "CoursesflowLayoutPanel";
-            this.CoursesflowLayoutPanel.Size = new System.Drawing.Size(959, 634);
+            this.CoursesflowLayoutPanel.Size = new System.Drawing.Size(959, 629);
             this.CoursesflowLayoutPanel.TabIndex = 2;
             // 
             // panel7
@@ -777,7 +779,7 @@
             this.panel7.Controls.Add(this.comboBox1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(2, 2);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(959, 23);
             this.panel7.TabIndex = 1;
@@ -796,7 +798,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(470, 6);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(62, 21);
             this.comboBox1.TabIndex = 0;
@@ -875,6 +877,20 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            // 
+            // CreateCoursebtn
+            // 
+            this.CreateCoursebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CreateCoursebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateCoursebtn.ForeColor = System.Drawing.Color.White;
+            this.CreateCoursebtn.Location = new System.Drawing.Point(785, 10);
+            this.CreateCoursebtn.Margin = new System.Windows.Forms.Padding(2);
+            this.CreateCoursebtn.Name = "CreateCoursebtn";
+            this.CreateCoursebtn.Size = new System.Drawing.Size(150, 34);
+            this.CreateCoursebtn.TabIndex = 22;
+            this.CreateCoursebtn.Text = "Create Course";
+            this.CreateCoursebtn.UseVisualStyleBackColor = false;
+            this.CreateCoursebtn.Click += new System.EventHandler(this.CreateCoursebtn_Click);
             // 
             // Welcomepage
             // 
@@ -979,5 +995,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button logoutbtn;
         private System.Windows.Forms.Button logout;
+        private System.Windows.Forms.Button CreateCoursebtn;
     }
 }
