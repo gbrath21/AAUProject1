@@ -52,14 +52,10 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
             this.ShowUserTypelb = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.ShowPasswordlb = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.ShowUserNamelb = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.CreateUserbtn = new System.Windows.Forms.Button();
@@ -93,6 +89,7 @@
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.CrossButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.logoutbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -103,10 +100,8 @@
             this.HomeTab.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
-            this.panel20.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel18.SuspendLayout();
-            this.panel17.SuspendLayout();
             this.panel16.SuspendLayout();
             this.CalendarTab.SuspendLayout();
             this.HomeworkTab.SuspendLayout();
@@ -341,6 +336,7 @@
             // 
             // HomeTab
             // 
+            this.HomeTab.Controls.Add(this.logoutbtn);
             this.HomeTab.Controls.Add(this.CourseslistBox1);
             this.HomeTab.Controls.Add(this.label14);
             this.HomeTab.Controls.Add(this.panel14);
@@ -367,8 +363,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(30, 71);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Location = new System.Drawing.Point(49, 345);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(70, 13);
             this.label14.TabIndex = 18;
@@ -377,14 +372,13 @@
             // panel14
             // 
             this.panel14.Controls.Add(this.panel15);
-            this.panel14.Controls.Add(this.panel20);
             this.panel14.Controls.Add(this.panel19);
             this.panel14.Controls.Add(this.panel18);
-            this.panel14.Controls.Add(this.panel17);
             this.panel14.Controls.Add(this.panel16);
-            this.panel14.Location = new System.Drawing.Point(27, 154);
+            this.panel14.Location = new System.Drawing.Point(54, 127);
+            this.panel14.Margin = new System.Windows.Forms.Padding(6);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(276, 157);
+            this.panel14.Size = new System.Drawing.Size(529, 186);
             this.panel14.TabIndex = 17;
             // 
             // panel15
@@ -410,23 +404,13 @@
             this.label20.Text = "Username";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.White;
-            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Controls.Add(this.ShowUserTypelb);
-            this.panel20.Location = new System.Drawing.Point(132, 94);
-            this.panel20.Margin = new System.Windows.Forms.Padding(0);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(132, 47);
-            this.panel20.TabIndex = 25;
-            // 
             // ShowUserTypelb
             // 
             this.ShowUserTypelb.BackColor = System.Drawing.Color.White;
             this.ShowUserTypelb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.ShowUserTypelb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.ShowUserTypelb.Location = new System.Drawing.Point(16, 12);
+            this.ShowUserTypelb.Location = new System.Drawing.Point(34, 19);
+            this.ShowUserTypelb.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ShowUserTypelb.Name = "ShowUserTypelb";
             this.ShowUserTypelb.Size = new System.Drawing.Size(100, 23);
             this.ShowUserTypelb.TabIndex = 22;
@@ -437,24 +421,12 @@
             // 
             this.panel19.BackColor = System.Drawing.Color.White;
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Controls.Add(this.ShowPasswordlb);
-            this.panel19.Location = new System.Drawing.Point(132, 47);
+            this.panel19.Controls.Add(this.ShowUserTypelb);
+            this.panel19.Location = new System.Drawing.Point(264, 90);
             this.panel19.Margin = new System.Windows.Forms.Padding(0);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(132, 47);
             this.panel19.TabIndex = 24;
-            // 
-            // ShowPasswordlb
-            // 
-            this.ShowPasswordlb.BackColor = System.Drawing.Color.White;
-            this.ShowPasswordlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.ShowPasswordlb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.ShowPasswordlb.Location = new System.Drawing.Point(16, 12);
-            this.ShowPasswordlb.Name = "ShowPasswordlb";
-            this.ShowPasswordlb.Size = new System.Drawing.Size(100, 23);
-            this.ShowPasswordlb.TabIndex = 22;
-            this.ShowPasswordlb.Text = "ShowPassword";
-            this.ShowPasswordlb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel18
             // 
@@ -479,29 +451,6 @@
             this.ShowUserNamelb.Text = "ShowUserName";
             this.ShowUserNamelb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.label23);
-            this.panel17.Location = new System.Drawing.Point(0, 94);
-            this.panel17.Margin = new System.Windows.Forms.Padding(0);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(132, 47);
-            this.panel17.TabIndex = 22;
-            // 
-            // label23
-            // 
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(16, 9);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(100, 23);
-            this.label23.TabIndex = 20;
-            this.label23.Text = "Usertype";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
@@ -522,7 +471,7 @@
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(100, 23);
             this.label22.TabIndex = 19;
-            this.label22.Text = "Password";
+            this.label22.Text = "Usertype";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CreateUserbtn
@@ -898,6 +847,19 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // logoutbtn
+            // 
+            this.logoutbtn.BackColor = System.Drawing.Color.Maroon;
+            this.logoutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.ForeColor = System.Drawing.Color.White;
+            this.logoutbtn.Location = new System.Drawing.Point(1074, 28);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(300, 65);
+            this.logoutbtn.TabIndex = 20;
+            this.logoutbtn.Text = "Logout";
+            this.logoutbtn.UseVisualStyleBackColor = false;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
+            // 
             // Welcomepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -921,10 +883,8 @@
             this.HomeTab.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
             this.panel19.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.CalendarTab.ResumeLayout(false);
             this.CalendarTab.PerformLayout();
@@ -982,14 +942,10 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Label ShowUserTypelb;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Label ShowPasswordlb;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label ShowUserNamelb;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel8;
@@ -1005,5 +961,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ListBox CourseslistBox1;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button logoutbtn;
     }
 }

@@ -32,7 +32,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
             //Viser kun timer du er tilmeldt
             foreach (var item in AAUProject.MainForm.courselist)
             {
-                String sqlstatement = "SELECT * FROM course_info WHERE cal_time = @cal_time AND course_course_id = @course_id ORDER BY time_start";
+                String sqlstatement = "SELECT * FROM lectures WHERE cal_time = @cal_time AND course_course_id = @course_id ORDER BY time_start";
                 MySqlCommand command = new MySqlCommand(sqlstatement, conn);
                 command.Parameters.AddWithValue("@course_id", item);
                 command.Parameters.AddWithValue("@cal_time", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);
@@ -63,7 +63,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         {
             string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
             MySqlConnection conn = new MySqlConnection(connstring);
-            String sqlstatement = "SELECT * FROM course_info WHERE cal_time = @cal_time";
+            String sqlstatement = "SELECT * FROM lectures WHERE cal_time = @cal_time";
             conn.Open();
             MySqlCommand command = new MySqlCommand(sqlstatement, conn);
             command.Parameters.AddWithValue("@cal_time", Welcomepage.static_year + "-" + Welcomepage.static_month + "-" + lbdays.Text);

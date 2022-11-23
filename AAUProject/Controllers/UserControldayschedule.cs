@@ -43,7 +43,7 @@ namespace AAUProject.Controllers
             conn.Open();
             foreach (var item in AAUProject.MainForm.courselist)
             {
-                String sqlstatement = "SELECT * FROM course_info WHERE cal_time = @cal_time AND course_course_id = @course_id ORDER BY time_start";
+                String sqlstatement = "SELECT * FROM lectures WHERE cal_time = @cal_time AND course_course_id = @course_id ORDER BY time_start";
                 MySqlCommand command = new MySqlCommand(sqlstatement, conn);
                 command.Parameters.AddWithValue("@course_id", item);
                 command.Parameters.AddWithValue("@cal_time", date);

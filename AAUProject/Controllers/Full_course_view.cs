@@ -42,7 +42,7 @@ namespace AAUProject.Controllers
             ID = id;
             coursename = course;
 
-            if (user_type != "teacher")
+            if (user_type == "Student")
             {
                 button1.Visible = false;
             }
