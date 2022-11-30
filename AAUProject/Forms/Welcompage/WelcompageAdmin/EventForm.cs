@@ -62,7 +62,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         private void Savebtn_Click_1(object sender, EventArgs e)
         {
             MySqlConnection connection = new MySqlConnection(connString);
-            String sqlStatement = "INSERT INTO course_info(info_hw, info_headline, course_course_id, cal_time, time_start, time_end) VALUES( @homework, @headline, @courseid, @coursedate, @timestart, @timeend)";
+            String sqlStatement = "INSERT INTO lectures(info_hw, info_headline, course_course_id, cal_time, time_start, time_end) VALUES( @homework, @headline, @courseid, @coursedate, @timestart, @timeend)";
             MySqlCommand command = new MySqlCommand(sqlStatement, connection);
             command.Parameters.AddWithValue("@coursedate", dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             command.Parameters.AddWithValue("@headline", txcoursename.Text);
@@ -90,7 +90,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         private void updatebtn_Click(object sender, EventArgs e)
         {
             MySqlConnection connection = new MySqlConnection(connString);
-            String sqlStatement = "UPDATE course_info SET info_hw = @homework, info_headline = @headline, course_course_id = @courseid, cal_time = @coursedate, time_start = @timestart, time_end = @timeend WHERE info_id = @id";
+            String sqlStatement = "UPDATE lectures SET info_hw = @homework, info_headline = @headline, course_course_id = @courseid, cal_time = @coursedate, time_start = @timestart, time_end = @timeend WHERE info_id = @id";
             MySqlCommand command = new MySqlCommand(sqlStatement, connection);
             command.Parameters.AddWithValue("@coursedate", dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             command.Parameters.AddWithValue("@headline", txcoursename.Text);
