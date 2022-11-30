@@ -60,9 +60,10 @@
             // 
             this.hwtext.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hwtext.Location = new System.Drawing.Point(281, 21);
-            this.hwtext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hwtext.Margin = new System.Windows.Forms.Padding(4);
             this.hwtext.Multiline = true;
             this.hwtext.Name = "hwtext";
+            this.hwtext.ReadOnly = true;
             this.hwtext.Size = new System.Drawing.Size(1062, 356);
             this.hwtext.TabIndex = 0;
             // 
@@ -99,7 +100,7 @@
             this.Controls.Add(this.hwtext);
             this.Controls.Add(this.dato_fullview);
             this.Controls.Add(this.info_headline);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Full_course_view";
             this.Size = new System.Drawing.Size(1700, 421);
             this.Load += new System.EventHandler(this.Full_course_view_Load);

@@ -43,21 +43,23 @@
             // lbdays
             // 
             this.lbdays.AutoSize = true;
-            this.lbdays.Font = new System.Drawing.Font("Barlow Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.lbdays.Location = new System.Drawing.Point(3, 0);
+            this.lbdays.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lbdays.Location = new System.Drawing.Point(6, 0);
+            this.lbdays.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbdays.Name = "lbdays";
-            this.lbdays.Size = new System.Drawing.Size(30, 22);
+            this.lbdays.Size = new System.Drawing.Size(55, 37);
             this.lbdays.TabIndex = 2;
             this.lbdays.Text = "00";
             // 
             // dispanel
             // 
             this.dispanel.Controls.Add(this.coursedis);
-            this.dispanel.Font = new System.Drawing.Font("Barlow SemiBold", 9F, System.Drawing.FontStyle.Bold);
+            this.dispanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.dispanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.dispanel.Location = new System.Drawing.Point(3, 20);
+            this.dispanel.Location = new System.Drawing.Point(6, 38);
+            this.dispanel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dispanel.Name = "dispanel";
-            this.dispanel.Size = new System.Drawing.Size(114, 47);
+            this.dispanel.Size = new System.Drawing.Size(228, 90);
             this.dispanel.TabIndex = 3;
             this.dispanel.Click += new System.EventHandler(this.UserControlDays_Click);
             // 
@@ -65,22 +67,25 @@
             // 
             this.coursedis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.coursedis.FormattingEnabled = true;
-            this.coursedis.ItemHeight = 16;
-            this.coursedis.Location = new System.Drawing.Point(4, 4);
+            this.coursedis.ItemHeight = 29;
+            this.coursedis.Location = new System.Drawing.Point(8, 8);
+            this.coursedis.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.coursedis.Name = "coursedis";
-            this.coursedis.Size = new System.Drawing.Size(107, 48);
+            this.coursedis.SelectionMode = System.Windows.Forms.SelectionMode.None;
+            this.coursedis.Size = new System.Drawing.Size(214, 87);
             this.coursedis.TabIndex = 0;
             // 
             // UserControlDays
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.dispanel);
             this.Controls.Add(this.lbdays);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "UserControlDays";
-            this.Size = new System.Drawing.Size(120, 70);
+            this.Size = new System.Drawing.Size(240, 135);
             this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.dispanel.ResumeLayout(false);
             this.ResumeLayout(false);
