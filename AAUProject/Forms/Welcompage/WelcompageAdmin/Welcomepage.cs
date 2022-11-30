@@ -388,6 +388,7 @@ namespace AAUProject
             this.Close();
             MainForm logud = new MainForm();
             logud.Show();
+            MainForm.courselist.Clear();
         }
 
         private void CreateCoursebtn_Click(object sender, EventArgs e)
