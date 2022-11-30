@@ -50,6 +50,7 @@ namespace AAUProject
             if (MainForm.User_type == "Student")
             {
                 CreateEventBTN.Hide();
+                createevent2.Hide();
             }
             if (EventForm.saved is true)
             {
@@ -405,6 +406,12 @@ namespace AAUProject
         {
             UpdateCourseForm updateCourseForm = new UpdateCourseForm();
             updateCourseForm.Show();
+        }
+
+        private void createevent2_Click(object sender, EventArgs e)
+        {
+            EventForm eventform = new EventForm();
+            eventform.Show();
         }
 
 
