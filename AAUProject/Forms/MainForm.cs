@@ -121,7 +121,7 @@ namespace AAUProject
                 }
             }
             string sem_courses = "SELECT course_id FROM semester WHERE semester_id = @semester;";
-            string teacher_courses = "SELECT course_id FROM semester WHERE teacher_id = @teacher;";
+            string teacher_courses = "SELECT course_id FROM teacher_courses WHERE teacher_id = @teacher;";
             MySqlCommand semcourses = new MySqlCommand(sem_courses, connection);
             MySqlCommand teachercourses = new MySqlCommand(teacher_courses, connection);
             semcourses.Parameters.AddWithValue("@semester", Semester_id);

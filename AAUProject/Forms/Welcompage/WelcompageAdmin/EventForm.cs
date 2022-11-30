@@ -30,9 +30,9 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
                 Endtimebox.Items.Add(i.ToString("00") + ":00:00");
             }
             MySqlConnection connection = new MySqlConnection(connString);
-            String sqlStatement = "SELECT course_id FROM semester WHERE semester_id = (select semester_id from user where user_name = @username)";
+            String sqlStatement = "SELECT course_id FROM teacher_courses WHERE teacher_id = @user_id";
             MySqlCommand command = new MySqlCommand(sqlStatement, connection);
-            command.Parameters.AddWithValue("@username", MainForm.SetValueForUsername);
+            command.Parameters.AddWithValue("@user_id", MainForm.user_id);
             
             connection.Open();
             using (MySqlDataReader Reader = command.ExecuteReader())
