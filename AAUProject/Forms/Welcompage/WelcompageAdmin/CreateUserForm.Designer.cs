@@ -47,7 +47,7 @@
             this.usernametxt.ForeColor = System.Drawing.Color.DimGray;
             this.usernametxt.Image = null;
             this.usernametxt.Location = new System.Drawing.Point(146, 138);
-            this.usernametxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernametxt.Margin = new System.Windows.Forms.Padding(4);
             this.usernametxt.MaxLength = 32767;
             this.usernametxt.Multiline = false;
             this.usernametxt.Name = "usernametxt";
@@ -65,7 +65,7 @@
             this.passwordtxt.ForeColor = System.Drawing.Color.DimGray;
             this.passwordtxt.Image = null;
             this.passwordtxt.Location = new System.Drawing.Point(146, 304);
-            this.passwordtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordtxt.Margin = new System.Windows.Forms.Padding(4);
             this.passwordtxt.MaxLength = 32767;
             this.passwordtxt.Multiline = false;
             this.passwordtxt.Name = "passwordtxt";
@@ -82,12 +82,13 @@
             this.semestertxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.semestertxt.EnabledCalc = true;
             this.semestertxt.FormattingEnabled = true;
-            this.semestertxt.ItemHeight = 20;
+            this.semestertxt.ItemHeight = 40;
             this.semestertxt.Location = new System.Drawing.Point(146, 560);
-            this.semestertxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.semestertxt.Margin = new System.Windows.Forms.Padding(4);
             this.semestertxt.Name = "semestertxt";
-            this.semestertxt.Size = new System.Drawing.Size(414, 26);
+            this.semestertxt.Size = new System.Drawing.Size(414, 46);
             this.semestertxt.TabIndex = 14;
+            this.semestertxt.SelectedIndexChanged += new System.EventHandler(this.semestertxt_SelectedIndexChanged);
             // 
             // dungeonLabel1
             // 
@@ -149,15 +150,15 @@
             this.usertypetxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.usertypetxt.EnabledCalc = true;
             this.usertypetxt.FormattingEnabled = true;
-            this.usertypetxt.ItemHeight = 20;
+            this.usertypetxt.ItemHeight = 40;
             this.usertypetxt.Items.AddRange(new object[] {
             "Student",
             "Teacher",
             "Admin"});
             this.usertypetxt.Location = new System.Drawing.Point(146, 454);
-            this.usertypetxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usertypetxt.Margin = new System.Windows.Forms.Padding(4);
             this.usertypetxt.Name = "usertypetxt";
-            this.usertypetxt.Size = new System.Drawing.Size(418, 26);
+            this.usertypetxt.Size = new System.Drawing.Size(418, 46);
             this.usertypetxt.TabIndex = 13;
             this.usertypetxt.SelectedIndexChanged += new System.EventHandler(this.usertypetxt_SelectedIndexChanged);
             // 
@@ -171,7 +172,7 @@
             this.createuser_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.createuser_button.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
             this.createuser_button.Location = new System.Drawing.Point(336, 662);
-            this.createuser_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.createuser_button.Margin = new System.Windows.Forms.Padding(4);
             this.createuser_button.Name = "createuser_button";
             this.createuser_button.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.createuser_button.Size = new System.Drawing.Size(300, 67);
@@ -194,7 +195,7 @@
             this.Controls.Add(this.usertypetxt);
             this.Controls.Add(this.passwordtxt);
             this.Controls.Add(this.usernametxt);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CreateUserForm";
             this.Text = "CreateUserForm";
             this.Load += new System.EventHandler(this.CreateUserForm_Load);

@@ -116,6 +116,7 @@
             this.semester.Name = "semester";
             this.semester.Size = new System.Drawing.Size(327, 33);
             this.semester.TabIndex = 7;
+            this.semester.SelectedIndexChanged += new System.EventHandler(this.semester_SelectedIndexChanged);
             // 
             // updatebtn
             // 

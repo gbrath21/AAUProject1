@@ -32,8 +32,10 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
             connection.Open();
             using (MySqlDataReader Reader = command.ExecuteReader())
             {
+                semestertxt.Items.Add("");
                 while (Reader.Read())
                 {
+
                     semestertxt.Items.Add(Reader.GetString("semester_name"));
                 }
             }
@@ -69,10 +71,8 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
             command.Parameters.AddWithValue("@username", usernametxt.Text);
             command.Parameters.AddWithValue("@password", passwordtxt.Text);
             command.Parameters.AddWithValue("@usertype", usertypetxt.Text);
-            command.Parameters.AddWithValue("@semestername", semestertxt.Text);
             connection.Open();
-            command.ExecuteNonQuery();
-            connection.Close();
+            
             
             if(usertypetxt.Text == "Student") 
             {
@@ -81,7 +81,16 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
                 command1.Parameters.AddWithValue("@semestername", semestertxt.Text);
                 command1.ExecuteNonQuery();
             }
-
+            if (semestertxt.Text == "")
+            {
+                command.Parameters.AddWithValue("@semestername", DBNull.Value);
+            }
+            else
+            {
+                command.Parameters.AddWithValue("@semestername", semestertxt.Text);
+            }
+            command.ExecuteNonQuery();
+            connection.Close();
             MessageBox.Show("User created");
             command.Dispose();
             connection.Close();
@@ -108,6 +117,9 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
 
         }
 
-        
+        private void semestertxt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

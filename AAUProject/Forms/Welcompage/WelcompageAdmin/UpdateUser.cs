@@ -107,5 +107,10 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
             connection.Close();
             this.Hide();
         }
+
+        private void semester_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
