@@ -53,7 +53,7 @@
             this.Savebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.Savebtn.ForeColor = System.Drawing.Color.White;
             this.Savebtn.Location = new System.Drawing.Point(482, 763);
-            this.Savebtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Savebtn.Margin = new System.Windows.Forms.Padding(6);
             this.Savebtn.Name = "Savebtn";
             this.Savebtn.Size = new System.Drawing.Size(176, 54);
             this.Savebtn.TabIndex = 17;
@@ -64,7 +64,7 @@
             // txcoursename
             // 
             this.txcoursename.Location = new System.Drawing.Point(100, 212);
-            this.txcoursename.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txcoursename.Margin = new System.Windows.Forms.Padding(6);
             this.txcoursename.Multiline = true;
             this.txcoursename.Name = "txcoursename";
             this.txcoursename.Size = new System.Drawing.Size(526, 71);
@@ -78,9 +78,10 @@
             this.label1.Location = new System.Drawing.Point(100, 175);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 29);
+            this.label1.Size = new System.Drawing.Size(118, 29);
             this.label1.TabIndex = 20;
-            this.label1.Text = "Course name";
+            this.label1.Text = "Headline";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -97,7 +98,7 @@
             // txhomework
             // 
             this.txhomework.Location = new System.Drawing.Point(100, 348);
-            this.txhomework.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txhomework.Margin = new System.Windows.Forms.Padding(6);
             this.txhomework.Multiline = true;
             this.txhomework.Name = "txhomework";
             this.txhomework.Size = new System.Drawing.Size(526, 71);
@@ -119,7 +120,7 @@
             // 
             this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dateTimePicker1.Location = new System.Drawing.Point(100, 106);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(526, 31);
             this.dateTimePicker1.TabIndex = 24;
@@ -140,7 +141,7 @@
             // 
             this.course_idbox.FormattingEnabled = true;
             this.course_idbox.Location = new System.Drawing.Point(100, 510);
-            this.course_idbox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.course_idbox.Margin = new System.Windows.Forms.Padding(6);
             this.course_idbox.Name = "course_idbox";
             this.course_idbox.Size = new System.Drawing.Size(526, 33);
             this.course_idbox.TabIndex = 27;
@@ -173,7 +174,7 @@
             // 
             this.Starttimebox.FormattingEnabled = true;
             this.Starttimebox.Location = new System.Drawing.Point(100, 612);
-            this.Starttimebox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Starttimebox.Margin = new System.Windows.Forms.Padding(6);
             this.Starttimebox.Name = "Starttimebox";
             this.Starttimebox.Size = new System.Drawing.Size(238, 33);
             this.Starttimebox.TabIndex = 30;
@@ -182,7 +183,7 @@
             // 
             this.Endtimebox.FormattingEnabled = true;
             this.Endtimebox.Location = new System.Drawing.Point(388, 612);
-            this.Endtimebox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Endtimebox.Margin = new System.Windows.Forms.Padding(6);
             this.Endtimebox.Name = "Endtimebox";
             this.Endtimebox.Size = new System.Drawing.Size(238, 33);
             this.Endtimebox.TabIndex = 31;
@@ -242,7 +243,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txcoursename);
             this.Controls.Add(this.Savebtn);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "EventForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EventForm";
