@@ -45,7 +45,9 @@ namespace AAUProject
                 updateuserbtn.Hide();
                 UpdateCourseBTN.Hide();
                 CreateCoursebtn.Hide();
-                
+                royalButton1.Show();
+                royalButton2.Show();
+
             }
             if (MainForm.User_type == "Student")
             {

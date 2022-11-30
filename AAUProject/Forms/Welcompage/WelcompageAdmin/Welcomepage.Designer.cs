@@ -243,6 +243,7 @@
             this.royalButton2.Size = new System.Drawing.Size(300, 75);
             this.royalButton2.TabIndex = 20;
             this.royalButton2.Text = "Homework";
+            this.royalButton2.Visible = false;
             this.royalButton2.Click += new System.EventHandler(this.royalButton2_Click);
             // 
             // panel5
@@ -276,6 +277,7 @@
             this.royalButton1.Size = new System.Drawing.Size(300, 75);
             this.royalButton1.TabIndex = 20;
             this.royalButton1.Text = "Calendar";
+            this.royalButton1.Visible = false;
             this.royalButton1.Click += new System.EventHandler(this.royalButton1_Click_1);
             // 
             // logout
