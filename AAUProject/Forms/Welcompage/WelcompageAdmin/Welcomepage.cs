@@ -48,6 +48,12 @@ namespace AAUProject
                 royalButton1.Show();
                 royalButton2.Show();
 
+                CreateCoursebtn.Hide();             
+            }
+            if (MainForm.User_type == "Admin")
+            {
+                CalenderBTN.Hide();
+                HomeworkBTN.Hide();
             }
             if (MainForm.User_type == "Student")
             {

@@ -38,9 +38,9 @@
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.royalButton2 = new ReaLTaiizor.Controls.RoyalButton();
+            this.HomeworkBTN = new ReaLTaiizor.Controls.RoyalButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.royalButton1 = new ReaLTaiizor.Controls.RoyalButton();
+            this.CalenderBTN = new ReaLTaiizor.Controls.RoyalButton();
             this.logout = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Homebtn = new ReaLTaiizor.Controls.RoyalButton();
@@ -214,7 +214,7 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.royalButton2);
+            this.panel6.Controls.Add(this.HomeworkBTN);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 601);
             this.panel6.Margin = new System.Windows.Forms.Padding(6);
@@ -222,33 +222,32 @@
             this.panel6.Size = new System.Drawing.Size(400, 192);
             this.panel6.TabIndex = 23;
             // 
-            // royalButton2
+            // HomeworkBTN
             // 
-            this.royalButton2.BackColor = System.Drawing.Color.White;
-            this.royalButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.royalButton2.BorderThickness = 2;
-            this.royalButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.royalButton2.DrawBorder = true;
-            this.royalButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.royalButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.royalButton2.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.royalButton2.Image = null;
-            this.royalButton2.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.royalButton2.Location = new System.Drawing.Point(50, 60);
-            this.royalButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.royalButton2.Name = "royalButton2";
-            this.royalButton2.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.royalButton2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.royalButton2.PressedForeColor = System.Drawing.Color.White;
-            this.royalButton2.Size = new System.Drawing.Size(300, 75);
-            this.royalButton2.TabIndex = 20;
-            this.royalButton2.Text = "Homework";
-            this.royalButton2.Visible = false;
-            this.royalButton2.Click += new System.EventHandler(this.royalButton2_Click);
+            this.HomeworkBTN.BackColor = System.Drawing.Color.White;
+            this.HomeworkBTN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.HomeworkBTN.BorderThickness = 2;
+            this.HomeworkBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HomeworkBTN.DrawBorder = true;
+            this.HomeworkBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeworkBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.HomeworkBTN.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.HomeworkBTN.Image = null;
+            this.HomeworkBTN.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.HomeworkBTN.Location = new System.Drawing.Point(50, 60);
+            this.HomeworkBTN.Margin = new System.Windows.Forms.Padding(4);
+            this.HomeworkBTN.Name = "HomeworkBTN";
+            this.HomeworkBTN.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.HomeworkBTN.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.HomeworkBTN.PressedForeColor = System.Drawing.Color.White;
+            this.HomeworkBTN.Size = new System.Drawing.Size(300, 75);
+            this.HomeworkBTN.TabIndex = 20;
+            this.HomeworkBTN.Text = "Homework";
+            this.HomeworkBTN.Click += new System.EventHandler(this.royalButton2_Click);
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.royalButton1);
+            this.panel5.Controls.Add(this.CalenderBTN);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 409);
             this.panel5.Margin = new System.Windows.Forms.Padding(6);
@@ -256,29 +255,28 @@
             this.panel5.Size = new System.Drawing.Size(400, 192);
             this.panel5.TabIndex = 22;
             // 
-            // royalButton1
+            // CalenderBTN
             // 
-            this.royalButton1.BackColor = System.Drawing.Color.White;
-            this.royalButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.royalButton1.BorderThickness = 2;
-            this.royalButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.royalButton1.DrawBorder = true;
-            this.royalButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.royalButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.royalButton1.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.royalButton1.Image = null;
-            this.royalButton1.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
-            this.royalButton1.Location = new System.Drawing.Point(50, 60);
-            this.royalButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.royalButton1.Name = "royalButton1";
-            this.royalButton1.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.royalButton1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
-            this.royalButton1.PressedForeColor = System.Drawing.Color.White;
-            this.royalButton1.Size = new System.Drawing.Size(300, 75);
-            this.royalButton1.TabIndex = 20;
-            this.royalButton1.Text = "Calendar";
-            this.royalButton1.Visible = false;
-            this.royalButton1.Click += new System.EventHandler(this.royalButton1_Click_1);
+            this.CalenderBTN.BackColor = System.Drawing.Color.White;
+            this.CalenderBTN.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalenderBTN.BorderThickness = 2;
+            this.CalenderBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CalenderBTN.DrawBorder = true;
+            this.CalenderBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalenderBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalenderBTN.HotTrackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.CalenderBTN.Image = null;
+            this.CalenderBTN.LayoutFlags = ReaLTaiizor.Util.RoyalLayoutFlags.ImageBeforeText;
+            this.CalenderBTN.Location = new System.Drawing.Point(50, 60);
+            this.CalenderBTN.Margin = new System.Windows.Forms.Padding(4);
+            this.CalenderBTN.Name = "CalenderBTN";
+            this.CalenderBTN.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.CalenderBTN.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(36)))), ((int)(((byte)(76)))));
+            this.CalenderBTN.PressedForeColor = System.Drawing.Color.White;
+            this.CalenderBTN.Size = new System.Drawing.Size(300, 75);
+            this.CalenderBTN.TabIndex = 20;
+            this.CalenderBTN.Text = "Calendar";
+            this.CalenderBTN.Click += new System.EventHandler(this.royalButton1_Click_1);
             // 
             // logout
             // 
@@ -1033,8 +1031,8 @@
         private ReaLTaiizor.Controls.RoyalButton Homebtn;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private ReaLTaiizor.Controls.RoyalButton royalButton2;
-        private ReaLTaiizor.Controls.RoyalButton royalButton1;
+        private ReaLTaiizor.Controls.RoyalButton HomeworkBTN;
+        private ReaLTaiizor.Controls.RoyalButton CalenderBTN;
         private System.Windows.Forms.Button Nextbtn;
         private System.Windows.Forms.Button Prebtn;
         private System.Windows.Forms.Label label12;
