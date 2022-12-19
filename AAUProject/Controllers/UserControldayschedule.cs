@@ -38,7 +38,7 @@ namespace AAUProject.Controllers
         public void displayHomework(string date)
         {
 
-            string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
+            string connstring = "server=aaupro.mysql.database.azure.com;user id=AAU_admin@aaupro;database=users;port=3306;password=Saderlort1";
             MySqlConnection conn = new MySqlConnection(connstring);
             conn.Open();
             foreach (var item in AAUProject.MainForm.courselist)

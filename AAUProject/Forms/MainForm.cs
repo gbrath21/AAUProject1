@@ -28,7 +28,7 @@ namespace AAUProject
             Username.Select();
         }
         
-        public static string mysqlconnection = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
+        public static string mysqlconnection = "server=aaupro.mysql.database.azure.com;user id=AAU_admin@aaupro;database=users;port=3306;password=Saderlort1";
         
         public static List<string> courselist = new List<string>();
         public bool IsLoggedIn = false;

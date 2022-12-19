@@ -23,7 +23,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
         private void UserControlDays_Load(object sender, EventArgs e)
         {
             
-            string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
+            string connstring = "server=aaupro.mysql.database.azure.com;user id=AAU_admin@aaupro;database=users;port=3306;password=Saderlort1";
             MySqlConnection conn = new MySqlConnection(connstring);
             
             conn.Open();
@@ -61,7 +61,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 
         public void displayCourse()
         {
-            string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
+            string connstring = "server=aaupro.mysql.database.azure.com;user id=AAU_admin@aaupro;database=users;port=3306;password=Saderlort1";
             MySqlConnection conn = new MySqlConnection(connstring);
             String sqlstatement = "SELECT * FROM lectures WHERE cal_time = @cal_time";
             conn.Open();

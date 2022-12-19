@@ -441,7 +441,7 @@ namespace AAUProject
             Couseoverviewtab.SelectedTab = tabPage1;
             CoursesflowLayoutPanel.Controls.Clear();
             string selected = this.CourseslistBox1.GetItemText(this.CourseslistBox1.SelectedItem);
-            string connstring = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
+            string connstring = "server=aaupro.mysql.database.azure.com;user id=AAU_admin@aaupro;database=users;port=3306;password=Saderlort1";
             MySqlConnection conn = new MySqlConnection(connstring);
             conn.Open();
             String sqlstatement = "SELECT * FROM lectures WHERE course_course_id = @course_id ORDER BY time_start";

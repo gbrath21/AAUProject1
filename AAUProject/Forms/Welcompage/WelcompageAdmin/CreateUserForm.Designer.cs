@@ -46,13 +46,13 @@
             this.usernametxt.Font = new System.Drawing.Font("Tahoma", 11F);
             this.usernametxt.ForeColor = System.Drawing.Color.DimGray;
             this.usernametxt.Image = null;
-            this.usernametxt.Location = new System.Drawing.Point(146, 138);
-            this.usernametxt.Margin = new System.Windows.Forms.Padding(4);
+            this.usernametxt.Location = new System.Drawing.Point(73, 72);
+            this.usernametxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.usernametxt.MaxLength = 32767;
             this.usernametxt.Multiline = false;
             this.usernametxt.Name = "usernametxt";
             this.usernametxt.ReadOnly = false;
-            this.usernametxt.Size = new System.Drawing.Size(418, 59);
+            this.usernametxt.Size = new System.Drawing.Size(209, 41);
             this.usernametxt.TabIndex = 11;
             this.usernametxt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.usernametxt.UseSystemPasswordChar = false;
@@ -64,13 +64,13 @@
             this.passwordtxt.Font = new System.Drawing.Font("Tahoma", 11F);
             this.passwordtxt.ForeColor = System.Drawing.Color.DimGray;
             this.passwordtxt.Image = null;
-            this.passwordtxt.Location = new System.Drawing.Point(146, 304);
-            this.passwordtxt.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordtxt.Location = new System.Drawing.Point(73, 158);
+            this.passwordtxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.passwordtxt.MaxLength = 32767;
             this.passwordtxt.Multiline = false;
             this.passwordtxt.Name = "passwordtxt";
             this.passwordtxt.ReadOnly = false;
-            this.passwordtxt.Size = new System.Drawing.Size(418, 59);
+            this.passwordtxt.Size = new System.Drawing.Size(209, 41);
             this.passwordtxt.TabIndex = 12;
             this.passwordtxt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
             this.passwordtxt.UseSystemPasswordChar = false;
@@ -83,10 +83,10 @@
             this.semestertxt.EnabledCalc = true;
             this.semestertxt.FormattingEnabled = true;
             this.semestertxt.ItemHeight = 40;
-            this.semestertxt.Location = new System.Drawing.Point(146, 560);
-            this.semestertxt.Margin = new System.Windows.Forms.Padding(4);
+            this.semestertxt.Location = new System.Drawing.Point(73, 310);
+            this.semestertxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.semestertxt.Name = "semestertxt";
-            this.semestertxt.Size = new System.Drawing.Size(414, 46);
+            this.semestertxt.Size = new System.Drawing.Size(209, 46);
             this.semestertxt.TabIndex = 14;
             this.semestertxt.SelectedIndexChanged += new System.EventHandler(this.semestertxt_SelectedIndexChanged);
             // 
@@ -96,10 +96,10 @@
             this.dungeonLabel1.BackColor = System.Drawing.Color.Transparent;
             this.dungeonLabel1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.dungeonLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.dungeonLabel1.Location = new System.Drawing.Point(162, 96);
-            this.dungeonLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dungeonLabel1.Location = new System.Drawing.Point(81, 50);
+            this.dungeonLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dungeonLabel1.Name = "dungeonLabel1";
-            this.dungeonLabel1.Size = new System.Drawing.Size(152, 41);
+            this.dungeonLabel1.Size = new System.Drawing.Size(75, 20);
             this.dungeonLabel1.TabIndex = 15;
             this.dungeonLabel1.Text = "Username";
             // 
@@ -109,10 +109,10 @@
             this.dungeonLabel2.BackColor = System.Drawing.Color.Transparent;
             this.dungeonLabel2.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.dungeonLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.dungeonLabel2.Location = new System.Drawing.Point(162, 262);
-            this.dungeonLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dungeonLabel2.Location = new System.Drawing.Point(81, 136);
+            this.dungeonLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dungeonLabel2.Name = "dungeonLabel2";
-            this.dungeonLabel2.Size = new System.Drawing.Size(143, 41);
+            this.dungeonLabel2.Size = new System.Drawing.Size(70, 20);
             this.dungeonLabel2.TabIndex = 16;
             this.dungeonLabel2.Text = "Password";
             // 
@@ -122,10 +122,10 @@
             this.dungeonLabel3.BackColor = System.Drawing.Color.Transparent;
             this.dungeonLabel3.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.dungeonLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.dungeonLabel3.Location = new System.Drawing.Point(162, 412);
-            this.dungeonLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dungeonLabel3.Location = new System.Drawing.Point(81, 214);
+            this.dungeonLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dungeonLabel3.Name = "dungeonLabel3";
-            this.dungeonLabel3.Size = new System.Drawing.Size(137, 41);
+            this.dungeonLabel3.Size = new System.Drawing.Size(67, 20);
             this.dungeonLabel3.TabIndex = 17;
             this.dungeonLabel3.Text = "Usertype";
             // 
@@ -135,10 +135,10 @@
             this.dungeonLabel4.BackColor = System.Drawing.Color.Transparent;
             this.dungeonLabel4.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.dungeonLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.dungeonLabel4.Location = new System.Drawing.Point(162, 517);
-            this.dungeonLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dungeonLabel4.Location = new System.Drawing.Point(81, 288);
+            this.dungeonLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dungeonLabel4.Name = "dungeonLabel4";
-            this.dungeonLabel4.Size = new System.Drawing.Size(141, 41);
+            this.dungeonLabel4.Size = new System.Drawing.Size(70, 20);
             this.dungeonLabel4.TabIndex = 18;
             this.dungeonLabel4.Text = "Semester";
             // 
@@ -155,10 +155,10 @@
             "Student",
             "Teacher",
             "Admin"});
-            this.usertypetxt.Location = new System.Drawing.Point(146, 454);
-            this.usertypetxt.Margin = new System.Windows.Forms.Padding(4);
+            this.usertypetxt.Location = new System.Drawing.Point(73, 236);
+            this.usertypetxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.usertypetxt.Name = "usertypetxt";
-            this.usertypetxt.Size = new System.Drawing.Size(418, 46);
+            this.usertypetxt.Size = new System.Drawing.Size(211, 46);
             this.usertypetxt.TabIndex = 13;
             this.usertypetxt.SelectedIndexChanged += new System.EventHandler(this.usertypetxt_SelectedIndexChanged);
             // 
@@ -171,11 +171,11 @@
             this.createuser_button.Image = null;
             this.createuser_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.createuser_button.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.createuser_button.Location = new System.Drawing.Point(336, 662);
-            this.createuser_button.Margin = new System.Windows.Forms.Padding(4);
+            this.createuser_button.Location = new System.Drawing.Point(170, 371);
+            this.createuser_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.createuser_button.Name = "createuser_button";
             this.createuser_button.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.createuser_button.Size = new System.Drawing.Size(300, 67);
+            this.createuser_button.Size = new System.Drawing.Size(150, 35);
             this.createuser_button.TabIndex = 19;
             this.createuser_button.Text = "Create User";
             this.createuser_button.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -183,9 +183,9 @@
             // 
             // CreateUserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 865);
+            this.ClientSize = new System.Drawing.Size(386, 450);
             this.Controls.Add(this.createuser_button);
             this.Controls.Add(this.dungeonLabel4);
             this.Controls.Add(this.dungeonLabel3);
@@ -195,7 +195,6 @@
             this.Controls.Add(this.usertypetxt);
             this.Controls.Add(this.passwordtxt);
             this.Controls.Add(this.usernametxt);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CreateUserForm";
             this.Text = "CreateUserForm";
             this.Load += new System.EventHandler(this.CreateUserForm_Load);

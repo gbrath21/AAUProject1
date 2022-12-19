@@ -13,7 +13,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageAdmin
 {
     public partial class UpdateUser : Form
     {
-        String connString = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
+        String connString = "server=aaupro.mysql.database.azure.com;user id=AAU_admin@aaupro;database=users;port=3306;password=Saderlort1";
         public UpdateUser()
         {
             InitializeComponent();

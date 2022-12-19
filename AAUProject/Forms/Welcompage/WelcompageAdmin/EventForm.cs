@@ -15,7 +15,7 @@ namespace AAUProject.Forms.Welcompage.WelcompageStundet
 {
     public partial class EventForm : Form
     {
-        String connString = "server=aauapp.mysql.database.azure.com;user id=Admin1;database=users;port=3306;password=AAU1234!";
+        String connString = "server=aaupro.mysql.database.azure.com;user id=AAU_admin@aaupro;database=users;port=3306;password=Saderlort1";
         public static int id;
         public EventForm()
         {
