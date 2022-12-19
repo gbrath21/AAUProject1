@@ -193,7 +193,7 @@
             // 
             this.daycontainer.Location = new System.Drawing.Point(6, 150);
             this.daycontainer.Name = "daycontainer";
-            this.daycontainer.Size = new System.Drawing.Size(885, 459);
+            this.daycontainer.Size = new System.Drawing.Size(909, 459);
             this.daycontainer.TabIndex = 51;
             // 
             // panel1
@@ -366,7 +366,7 @@
             this.HomeTab.Location = new System.Drawing.Point(4, 22);
             this.HomeTab.Name = "HomeTab";
             this.HomeTab.Padding = new System.Windows.Forms.Padding(3);
-            this.HomeTab.Size = new System.Drawing.Size(975, 544);
+            this.HomeTab.Size = new System.Drawing.Size(975, 665);
             this.HomeTab.TabIndex = 1;
             this.HomeTab.Text = "tabPage5";
             this.HomeTab.UseVisualStyleBackColor = true;
@@ -738,7 +738,7 @@
             this.HomeworkTab.Location = new System.Drawing.Point(4, 22);
             this.HomeworkTab.Name = "HomeworkTab";
             this.HomeworkTab.Padding = new System.Windows.Forms.Padding(3);
-            this.HomeworkTab.Size = new System.Drawing.Size(975, 544);
+            this.HomeworkTab.Size = new System.Drawing.Size(975, 665);
             this.HomeworkTab.TabIndex = 2;
             this.HomeworkTab.Text = "tabPage6";
             this.HomeworkTab.UseVisualStyleBackColor = true;
@@ -751,7 +751,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(3, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(908, 538);
+            this.panel8.Size = new System.Drawing.Size(908, 659);
             this.panel8.TabIndex = 23;
             // 
             // Next_WeekBTN
@@ -781,7 +781,7 @@
             // WeekdaysPanel
             // 
             this.WeekdaysPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.WeekdaysPanel.Location = new System.Drawing.Point(0, -64);
+            this.WeekdaysPanel.Location = new System.Drawing.Point(0, 57);
             this.WeekdaysPanel.Margin = new System.Windows.Forms.Padding(0);
             this.WeekdaysPanel.Name = "WeekdaysPanel";
             this.WeekdaysPanel.Size = new System.Drawing.Size(908, 602);
@@ -795,7 +795,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(975, 544);
+            this.tabPage1.Size = new System.Drawing.Size(975, 665);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -807,7 +807,7 @@
             this.CoursesflowLayoutPanel.Location = new System.Drawing.Point(2, 31);
             this.CoursesflowLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
             this.CoursesflowLayoutPanel.Name = "CoursesflowLayoutPanel";
-            this.CoursesflowLayoutPanel.Size = new System.Drawing.Size(971, 511);
+            this.CoursesflowLayoutPanel.Size = new System.Drawing.Size(971, 632);
             this.CoursesflowLayoutPanel.TabIndex = 2;
             // 
             // panel7
